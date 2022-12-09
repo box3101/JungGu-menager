@@ -364,46 +364,46 @@ body {background:#484848; border-top:2px solid #272727;}
 .wp97{width:97% !important;}
 .wp100{width:100% !important;}
 
-.wx10 {width:10px !important;}
-.wx20 {width:20px !important;}
-.wx30 {width:30px !important;}
-.wx50 {width:50px !important;}
-.wx60 {width:50px !important;}
-.wx70 {width:70px !important;}
-.wx80 {width:80px !important;}
-.wx100 {width:100px !important;}
-.wx110 {width:110px !important;}
-.wx120 {width:120px !important;}
-.wx130 {width:130px !important;}
-.wx140 {width:140px !important;}
-.wx150 {width:150px !important;}
-.wx160 {width:160px !important;}
-.wx165 {width:165px !important;}
-.wx200 {width:200px !important;}
-.wx250 {width:250px !important;}
-.wx260 {width:260px !important;}
-.wx280 {width:280px !important;}
-.wx300 {width:300px !important;}
-.wx320 {width:320px !important;}
-.wx350 {width:350px !important;}
-.wx360 {width:360px !important;}
-.wx380 {width:380px !important;}
-.wx400 {width:400px !important;}
-.wx405 {width:405px !important;}
-.wx450 {width:450px !important;}
-.wx500 {width:500px !important;}
-.wx550 {width:550px !important;}
-.wx580 {width:580px !important;}
-.wx600 {width:600px !important;}
-.wx650 {width:650px !important;}
-.wx700 {width:700px !important;}
-.wx702 {width:702px !important;}
-.wx732 {width:732px !important;}
-.wx750 {width:750px !important;}
-.wx800 {width:800px !important;}
-.wx850 {width:850px !important;}
-.wx900 {width:900px !important;}
-.wx950 {width:950px !important;}
+.wx10 {width:10px !important; flex:0 0 10px!important;}
+.wx20 {width:20px !important; flex:0 0 20px!important;}
+.wx30 {width:30px !important; flex:0 0 30px!important;}
+.wx50 {width:50px !important; flex:0 0 50px!important;}
+.wx60 {width:50px !important; flex:0 0 50px!important;}
+.wx70 {width:70px !important; flex:0 0 70px!important;}
+.wx80 {width:80px !important; flex:0 0 80px!important;}
+.wx100 {width:100px !important; flex:0 0 100px!important;}
+.wx110 {width:110px !important; flex:0 0 110px!important;}
+.wx120 {width:120px !important; flex:0 0 120px!important;}
+.wx130 {width:130px !important; flex:0 0 130px!important;}
+.wx140 {width:140px !important; flex:0 0 140px!important;}
+.wx150 {width:150px !important; flex:0 0 150px!important;}
+.wx160 {width:160px !important; flex:0 0 160px!important;}
+.wx165 {width:165px !important; flex:0 0 165px!important;}
+.wx200 {width:200px !important; flex:0 0 200px!important;}
+.wx250 {width:250px !important; flex:0 0 250px!important;}
+.wx260 {width:260px !important; flex:0 0 260px!important;}
+.wx280 {width:280px !important; flex:0 0 280px!important;}
+.wx300 {width:300px !important; flex:0 0 300px!important;}
+.wx320 {width:320px !important; flex:0 0 320px!important;}
+.wx350 {width:350px !important; flex:0 0 350px!important;}
+.wx360 {width:360px !important; flex:0 0 360px!important;}
+.wx380 {width:380px !important; flex:0 0 380px!important;}
+.wx400 {width:400px !important; flex:0 0 400px!important;}
+.wx405 {width:405px !important; flex:0 0 405px!important;}
+.wx450 {width:450px !important; flex:0 0 450px!important;}
+.wx500 {width:500px !important; flex:0 0 500px!important;}
+.wx550 {width:550px !important; flex:0 0 550px!important;}
+.wx580 {width:580px !important; flex:0 0 580px!important;}
+.wx600 {width:600px !important; flex:0 0 600px!important;}
+.wx650 {width:650px !important; flex:0 0 650px!important;}
+.wx700 {width:700px !important; flex:0 0 700px!important;}
+.wx702 {width:702px !important; flex:0 0 702px!important;}
+.wx732 {width:732px !important; flex:0 0 732px!important;}
+.wx750 {width:750px !important; flex:0 0 750px!important;}
+.wx800 {width:800px !important; flex:0 0 800px!important;}
+.wx850 {width:850px !important; flex:0 0 850px!important;}
+.wx900 {width:900px !important; flex:0 0 900px!important;}
+.wx950 {width:950px !important; flex:0 0 950px!important;}
 .wx1000 {width:1000px !important;}
 .wx1057 {width:1057px !important;}
 .wx1100 {width:1100px !important;}
@@ -1258,3 +1258,4 @@ div.jqgridTextareaDiv {
 .tbl-type02 td.flexCell{display:flex;flex-wrap:wrap;height:100%;padding:10px; gap:7px;}
 .tbl-type02 td.flexCell>select{width:calc(33.3% - 14px/3)!important;}
 
+/* 20221209 추가 */

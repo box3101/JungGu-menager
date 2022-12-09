@@ -1143,165 +1143,114 @@
           <!--
 필독 : 다국어 지원기능에 의해서 화면에 나타나는 한글명칭은 message properties파일을 이용하여 수정할 것.
  -->
-
+          <div class="ptitle">
+            기관 등록</div>
           <form id="form" name="form"
             action="/irmsm/main.do?findYear=2017&amp;findMon=12&amp;findAnalCycle=Y&amp;findScDeptId=S60&amp;findDeptId=&amp;findUseYn=&amp;findEvalGrpId=&amp;pgmId=PGM1568&amp;_=1670554988891"
             method="post"><input id="confmFairNo" name="confmFairNo" type="hidden" value=""><input type="text"
               id="preventElement" class="hide">
 
-            <!-- 검색 container -->
-            <div class="sch-bx">
-              <ul>
-                <li>
-                  <label for="a1">기관그룹</label>
-                  <select id="a1" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a2">기관그룹</label>
-                  <select id="a2" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a2">담당자 성명</label>
-                  <select id="a2" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-              </ul>
-              <a href="#" class="btn-sch" onclick="searchList();return false;">검색</a>
-            </div>
-            <!-- 검색 container eee -->
-
             <!-- 내용 container -->
             <div class="gridContainer">
-              <div class="comGridContainer">
-                <div class="comSearchBox">
-                  <p class="txt">
-                    총 <span>13</span>개의 기관이 있습니다.
-                  </p>
-                </div>
-                <div class="comTableWrap-1">
-                  <table class="comTable-1">
+              <div class="comGridContainer pt0">
+                <div class="tbl-type02">
+                  <table class="comTable-2">
                     <colgroup>
-                      <col width="80px">
                       <col width="200px">
                       <col width="auto">
                       <col width="200px">
-                      <col width="200px">
-                      <col width="200px">
+                      <col width="auto">
                     </colgroup>
                     <thead>
                       <tr>
-                        <th>번호</th>
-                        <th>기관그룹</th>
-                        <th>기관명</th>
-                        <th>담당자</th>
-                        <th>등록일</th>
-                        <th>등록자</th>
+                        <th>기관 그룹 * </th>
+                        <td>
+                          <select class="comSelect readOnly" name="" id=""
+                            onChange="this.selectedIndex = this.initialSelect;">
+                            <option value="">문화센터</option>
+                            <option value="">문화센터2</option>
+                            <option value="">문화센터</option>
+                          </select>
+                        </td>
+                        <th>기관명 *</th>
+                        <td>
+                          <select class="comSelect readOnly" name="" id=""
+                            onChange="this.selectedIndex = this.initialSelect;">
+                            <option value="">선택</option>
+                            <option value="">문화센터3</option>
+                            <option value="">문화센터</option>
+                          </select>
+                        </td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>13</td>
-                        <td>평생학습관</td>
-                        <td class="left oneLine">
-                          <a
-                            href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                        <th>담당자 ID *</th>
+                        <td class="flex gap5">
+                          <input type="text" class="comInput">
+                          <button type="button" class="comBtn" value="검색">검색</button>
                         </td>
-                        <td>홍*동</td>
-                        <td>2022-10-20</td>
-                        <td>최*동</td>
+                        <th>담당자 성명 *</th>
+                        <td>
+                          <input type="text" class="comInput">
+                        </td>
                       </tr>
                       <tr>
-                        <td>12</td>
-                        <td>행정복지센터</td>
-                        <td class="left"><a href="#">운서동행정복지센터</a></td>
-                        <td>김*동</td>
-                        <td>2022-10-20</td>
-                        <td>이*동</td>
+                        <th>대표 전화번호 *</th>
+                        <td class="flex gap5">
+                          <input type="text" class="comInput">
+                        </td>
+                        <th>홈페이지</th>
+                        <td class="flex gap5">
+                          <input type="text" class="comInput">
+                        </td>
                       </tr>
                       <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td class="left"><a href="#">영종동행정복지센터</a></td>
-                        <td>최*동</td>
-                        <td>2022-10-20</td>
-                        <td>박*동</td>
+                        <th>주소 *</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" class="comInput wx200">
+                            <button type="button" class="comBtn" value="주소찾기">주소찾기</button>
+                            <input type="text" class="comInput">
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                        <td>10</td>
-                        <td></td>
-                        <td class="left"><a href="#">영종1동 행정복지센터</a></td>
-                        <td>이*동</td>
-                        <td>2022-10-20</td>
-                        <td>홍*자</td>
+                        <th>PG사 상점ID *
+                        </th>
+                        <td class="flex gap5">
+                          <input type="text" class="comInput">
+                          <p class="desc">* 상점 ID를 입력하세요.</p>
+                        </td>
+                        <th>입금 계좌번호 *</th>
+                        <td>
+                          <div class="flex gap5">
+                            <select class="comSelect wx200" name="" id="">
+                              <option value="">은행선택</option>
+                              <option value="">문화센터</option>
+                              <option value="">문화센터</option>
+                            </select>
+                            <p class="desc">계좌번호</p>
+                            <input type="text" class="comInput">
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                        <td>9</td>
-                        <td></td>
-                        <td class="left"><a href="#">용유동행정복지센터</a></td>
-                        <td>박*동</td>
-                        <td>2022-10-20</td>
-                        <td>김*자</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>문화센터</td>
-                        <td class="left"><a href="#">롯데마트 문화센터</a></td>
-                        <td>홍*자</td>
-                        <td>2022-10-20</td>
-                        <td>홍*동</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td></td>
-                        <td class="left"><a href="#">하늘문화센터</a></td>
-                        <td>김*자</td>
-                        <td>2022-10-20</td>
-                        <td>김*자</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>청소년 수련관</td>
-                        <td class="left"><a href="#">청소년 수련관</a></td>
-                        <td>홍*동</td>
-                        <td>2022-10-20</td>
-                        <td>홍*동</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-
-                <!-- 페이징 -->
-                <div id="paginate" class="customPaginateBar" style="width: 100%; margin: 0px 20px;">
-                  <table width="100%">
-                    <tbody>
-                      <tr>
-                        <td width="29%"></td>
-                        <td align="center" class="customPage"><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-first"></i></span><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-prev"></i></span><span class="customPageNumberBtn"><a
-                              href="javascript:goPage(&quot;list&quot;, 1);" id="1"
-                              title="1페이지로 이동"><strong>1</strong></a></span><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-next"></i></span><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-end"></i></span></td>
-                        <td width="29%" align="right"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- 페이징 eee -->
               </div>
             </div>
             <!-- 내용 container eee -->
 
             <!-- 하단 버튼 container -->
-            <div class="tbl-bottom tbl-bottom2">
+            <div class="tbl-bottom">
+              <div class="tbl-wbtn">
+              </div>
               <div class="tbl-btn">
-                <a href="#" class="new" onclick="goAddForm();return false;">기관등록</a>
+                <a href="#" class="close" onclick="saveData();return false;">취소</a>
+                <a href="#" class="view" onclick="goList();return false;">등록</a>
               </div>
             </div>
             <!-- 하단 버튼 container eee -->
