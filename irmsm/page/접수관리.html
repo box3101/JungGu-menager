@@ -1191,6 +1191,31 @@
                   </select>
                 </li>
               </ul>
+              <ul>
+                <li>
+                  <label for="findNtcePd">게시 기간</label>
+                  <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx100 datepicker hasDatepicker"
+                    type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                  <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx100 datepicker hasDatepicker"
+                    type="text" value="">
+                </li>
+                <li>
+                  <label for="findUseAt">사용여부</label>
+                  <select id="findUseAt" name="findUseAt" class="select wx80">
+                    <option value="1">사용</option>
+                    <option value="0">미사용</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="findCondition">검색키워드</label>
+                  <select id="findCondition" name="findCondition" class="select wx80">
+                    <option value="cntntsNm">콘텐츠명</option>
+                    <option value="registerEsntlNm">등록자명</option>
+                    <option value="updusrEsntlNm">수정자명</option>
+                  </select>
+                  <input type="text" name="findConditionValue" class="t-box03 wx200" title="검색어">
+                </li>
+              </ul>
               <a href="#" class="btn-sch" onclick="searchList();return false;">검색</a>
             </div>
             <!-- 검색 container eee -->
