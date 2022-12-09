@@ -1,0 +1,47 @@
+@font-face {font-family:'Noto Sans CJKkr';
+font-weight:200;
+src: url('font/NotoSansCJKkr-Thin.eot');
+src: url('font/NotoSansCJKkr-Thin.woff') format('woff'),
+url('font/NotoSansCJKkr-Thin.otf') format('opentype');
+}
+@font-face {font-family:'Noto Sans CJKkr';
+font-weight:300;
+src: url('font/NotoSansCJKkr-Light.eot');
+src: url('font/NotoSansCJKkr-Light.woff') format('woff'),
+url('font/NotoSansCJKkr-Light.otf') format('opentype');
+}
+@font-face {font-family:'Noto Sans CJKkr';
+font-weight:400;
+src: url('font/NotoSansCJKkr-DemiLight.eot');
+src: url('font/NotoSansCJKkr-DemiLight.woff') format('woff'),
+url('font/NotoSansCJKkr-DemiLight.otf') format('opentype');
+}
+
+@font-face {font-family:'Noto Sans CJKkr';
+font-weight:500;
+src: url('font/NotoSansCJKkr-Medium.eot');
+src: url('font/NotoSansCJKkr-Medium.woff') format('woff'),
+url('font/NotoSansCJKkr-Medium.otf') format('opentype');
+}
+
+@font-face {font-family:'Noto Sans CJKkr';
+font-weight:600;
+src: url('font/NotoSansCJKkr-Regular.eot');
+src: url('font/NotoSansCJKkr-Regular.woff') format('woff'),
+url('font/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+
+@font-face {font-family:'Noto Sans CJKkr';
+font-weight:700;
+src: url('font/NotoSansCJKkr-Black.eot');
+src: url('font/NotoSansCJKkr-Black.woff') format('woff'),
+url('font/NotoSansCJKkr-Black.otf') format('opentype');
+}
+
+
+@font-face {font-family:'tahoma';
+src: url('font/tahoma.eot');
+src: url('font/tahoma.woff') format('woff'),
+url('font/tahoma.otf') format('truetype');
+}

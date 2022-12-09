@@ -1,0 +1,724 @@
+#wrap {width:100%; position:relative;}
+::selection {color:#fff; background:#666;}
+/*header ST*/
+#header {width:100%; background:#fff; height:90px;}
+#header .headerWrap {width:1000px; margin:0 auto;position:relative;}
+#header .headerWrap h1.logo {position:absolute; left:0;}
+#header .headerWrap h1.logo .mLogo {display:none;}
+
+#pageslide {display: none;}
+.mGnb {display: none; }
+.wGnb {position:absolute; right:0; width:89%;}
+.wGnb:after {content:''; display:block; clear:both;}
+.wGnb li {float:left; margin-left:45px; margin-top:26px; line-height:20px; text-align:center;}
+.wGnb li a {font-size:16px; color:#444; font-weight:500;}
+.wGnb li.last {position:relative; top:10px;}
+.wGnb li.lang {float:right; position:relative; margin-left:20px; margin-top:42px; z-index:99999;}
+/*.wGnb li.lang a {font-size:13px; color:#797979; font-weight:500;}*/
+/*.wGnb li.lang a:before {content:" | "; color:#797979; font-size:0.75em; padding:0 5px; position:relative; top:-3px;}*/
+/*.wGnb li.lang a:first-child:before{display:none;}*/
+.wGnb li.btnSitemap {float:right; margin-top:0; margin-left:35px; width:auto;}
+
+.wGnb li.lang p.langBox {font-size:0.75em; color:#737373; cursor:pointer; padding-right:18px; background:url(../../../images/deploy/ispark/common/ico_lang_off.gif) right center no-repeat;}
+.wGnb li.lang p.langBox.on {font-size:0.75em; color:#258bff; cursor:pointer; padding-right:18px; background:url(../../../images/deploy/ispark/common/ico_lang_on.gif) right center no-repeat;}
+.wGnb li.lang .langOn { position:absolute; width:78px; border:1px solid #ccc; top:20px; display:none;}
+.wGnb li.lang .langOn a {font-size:0.75em; display:block; border-top:1px solid #ccc; padding:6px; text-align:right; color:#555; font-weight:normal; background:#fff;}
+.wGnb li.lang .langOn a:hover {color:#2488ff;}
+.wGnb li.lang .langOn a:first-child {border-top:none;}
+
+#gnb {display: none; position: absolute;  width:100%;  background:#2487ff; right:0; top:90px; z-index: 999999; min-width:200px; padding:50px 0;}
+#gnb .gnbWrap {width:1000px; margin:0 auto; overflow:hidden;}
+#gnb .gmenu {float:left;}
+#gnb h2 {font-size:1.313em; color:#ffffff; cursor:pointer; font-weight:500; margin-bottom:30px; height:50px;}
+#gnb h2 span {font-size:1em; color:#ffffff; font-weight:500; display:block; line-height:28px;}
+#gnb h2 em {font-size:1em; color:#ffffff; font-weight:500; display:block; line-height:28px; position:relative; top:10px; font-style:normal;}
+#gnb h2 a {font-size:1em; color:#ffffff; font-weight:500;}
+#gnb .gnbList {border-bottom:1px solid #656565;}
+#gnb ul li {margin-top:17px;}
+#gnb ul li:first-child {margin-top:0;}
+#gnb ul li a {font-size:0.75em; color:#fefefe; letter-spacing:0; font-weight:400; opacity:0.7;}
+
+#gnb .menu01 {width:194px;}
+#gnb .menu02 {width:175px;}
+#gnb .menu03 {width:162px;}
+#gnb .menu04 {width:154px;}
+#gnb .menu05 {width:164px;}
+#gnb .menu06 {width:127px;}
+/*header ED*/
+
+/*container ST*/
+#container {width:100%;}
+
+/*메인비주얼*/
+#container .mainVisual {background:url(../../../images/deploy/ispark/main/w_main_bg01.jpg) center top no-repeat; background-size:cover;}
+#container .mainVisual .mMainvisual {display:none;}
+.bx-wrapper {  position: relative; padding:0;  *zoom: 1;  -ms-touch-action: pan-y;  touch-action: pan-y; width:1000px; margin:0 auto;}
+.bx-viewport {min-height:770px;}
+/* PAGER */
+.bx-wrapper .bx-pager {text-align: center;  font-size: .85em;  font-family: Arial;  font-weight: bold;  color: #666;  position:absolute; bottom:44px; width:100%; z-index:99;}
+.bx-wrapper .bx-pager.bx-default-pager a {background: #a1a3ab;  text-indent: -9999px;  display: block;  width: 9px;  height: 9px;  margin: 0 5px;  outline: 0;  -moz-border-radius: 5px;  -webkit-border-radius: 5px;  border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {background: #2488ff;}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;  *zoom: 1;  *display: inline;}
+.bx-wrapper .bx-pager-item {font-size: 0;  line-height: 0;}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {left: 140px; background: url(../../../images/deploy/ispark/main/btn_ar1.png) no-repeat;}
+.bx-wrapper .bx-next {right: 140px;  background: url(../../../images/deploy/ispark/main/btn_ar2.png) no-repeat;}
+.bx-wrapper .bx-controls-direction a {position: absolute;  top: 50%;  margin-top: -16px;  outline: 0;  width: 23px;  height: 41px;  text-indent: -9999px;  z-index: 9999;}
+.bx-wrapper .bx-controls-direction a.disabled {display: none;}
+/*메인비주얼*/
+
+/*solution st*/
+.solutionWrap {background:url(../../../images/deploy/ispark/main/w_main_bg02.jpg) center 80px no-repeat; background-size:cover;}
+.solutionWrap .sTab {background:#2a2a2a; border-top:1px solid #393939; position:relative; height:80px;}
+.solutionWrap .sTab:after {content:""; clear:both; display:block;}
+.solutionWrap .sTab ul {width:1000px; margin:0 auto;  height:90px;}
+.solutionWrap .sTab ul li {float:left; width:33.33%;  height:80px;}
+.solutionWrap .sTab ul li a {display:block; border-right:1px solid #393939; height:80px; text-align:center; line-height:80px; font-size:18px; color:#828282; font-weight:500;}
+.solutionWrap .sTab ul li a:first-child {border-left:1px solid #393939;}
+.solutionWrap .sTab ul li.on a {display:block; height:80px; text-align:center; line-height:80px; font-size:18px; font-weight:500; background:#1a1a1a; color:#0087e3;}
+.solutionWrap .sTab ul li.on {padding-bottom:10px; background:url(../../../images/deploy/ispark/main/tab_arrow.png) center bottom no-repeat;}
+.solutionWrap .sCon {padding:50px 0; text-align:center;}
+.solutionWrap .sCon h2 { font-size:2.75em; color:#333; margin-bottom:35px;}
+
+.solutionWrap #solution01 .sCon p {width:100%; margin:0 auto 20px;}
+.solutionWrap #solution02 .sCon p {width:100%; margin:0 auto 20px;}
+.solutionWrap #solution03 .sCon p {width:100%; margin:0 auto 20px; font-size:1em;}
+.solutionWrap .sCon p {color:#333; font-size:0.875em; line-height:22px; font-weight:500; margin-bottom:20px;}
+.solutionWrap .sCon p span {display:block; text-align:center; color:#333; font-size:1em; line-height:22px; font-weight:500;}
+.solutionWrap .sCon ul {overflow:hidden; display:inline-block; zoom:1; *display:inline; margin-bottom:24px; padding-left:7px;}
+.solutionWrap .sCon ul.first {margin-bottom:5px;}
+.solutionWrap .sCon ul li.bsc {padding:30px 0; }
+.solutionWrap .sCon ul li {float:left; width:100px;  text-align:center;color:#fff; background:url(../../../images/deploy/ispark/main/black_circle.png) no-repeat; padding:40px 0; position:relative; margin-left:-7px; font-size:15px;}
+.solutionWrap .sCon ul li span {color:#fff; line-height:20px; display:block;}
+.solutionWrap .sCon .sTxt {width:100%; margin:0 auto; line-height:21px; color:#565656; font-size:0.875em; margin-bottom:45px;}
+.solutionWrap .sCon .sTxt span {line-height:21px; color:#565656; font-size:1em; display:block;}
+.solutionWrap .sCon a.sBtn {display:block; margin:0 auto; width:217px; height:31px; line-height:31px; text-align:center; color:#0086e2; font-size:15px; font-weight:500; border:2px solid #0087e3; border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; -moz-border-radius:5px;}
+#solution01 {display:block;}
+#solution02 {display:none;}
+#solution03 {display:none;}
+/*solution ed*/
+
+
+/*service st*/
+.serviceWrap {paddIng:50px 0 55px; background:#0087e3 url(../../../images/deploy/ispark/main/w_main_bg03.jpg) center top no-repeat; background-size:cover; text-align:center;}
+.serviceWrap h2 {font-size:44px; color:#fff; margin-bottom:30px;}
+.serviceWrap p {color:rgba(255,255,255,0.72); font-size:0.875em; line-height:22px;}
+.castle {width:714px; background-size:cover; margin:30px auto 0;}
+.castle .wCastle {display:block;}
+.castle .mCastle {display:none;}
+a.btnInquire {width:186px; height:31px; line-height:31px; font-size:15px; font-weight:500; display:block; margin:0 auto; border:2px solid #fff; color:#fff; text-align:center;  border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; -moz-border-radius:5px;}
+/*service ed*/
+
+
+/*vision st*/
+.visionWrap {background:#ededed; padding:55px 0;}
+.visionWrap .visionTitle h2 {color:#0087e3; font-size:44px; margin-bottom:30px; text-align:center;}
+.visionWrap .visionTitle p {color:#3f3f3f; font-size:0.875em; line-height:22px; font-weight:500; text-align:center; }
+.visionWrap .visionTitle p span {color:#3f3f3f; font-size:1em; display:block; line-height:22px; font-weight:500; text-align:center; }
+.visionWrap .vision {width:1000px; margin:0 auto;}
+.visionWrap ul {overflow:hidden; width:100%; margin-top:45px; }
+.visionWrap ul li {padding-top:10px; float:left; width:33.33%; overflow:hidden;}
+.visionWrap ul li img {width:60px; float:left; margin-right:15px;}
+.visionWrap ul li h3 {font-size:20px; color:#666; font-weight:500; margin-bottom:15px;  float:left; width:76%;}
+.visionWrap ul li p {color:#3f3f3f; font-size:0.875em; line-height:22px; opacity:.5;  font-weight:400; float:left; width:76%;}
+.visionWrap ul li.v01,
+.visionWrap ul li.v02,
+.visionWrap ul li.v03 { padding-bottom:45px;}
+.visionWrap ul li.v04 { clear:both;}
+.visionWrap ul li.v05 {}
+.visionWrap ul li.v06 {}
+/*vision ed*/
+
+/*notice st*/
+.noticeWrap {background:url(../../../images/deploy/ispark/main/w_main_bg04.jpg) center top no-repeat; padding:55px 0; background-size:cover;}
+.noticeWrap h2 {color:#fff; font-size:44px; margin-bottom:55px; text-align:center;}
+.noticeWrap .notice {overflow:hidden; width:890px; margin:0 auto;}
+.noticeWrap .notice .video {float:left; width:400px;}
+.noticeWrap .notice .video img {width:100%;}
+.noticeWrap .notice .board {width:440px; float:right;}
+.noticeWrap .notice .board h3 {position:relative; font-size:21px; color:#fff; font-weight:500; margin-bottom:10px;}
+.noticeWrap .notice .board h3 a {position:absolute; right:0;}
+.noticeWrap .notice .board dl {height:230px;}
+.noticeWrap .notice .board dl dt {padding:8px 0; overflow:hidden;}
+.noticeWrap .notice .board dl dt.on span.title {font-size:0.875em;}
+.noticeWrap .notice .board dl dt span.title {font-size:12px; color:#fff; font-family:Dotum; font-weight:bold;}
+.noticeWrap .notice .board dl dt span.date {font-size:11px; padding:0 8px; color:#828282; font-family:tahoma;}
+.noticeWrap .notice .board dl dd {padding:12px 0 22px; border-bottom:1px solid #d8d8d8; overflow:hidden; margin-bottom:10px;}
+.noticeWrap .notice .board dl dd .noticeCon { font-family:Dotum; font-size:11px; color:#828282; line-height:18px;}
+/*notice ed*/
+
+/*customer st*/
+.customerWrap {background:#eb7022; padding:55px 0;}
+.customerWrap .customer {width:1000px; margin:0 auto;}
+.customerWrap .customer h2 {color:#fff; font-size:2.875em; line-height:48px;  font-weight:500;}
+.customerWrap .tel {overflow:hidden; margin-top:10px;}
+.customerWrap .tel h3 {font-size:2.375em; float:left; margin-right:23px; font-weight:500;}
+.customerWrap .tel h3 a {color:#ffe095; font-size:1em;}
+.customerWrap .tel h3 span {color:#ffe095; font-size:1em; padding-bottom:5px; display:inline-block;}
+.customerWrap .tel h3 span:first-child:after {content:"/"; padding:0 10px; }
+.customerWrap .tel a.cBtn {font-size:15px; font-weight:500; margin-top:2px; float:left; display:block; width:131px; height:31px; line-height:31px; text-align:center; color:#ffd57c; margin-right:10px; border:2px solid #ffd57c; border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; -moz-border-radius:5px;}
+
+.footSitemap {background:#d1641e; padding:55px 0;}
+.footSitemap .sitemap {width:1000px; margin:0 auto;}
+.footSitemap h2 {font-size:42px; color:#fff; margin-bottom:30px;}
+.footSitemap table {width:100%;}
+.footSitemap table td {vertical-align:top;}
+.footSitemap table td h3 {margin-bottom:25px; font-weight:500;}
+.footSitemap table td h3 a {font-size:18px; color:#ffddc7;}
+.footSitemap table td ul li {margin-top:10px;}
+.footSitemap table td ul li:first-child {margin-top:0;}
+.footSitemap table td ul li a {font-size:0.875em; color:#ffc7a3;}
+/*customer ed*/
+/*container ED*/
+/*footer ST*/
+#footer {padding:17px 12px 60px; background:#fff; position:relative; background:#ededed;}
+#footer ul.footerBtn {overflow:hidden; margin-bottom:10px;}
+#footer ul.footerBtn a {color:#444; font-size:0.75em; font-weight:400;}
+#footer ul.footerBtn li {float:left; color:#444;}
+#footer ul.footerBtn li:before {content:"|"; padding:0 5px; font-size:0.813em; font-weight:400;}
+#footer ul.footerBtn li:first-child:before {display:none;}
+#footer ul.footerTxt li {color:#444; font-size:0.75em; margin-top:5px; line-height:20px; overflow:hidden;}
+#footer ul.footerTxt li:first-child {margin-top:0;}
+#footer ul.footerTxt li.chanwon {width:60%;}
+#footer ul.footerTxt li.chanwon span {color:#444; font-size:1em; padding-left:8px;}
+#footer p.copyright {font-size:0.75em; margin-top:6px; color:#444;font-weight:400; letter-spacing:0;}
+
+.footerWrap {width:1000px; margin:0 auto; position:relative; height:55px;}
+.footerWrap .footerL{position:absolute; left:0;}
+.footerWrap .footerR{position:absolute; right:0;}
+.footerWrap .footerTxt {overflow:hidden;}
+.footerWrap .footerTxt li {float:left; margin-top:0px !important; margin-right:8px;}
+.footerWrap .footerTxt li.clear {clear:both;}
+/*footer ED*/
+
+/* Board 게시판 ST*/
+::-webkit-input-placeholder { font-size: 14px; color: #fff; }
+:-moz-placeholder { /* older Firefox*/ font-size:14px; color: #fff;}
+::-moz-placeholder { /* Firefox 19+ */  font-size: 14px; color: #fff;} 
+:-ms-input-placeholder {  font-size: 14px;  color: #fff; }
+
+#cs_bot {position:relative; margin-top:10px; width:80.5%; margin:0 auto;}
+/* paging start */
+#pagenation {text-align:center; position:relative; margin-top:23px;}
+.page_num span {display:inline-block; zoom:1; *display:inline; padding:0 20px;}
+.page_num span a {display:inline-block; color:#3c3c3c; font-size:0.75em; text-align:center; margin:0 7px; font-family:'돋움',Dotum; }
+.page_num .sel_page {display:inline-block; text-align:center; font-size:0.75em; color:#ff8400; font-family:'돋움',Dotum;  font-weight:bold;}
+.page_num .btn_ar {position:relative; top:1px; padding:0 5px;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.page_num .btn_ar {position:relative; top:6px; padding:0 5px;}
+}
+.page_num .btn_ar .mBtn_ar {display:none;}
+.btnWrite {position:absolute; right:0; display:block; width:100px; height:35px; line-height:35px; background:#2ba0ff; border-radius:5px; text-align:center; color:#fff; font-size:0.875em; top:0; margin-top:20px;}
+/* paging end */
+
+
+/* table_search start */
+ .table_search {overflow:hidden; overflow:hidden; float:right;}
+ .table_search form legend {display:none;}
+ .table_search #selcect_form {float:left; margin-right:4px; }
+
+ .table_search #selcect_form .input_style {border:1px solid #c2c2c2; line-height:25px;}
+ .table_search #search_select {float:left; margin-top:16px; margin-left:195px; border:1px solid #c2c2c2;}
+ .table_search #search_select #s_scroll {width:96px;height:23px; border:none; }
+ .table_search #search_key {float:left; }
+  *:first-child+html .table_search #search_key {position:relative; top:-1px;} /*ie7*/
+ .table_search #search_key #s_key {border-top:1px solid #dadada;border-bottom:1px solid #dadada; border-left:1px solid #dadada; border-right:0; }
+ .table_search #search_btn {float:left;}
+ .table_search #search_btn  .btnSearch {border:none; }
+/* table search end */
+
+
+
+/* view_page start */
+#board_view {width:80.5%; margin:0 auto;}
+#board_view_wrap1 {position:relative;  border-bottom:1px solid #dcdcdc;  border-top:2px solid #a5a6a6;  background:url(../../../images/deploy/ispark/common/th_bg.png) left top; font-family:'돋움',Dotum;  font-weight:bold; font-size:0.75em;  overflow:hidden;}
+#board_view_wrap1 #board_view_title {padding:10px 0;  text-align:center; width:76px; color:#7f7f7f; float:left; background:url(../../../images/deploy/ispark/common/th_bar.gif) right top no-repeat;   font-family:'돋움',Dotum;  font-weight:bold; font-size:1em; }
+#board_view_wrap1 #board_view_data {padding:10px 0;  float:left; margin-left:17px; color:#333; font-size:1em; font-family:'돋움',Dotum;}
+
+#board_view_wrap2 {position:relative; border-bottom:1px solid #dcdcdc; font-size:0.75em; background:url(../../../images/deploy/ispark/common/th_bg.png) left top; overflow:hidden;}
+#board_view_wrap2 #board_view_title {padding:10px 0; float:left; text-align:center; width:76px; color:#7f7f7f; background:url(../../../images/deploy/ispark/common/th_bar.gif) right top no-repeat; font-weight:bold; font-size:1em;  font-family:'돋움',Dotum;}
+#board_view_wrap2 #board_view_data {padding:10px 0; float:left; margin-left:17px; font-family:'돋움',Dotum; font-size:1em; color:#333;}
+
+#board_view_wrap2 #board_view_info {float:right; padding-right:40px;}
+#board_view_wrap2 #board_view_info .board_view_title {float:left; width:76px; text-align:center; padding:10px 0;  font-family:'돋움',Dotum; color:#7f7f7f; font-size:0.75em; background:url(../../../images/deploy/ispark/common/th_bar.gif) right top no-repeat; font-family:'돋움',Dotum; margin-left:17px; }
+#board_view_wrap2 #board_view_info .board_date_data {float:left;padding:10px 0; margin-left:17px; font-size:0.75em; color:#333; font-family:'돋움',Dotum;}
+
+#board_view_content {clear:both; position: relative; padding:15px 20px 20px 20px; line-height:180%; font-size:0.75em; color:#7f7f7f; font-family:'돋움',Dotum; border-bottom:1px solid #b7b6b5;}
+#board_view_line {background-color:#a3a3a3; height:1px;}
+#board_btn_wrap {position:relative; height:35px; padding-top:10px;}
+#board_btn_wrap .board_btn_list {float:right;}
+#board_btn_wrap .board_btn_list2 {float:left;}
+#board_btn_wrap p.bt_list {float:left; font-size:14px;}
+#board_btn_wrap p.bt_write {float:right; font-size:14px;}
+#board_btn_wrap p.bt_reply {float:right; margin-left:3px; font-size:14px;}
+/* view_page end */
+
+
+/*write page ST*/
+#board_write {position:relative; border-top:2px solid #a5a6a6;  width:80.5%; margin:0 auto;}
+#board_write th.title {text-align:left; width:120px; border-bottom:1px solid #dcdcdc; font-size:0.75em; font-weight:bold; text-align:center; vertical-align:middle; color:#7f7f7f; font-family:'돋움',Dotum; background:url(../../../images/deploy/ispark/common/th_bg.png) left top;}
+#board_write td ul {overflow:hidden; width:100%;}
+#board_write td ul table {width:100%;}
+#board_write td ul li {float:left; width:50%;}
+#board_write td label {font-size:0.875em;}
+#board_write td span {font-size:1em;}
+#board_write td {font-size:0.875em;}
+#board_write td.con {text-align:left; border-bottom:1px solid #dcdcdc; padding:5px; color:#333;}
+#board_write input.input_write {background:#fff; border:1px solid #e8e8e8; padding-left:3px; line-height:25px; height:24px; font-size:1em; } 
+#board_write input.input_write.subject {width:95%; }
+#board_write input.input_write.name,
+#board_write input.input_write.password {width:50%;}
+#board_write input.input_write.email,
+#board_write input.input_write.tel {width:80%;}
+#board_write td textarea {width:98.75%; height:300px; background:#fff; border:1px solid #e8e8e8;}
+
+/*파일 버튼*/
+.filebox input[type="file"] {position: absolute; width: 0px; height: 0px; padding: 0; overflow: hidden; font-size:1em;}
+.filebox label {width:72px; height:24px; text-align:center; background:#333; display: inline-block; color: #fff;  font-size:0.75em;  line-height: 24px; cursor: pointer;  font-family:'돋움',Dotum; margin-left:-3px; position:relative; top:-1px;}
+/* named upload */
+.filebox .upload-name {height:22px; border-top:1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; border-left:1px solid #cfcfcf;  border-right:none;  font-size:0.75em; display: inline-block; font-family:'돋움',Dotum; background:#fff;}
+/*파일 버튼*/
+
+.btnWrap {width:80.5%; margin:0 auto; text-align:right;}
+.btnWrap a {display:inline-block; zoom:1; *display:inline; width:100px; height:35px; line-height:35px; border-radius:5px; text-align:center; color:#fff; font-size:0.875em; top:0; margin-top:20px;}
+.btnWrap .btn01 {background:#2ba0ff;}
+.btnWrap .btn02 {background:#333; margin-left:9px;}
+/*write page ED*/
+
+
+
+/* Board 게시판 ED*/
+
+
+/*서브시작*/
+/*공통*/
+h3.bigTitle {font-size:2.875em; color:#333; text-align:center; padding-bottom:62px; background:url(../../../images/deploy/ispark/common/bul_point.png) center bottom no-repeat; margin-bottom:55px;}
+h3.bigTitle2 {font-size:2.875em; color:#333; text-align:center; padding-bottom:62px; background:url(../../../images/deploy/ispark/common/bul_point.png) center bottom no-repeat; margin-bottom:55px;}
+/*공통*/
+
+
+/*회사소개 st*/
+#ceoWrap {background:url(../../../images/deploy/ispark/company/bg01.jpg) center top no-repeat; background-size:cover; padding-top:95px;}
+#ceoWrap h3 {color:#fff;}
+#ceoWrap .ceo {width:1000px; margin:0 auto; padding-bottom:125px;/*background:url(../../../images/deploy/ispark/company/ceo.png) right bottom no-repeat;*/}
+#ceoWrap .ceo .txt p {font-size:0.9em; color:#fff;  line-height:20px; font-weight:500; margin-top:20px; text-align:center;}
+#ceoWrap .ceo .txt p:first-child {margin-top:0;}
+#ceoWrap .ceo .txt p span {font-size:1em; display:block; color:#fff; line-height:20px;}
+#ceoWrap .ceo .txt2 p {font-size:0.938em; color:#fff; line-height:22px; margin-top:18px; text-align:center; font-weight:500;}
+#ceoWrap .ceo .txt2 p b {font-size:1em; color:#ff8400; font-weight:500;}
+#ceoWrap .ceo .txt2 p:first-child {margin-top:0;}
+#ceoWrap .ceo .txt2 p.name {margin-top:50px; opacity:0.8; -ms-filter: alpha(opacity:.5); font-size:0.875em; position:relative;}
+#ceoWrap .ceo .txt2 p span {font-size:1em; display:block; color:#fff; line-height:22px;}
+
+#ceoWrap .ceo ul.icon {width:1000px; margin:0 auto; overflow:hidden; width:400px; padding:25px 0 25px 15px;}
+#ceoWrap .ceo ul.icon li {position:relative;width:35.5%; float:left; height:143px; background:url(../../../images/deploy/ispark/company/bg_circle.png) no-repeat; text-align:center; margin-left:-15px;}
+#ceoWrap .ceo ul.icon li img.ico01 {position:relative; top:50%; margin-top:-12px;}
+#ceoWrap .ceo ul.icon li img.ico02 {position:relative; top:50%; margin-top:-15px;}
+#ceoWrap .ceo ul.icon li img.ico03 {position:relative; top:50%; margin-top:-15px;}
+
+#historyWrap {background:url(../../../images/deploy/ispark/company/bg02.jpg) center top no-repeat fixed; background-size:cover; padding-top:95px; padding-bottom:110px;}
+#historyWrap h3 {color:#fff; background:none; padding:0; margin-bottom:120px; }
+#historyWrap .history {width:1000px; margin:0 auto;}
+#historyWrap .history table {margin-left:17%;}
+#historyWrap .history table th {width:17.14%; padding-bottom:30px; background:url(../../../images/deploy/ispark/company/h_line.gif) 82% top repeat-y; vertical-align:top; text-align:left;}
+#historyWrap .history table th p {font-size:1.313em; color:#fff; background:url(../../../images/deploy/ispark/company/v_line.gif) 88% top no-repeat; line-height:5px;  font-weight:500;}
+#historyWrap .history table th.last {background:none;}
+#historyWrap .history table td {padding-bottom:30px; padding-left:10px;}
+#historyWrap .history table td p {font-size:1em; color:#e3ebf3; line-height:22px; position:relative; top:-9px;}
+
+#organizationWrap {background:url(../../../images/deploy/ispark/company/bg03.jpg) center top; padding-top:95px; padding-bottom:145px;}
+#organizationWrap .organization {width:1000px; margin:0 auto;}
+#organizationWrap .organization p {width:209px; height:60px; margin:0 auto; background:#2ba0ff; text-align:center; line-height:60px; font-size:1.125em; color:#fff; font-weight:500; border-radius:5px; border:1px solid #2894ec;}
+#organizationWrap .organization .organ {overflow:hidden;}
+#organizationWrap .organization .oline {border-bottom:1px solid #bababa; margin:0 auto; position:relative; left:-1px; height:67px; width:81.6%; background:url(../../../images/deploy/ispark/company/h_line2.gif) center top repeat-y;}
+#organizationWrap .organization ul {float:left; margin-left:90px;}
+#organizationWrap .organization ul:first-child {margin-left:0;}
+#organizationWrap .organization ul li {width:180px; height:40px; padding:10px 0; line-height:20px; text-align:center; font-size:1em; font-weight:500; border-radius:5px; border:1px solid #999; margin-bottom:7px; color:#777;}
+#organizationWrap .organization ul li span {font-size:1em; font-weight:500; border-radius:5px; color:#777; position:relative; top:10px;}
+#organizationWrap .organization ul li.title {background:#6a6a6a; color:#fff; border:1px solid #626262;}
+#organizationWrap .organization ul li.title span {font-size:1em; font-weight:500; color:#fff; position:relative; top:10px;}
+#organizationWrap .organization ul li.line {display:block; height:60px;background:url(../../../images/deploy/ispark/company/h_line2.gif) center top repeat-y; width:100%; border:none; margin:0;}
+
+#partnerWrap {background:url(../../../images/deploy/ispark/company/bg04.jpg) center top no-repeat fixed; background-size:cover; padding-top:95px; padding-bottom:145px;}
+#partnerWrap  p {font-size:1.25em; color:#333; text-align:center;}
+#partnerWrap .partner {text-align:center; width:1000px; margin:0 auto; padding-top:50px;}
+#partnerWrap .partner h4 {font-size:1.563em; font-weight:500; color:#333; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt2.png) left top no-repeat; margin:30px 0 30px -25px; display:inline-block; zoom:1; *display:inline; }
+
+#partnerWrap .partner ul.partnerTab {width:100%; margin:0 auto; }
+#partnerWrap .partner ul.partnerTab:after {content:""; clear:both; display:block;}
+#partnerWrap .partner ul.partnerTab li {width:12.5%; float:left; text-align:center; }
+#partnerWrap .partner ul.partnerTab li a {position:relative; display:block; width:100%; height:100%; line-height:15px;color:#9b9b9b; font-size:0.7em;border:1px solid #cbcbcb; margin-left:-1px; height:35px; border-radius:3px; z-index:9;}
+#partnerWrap .partner ul.partnerTab li span {line-height:15px;color:#9b9b9b; font-size:1em; position:relative; top:10px;}
+#partnerWrap .partner ul.partnerTab li a.selected {position:relative; color:#fff;border-radius:3px; background:#2ba0ff; border:1px solid #2ba0ff; z-index:99;}
+#partnerWrap .partner ul.partnerTab li a.selected span {color:#fff;}
+#partnerWrap .partner .pCon {padding-top:85px;}
+#partnerWrap .partner .pCon ul {overflow:hidden; border-top:1px solid #bbb; border-right:1px solid #bbb;}
+#partnerWrap .partner .pCon ul li {float:left; border-left:1px solid #bbb; border-bottom:1px solid #bbb; width:16.565%;  height:130px; background:#fff; overflow:hidden;}
+#partnerWrap .partner .pCon ul li.wnone {display:none;}
+#partnerWrap .partner .pCon ul li img {width:100%;}
+#partnerWrap .partner .pCon {margin-top:20px;}
+
+
+#recruitWrap {background:#ededed; padding-top:95px; padding-bottom:145px;}
+#recruitWrap .titleArea p {font-size:0.875em; text-align:center; line-height:22px; color:#3f3f3f; width:100%; margin:0 auto;}
+#recruitWrap .titleArea p span {font-size:1em; line-height:22px; color:#3f3f3f; display:block; text-align:center;}
+#recruitWrap .recruit {text-align:center; width:1000px; margin:0 auto;}
+#recruitWrap .recruit h4 {font-size:1.563em; font-weight:500; color:#333; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt2.png) left top no-repeat; margin:30px 0 45px -25px; display:inline-block; zoom:1; *display:inline; }
+#recruitWrap .recruit .rCon ul.rList1 {overflow:hidden; text-align:center; width:100%; display:table; margin-bottom:40px;}
+#recruitWrap .recruit .rCon ul.rList1 li {text-align:left; overflow:hidden; width:31%; padding-right:2%; margin-bottom:40px; display:table-cell; vertical-align:top;}
+#recruitWrap .recruit .rCon ul.rList2 {overflow:hidden; text-align:center; width:80%; display:table; margin:0 auto;}
+#recruitWrap .recruit .rCon ul.rList2 li {text-align:left; overflow:hidden; width:50%; padding-right:2%;  margin-bottom:40px; display:table-cell; vertical-align:top;}
+
+#recruitWrap .recruit .rCon ul li img {float:left; width:113px; margin-right:20px; display:block;}
+#recruitWrap .recruit .rCon ul li h5 {font-size:1.25em; color:#3f3f3f; font-weight:400; margin-bottom:15px; margin-top:15px; width:55%; float:left;}
+#recruitWrap .recruit .rCon ul li p {line-height:21px; color:#3f3f3f; opacity:0.5; -ms-filter:alpha(opacity:.5); font-size:0.875em; width:55%; float:left;}
+#recruitWrap .recruit .rCon2 {padding-top:50px;}
+#recruitWrap .recruit .rCon2 ul {overflow:hidden; width:100%;}
+#recruitWrap .recruit .rCon2 ul li {text-align:left; overflow:hidden; float:left; margin-bottom:40px; width:31%; padding-right:2%; }
+#recruitWrap .recruit .rCon2 ul li img {float:left; width:113px; margin-right:20px;}
+#recruitWrap .recruit .rCon2 ul li .txt {float:left;}
+#recruitWrap .recruit .rCon2 ul li.clear {clear:both;}
+#recruitWrap .recruit .rCon2 ul li h5 {font-size:1.25em; color:#3f3f3f; font-weight:400; margin-bottom:15px; margin-top:15px;}
+#recruitWrap .recruit .rCon2 ul li .txt p {line-height:21px; color:#3f3f3f; opacity:0.5; -ms-filter:alpha(opacity:.5); font-size:0.875em; padding-left:10px; position:relative;}
+#recruitWrap .recruit .rCon2 ul li .txt p span {line-height:21px; color:#3f3f3f; font-size:1em; display:block;}
+#recruitWrap .recruit .rCon2 ul li .txt p:before {content:"· "; position:absolute; left:0;}
+
+#recruitWrap .recruit .rCon3 {text-align:center;}
+#recruitWrap .recruit .rCon3 h5 {font-size:1.25em; color:#2ba0ff; text-align:center; border-bottom:1px solid #2ba0ff; display:inline-block; zoom:1; *display:inline; font-weight:400; margin-bottom:45px;}
+#recruitWrap .recruit .rCon3 p {font-size:0.875em; color:#3f3f3f; line-height:25px; width:100%;}
+#recruitWrap .recruit .rCon3 p span {font-size:1em; color:#3f3f3f; line-height:25px; text-align:center; display:block;}
+/*회사소개 ed*/
+
+/*PLM st*/
+#plmWrap .titleArea {padding:120px 0 100px; background:url(../../../images/deploy/ispark/plm/bg01.jpg) center top no-repeat; background-size:cover; }
+#plmWrap .titleArea h3 {color:#fff; margin-bottom:40px;}
+#plmWrap .titleArea p {width:100%; margin: 0 auto; text-align:center; line-height:34px; color:#fff; font-weight:500; font-size:1.125em;}
+#plmWrap .titleArea p span {text-align:center; line-height:34px; color:#fff; font-weight:500; font-size:1em; display:block;}
+
+#plmWrap .titleArea2 {padding:90px 0 75px; background:url(../../../images/deploy/ispark/plm/bg04.jpg) center top no-repeat; background-size:cover; }
+#plmWrap .titleArea2 h3 {color:#fff; margin-bottom:40px;}
+#plmWrap .titleArea2 h4 {color:#fff; margin-bottom:40px; font-size:1.876em; font-weight:400; text-align:center;}
+#plmWrap .titleArea2 p {width:100%; margin: 0 auto; text-align:center; line-height:22px; color:#fff; font-size:0.875em; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#plmWrap .titleArea2 p span {font-size:1em; text-align:center; display:block; line-height:22px; color:#fff;}
+
+#plmWrap .titleArea3 {padding:90px 0 75px; background:url(../../../images/deploy/ispark/plm/bg07.jpg) center top no-repeat; background-size:cover; }
+#plmWrap .titleArea3 h3 {color:#fff; margin-bottom:40px;}
+#plmWrap .titleArea3 h4 {color:#fff; margin-bottom:40px; font-size:1.876em; font-weight:400; text-align:center;}
+#plmWrap .titleArea3 p {width:100%; margin: 0 auto 25px; text-align:center; line-height:22px; color:#fff;  font-size:0.875em; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#plmWrap .titleArea3 p span {text-align:center; color:#fff; font-size:1em; display:block; line-height:22px;}
+#plmWrap .titleArea3 a.btnEducation {width:216px; height:35px; line-height:35px; text-align:center; margin:0 auto; color:#fff; display:block; font-size:0.938em; font-weight:500; border:2px solid #fff; border-radius:5px;}
+
+#plmWrap .info {padding:80px 0; background:url(../../../images/deploy/ispark/plm/bg02.jpg) center top no-repeat; background-size:cover; }
+#plmWrap .info .iCon {overflow:hidden; width:1000px; margin:0 auto; position:relative; height:432px; }
+#plmWrap .info .iCon .pic {margin-left:23px; left:0; position:absolute;}
+#plmWrap .info .iCon .txt {width:449px; right:0; bottom:0; position:absolute;}
+#plmWrap .info .iCon .txt h4 {font-size:1.563em; font-weight:500; color:#fff; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt.png) left top no-repeat; margin-bottom:40px; margin-left:-25px;}
+#plmWrap .info .iCon .txt p {font-size:0.875em; color:#fff; line-height:25px; font-weight:500;}
+
+#plmWrap .application {padding:110px 0; background:url(../../../images/deploy/ispark/plm/bg03.jpg) center top no-repeat; background-size:cover;}
+#plmWrap .application .aCon {width:1000px; margin:0 auto;}
+#plmWrap .application ul {width:100%; margin-left:20px;}
+#plmWrap .application ul li {margin-top:70px;}
+#plmWrap .application ul li:first-child {margin-top:0;}
+#plmWrap .application ul li:after {content:""; clear:both; display:block;}
+#plmWrap .application ul li img {float:left; width:158px; margin-right:20px; }
+#plmWrap .application ul li h4 {font-size:1.913em; font-weight:500; color:#333; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt2.png) left top no-repeat; margin:0 0 15px -25px; display:inline-block; zoom:1; *display:inline;}
+#plmWrap .application ul li h5 {color:#333; font-weight:500; margin-bottom:12px;}
+#plmWrap .application ul li .txt {float:right; width:75.86%; }
+#plmWrap .application ul li p {font-size:0.875em; color:#333; opacity:0.6; -ms-filter:alpha(opacity:.5); line-height:18px; margin-bottom:15px;}
+#plmWrap .application ul li p span {font-size:1em; color:#333; display:block; line-height:18px;}
+#plmWrap .application ul li p a {font-size:1em; color:#333; opacity:1; -ms-filter:alpha(opacity:.1); line-height:18px; margin-bottom:15px;}
+#plmWrap .application ul li p a.telBtn:before {content:", ";}
+#plmWrap .application ul li p em {font-style:normal; opacity:1; -ms-filter:alpha(opacity:.1); font-size:1em; color:#333; }
+#plmWrap .application ul li a.videoBtn {display:block ; font-size:0.938em; width:136px; height:31px;  line-height:31px; color:#0086e2; border:2px solid #0086e2; border-radius:5px; text-align:center; font-weight:500;}
+
+#play_vod {position:fixed; z-index:99999; width:640px; height:480px; top:50%; left:50%; margin-left:-320px; margin-top:-240px; padding-top:50px; display:none;}
+#play_vod img.btn_x {position:absolute; z-index:99999; top:0; right:0; display:block; cursor:pointer;}
+#play_vod iframe {position:relative; top:0; left:0;}
+#play_black {width:100%; height:100%; position:fixed; top:0; left:0; background:rgba(0,0,0,0.8); -ms-filter:alpha(opacity:.8); z-index:999; display:none;}
+
+#plmWrap .diagram1 {background:url(../../../images/deploy/ispark/plm/bg05.jpg) center top no-repeat; background-size:cover;  padding:90px 0;}
+#plmWrap .diagram1 ul {width:696px;  margin:0 auto; overflow:hidden; padding-left:24px;}
+#plmWrap .diagram1 ul li {float:left; width:188px; padding:82px 0; font-size:1.625em; text-align:center; color:#333; background:url(../../../images/deploy/ispark/plm/bg_circle1.png) center top no-repeat; margin-left:-14px; line-height:30px;}
+#plmWrap .diagram1 ul li span {position:relative; top:-10px; color:#333; font-size:1em; display:block;}
+#plmWrap .diagram1 ul li.d1 span {top:-25px;}
+#plmWrap .diagram1 ul li.d2 span {top:-15px;}
+#plmWrap .diagram1 p {width:100%; line-height:22px; font-weight:500; font-size:0.875em; text-align:center; color:#393939; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#plmWrap .diagram1 p span {line-height:22px; font-weight:500; font-size:0.875em; text-align:center; color:#393939; font-size:1em; display:block;}
+#plmWrap .diagram2 {background:url(../../../images/deploy/ispark/plm/bg06.jpg) center top no-repeat; background-size:cover;  padding:90px 0;}
+#plmWrap .diagram2 ul {width:349px; margin:0 auto 30px; overflow:hidden; padding-left:14px;}
+#plmWrap .diagram2 ul li {float:left; width:188px; padding:70px 0; font-size:1.375em; line-height:30px; text-align:center; color:#fff; background:url(../../../images/deploy/ispark/plm/bg_circle2.png) center top no-repeat; margin-left:-14px;}
+#plmWrap .diagram2 p {width:100%; margin:0 auto; line-height:22px; font-size:0.875em; text-align:center; color:#fff; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#plmWrap .diagram2 p span {line-height:22px; font-size:0.875em; text-align:center; color:#fff; font-size:1em;  display:block;}
+
+#plmWrap .develop {background:url(../../../images/deploy/ispark/plm/bg08.jpg) center top no-repeat; background-size:cover;  padding:90px 0;}
+#plmWrap .develop .dCon {width:1000px; margin:0 auto; position:relative; height:370px; border-bottom:1px solid #93b9d2;}
+#plmWrap .develop .dCon li {position:absolute;}
+#plmWrap .develop .dCon li.video {left:0; width:454px; }
+#plmWrap .develop li.video img {width:100%;}
+#plmWrap .develop .dCon li.txt {right:0; width:509px;}
+#plmWrap .develop .dCon2 {width:1000px; margin:40px auto 0; position:relative; height:350px; }
+#plmWrap .develop .dCon2 li {position:absolute;}
+#plmWrap .develop .dCon2 li.video {right:0; width:454px; }
+#plmWrap .develop .dCon2 li.txt {left:0; width:499px; margin-left:20px;}
+#plmWrap .develop  h4 {font-size:1.563em; line-height:30px; font-weight:500; color:#fff; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt.png) left top no-repeat; margin-bottom:20px; display:inline-block; zoom:1; *display:inline; margin-left:-25px;}
+#plmWrap .develop  h4 span {font-size:0.75em; color:#fff; font-weight:400;}
+#plmWrap .develop p {color:#fff; line-height:22px; opacity:0.9; -ms-filter:alpha(opacity:.9); font-size:0.875em;}
+#plmWrap .develop p.tel {color:#8f9fae; font-weight:bold; background:#f0f0f0 url(../../../images/deploy/ispark/plm/ico_tel.gif) 10px center no-repeat; padding:10px 10px 10px 35px; display:inline-block; zoom:1;  *display:inline; border-radius:5px; margin-top:20px; font-size:0.813em;}
+
+#plmWrap .consulting {background:url(../../../images/deploy/ispark/plm/bg09.jpg) center top; padding:90px 0; text-align:center;}
+#plmWrap .consulting h4 {font-size:1.625em; font-weight:600; color:#333; lpadding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt2.png) left top no-repeat; margin:0 0 40px -25px; display:inline-block; zoom:1; *display:inline;}
+#plmWrap .consulting .cCon {width:1000px; margin:0 auto;}
+#plmWrap .consulting .cCon p {font-size:0.875em; width:100%; line-height:22px; margin:0 auto;}
+#plmWrap .consulting .cCon p span {font-size:1em; text-align:center; line-height:22px; display:block;}
+#plmWrap .consulting .cCon ul {overflow:hidden; width:302px; margin:40px auto 0; padding-left:25px;}
+#plmWrap .consulting .cCon ul li {width:166px; padding:50px 0; background:url(../../../images/deploy/ispark/plm/bg_circle3.png) center top no-repeat; float:left; margin-left:-15px; color:#fff; font-size:1.125em; line-height:22px; font-weight:500;}
+#plmWrap .consulting .cCon ul li span {color:#fff; font-weight:normal; font-size:1em;}
+/*PLM ed*/
+
+
+/*BI st*/
+#biWrap .titleArea {padding:120px 0 100px; background:url(../../../images/deploy/ispark/bi/bg01.jpg) center top no-repeat; background-size:cover; }
+#biWrap .titleArea h3 {color:#fff; margin-bottom:40px;}
+#biWrap .titleArea p {width:100%; margin: 0 auto; text-align:center; color:#fff; font-weight:500; font-size:1.125em;}
+#biWrap .titleArea p span {display:block; font-size:1em; color:#fff; margin-bottom:5px; line-height:26px;}
+
+#biWrap .titleArea2 {padding:90px 0 75px; background:url(../../../images/deploy/ispark/bi/bg06.jpg) center top no-repeat; background-size:cover; }
+#biWrap .titleArea2 h3 {color:#fff; margin-bottom:40px;}
+#biWrap .titleArea2 h4 {color:#fff; margin-bottom:40px; font-size:1.876em; font-weight:400; text-align:center;}
+#biWrap .titleArea2 p {width:100%; margin: 0 auto; text-align:center; line-height:22px; color:#fff; font-size:0.875em; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#biWrap .titleArea2 p span {font-size:1em; line-height:22px; color:#fff; display:block; text-align:center;}
+#biWrap .titleArea2 ul li {margin-top:60px;}
+#biWrap .titleArea2 ul li:first-child {margin-top:0;}
+
+#biWrap .info {padding:80px 0; background:url(../../../images/deploy/ispark/bi/bg02.jpg) center top no-repeat; background-size:cover; }
+#biWrap .info .iCon {overflow:hidden; width:1000px; margin:0 auto; position:relative; height:445px; }
+#biWrap .info .iCon .pic {margin-left:23px; left:-20px; position:absolute; }
+#biWrap .info .iCon .txt {width:509px; right:0; bottom:80px; position:absolute;}
+#biWrap .info .iCon .txt h4 {font-size:1.563em; font-weight:500; color:#fff; line-height:35px; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt.png) left top no-repeat; margin-bottom:40px; margin-left:-25px;}
+#biWrap .info .iCon .txt p {font-size:0.875em; color:#fff; line-height:25px;}
+
+#biWrap .solution.bg01 {padding:140px 0; background:url(../../../images/deploy/ispark/bi/bg03.jpg) center top no-repeat; background-size:cover;}
+#biWrap .solution.bg02 {padding:140px 0; background:url(../../../images/deploy/ispark/bi/bg05.jpg) center top no-repeat; background-size:cover;}
+#biWrap .solution .sCon {width:1000px; margin:0 auto;}
+#biWrap .solution ul {width:72.4%; margin:0 auto;}
+#biWrap .solution ul li {margin-top:90px;}
+#biWrap .solution ul li:first-child {margin-top:0;}
+#biWrap .solution ul li:after {content:""; clear:both; display:block;}
+#biWrap .solution ul li h4 {font-size:1.913em; font-weight:500; color:#333; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt2.png) left top no-repeat; margin:0 0 15px -25px; display:inline-block; zoom:1; *display:inline;}
+#biWrap .solution ul li h4 span {font-size:0.6em; color:#333;}
+#biWrap .solution ul li h5 {color:#333; font-weight:500; margin-bottom:12px;}
+#biWrap .solution ul li .txt {}
+#biWrap .solution ul li p {font-size:0.875em; color:#333; opacity:0.6; -ms-filter:alpha(opacity:.5); line-height:18px; margin-bottom:15px;}
+#biWrap .solution ul li a {display:block ; font-size:0.938em; width:275px; height:31px;  line-height:31px; color:#0086e2; border:2px solid #0086e2; border-radius:5px; text-align:center; font-weight:500;}
+
+#biWrap .consulting {padding:90px 0 75px; background:url(../../../images/deploy/ispark/plm/bg07.jpg) center top no-repeat; background-size:cover;  text-align:center;}
+#biWrap .consulting h3 {color:#fff; margin-bottom:40px;}
+#biWrap .consulting p {width:100%; margin: 0 auto 25px; text-align:center; line-height:22px; color:#fff; font-size:0.875em; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#biWrap .consulting ul {display:inline-block; zoom:1; *display:inline; padding-left:14px;}
+#biWrap .consulting ul li {float:left; width:239px; height:239px;color:#fff; text-align:center; background:url(../../../images/deploy/ispark/bi/bg_circle1.png) no-repeat; line-height:24px; margin-left:-10px;}
+#biWrap .consulting ul li span {line-height:1.063em; font-size:1em; color:#fff;}
+#biWrap .consulting ul li.c1 span {position:relative; top:75px;}
+#biWrap .consulting ul li.c2 span {position:relative; top:90px;}
+#biWrap .consulting ul li.c3 span {position:relative; top:75px;}
+/*솔루션 자세히 보기*/
+#solutionDetailWrap #header {display:none;}
+.detail01 {padding:90px 0; background:url(../../../images/deploy/ispark/bi/bg_detail.jpg) center top no-repeat; background-size:cover;}
+.detail01 h3 {color:#fff;}
+.detail01 p {font-size:20px; color:#ffffff; text-align:center;}
+.detail02 {background:url(../../../images/deploy/ispark/bi/bg_detail2.jpg) center top; padding-top:100px; padding-bottom:200px;}
+
+.tab {width:806px; margin:0 auto; overflow:hidden; padding-left:1px;}
+.tab ul li {float:left; width:159px; height:35px; line-height:35px; background:#fff; border:1px solid #aaa; border-radius:5px; margin-left:-1px; opacity:0.45; -ms-filter:alpha(opacity:.45);}
+.tab ul li a {display:block; width:100%; height:100%;  color:#333; text-align:center; font-size:14px; font-weight:500;line-height:35px;}
+.tab ul li.selected {width:159px;  background:#2ba0ff; border-radius:5px; border:1px solid #2ba0ff;  opacity:1; -ms-filter:alpha(opacity:1); }
+.tab ul li.selected a {color:#ffffff; line-height:35px;}
+.tab ul li:first-child {width:162px;}
+.tab ul li a:hover {text-decoration:none;}
+.dContent {width:806px; margin:45px auto 0; overflow:hidden;}
+.dContent h4 {font-size:1.563em; font-weight:500; line-height:28px; color:#333; padding-top:10px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt2.png) left top no-repeat; margin-bottom:30px; }
+.dContent h4 span {font-size:1em; color:#333; display:block; line-height:28px;}
+.dContent .mPic {display:none;}
+.deCon {padding:30px 0 50px; border-top:1px solid #d5d5d5;}
+.deCon:first-child {border-top:none; padding-top:0;}
+.deList {overflow:hidden;}
+.deList ul.deR,
+.deList ul.deL {width:403px; float:left;}
+.deList ul li {position:relative; padding-left:25px; font-size:0.875em; margin-bottom:10px; line-height:22px; letter-spacing:-0.055em;}
+.deList ul li:before {content:" · "; position:absolute; left:12px;}
+/*솔루션 자세히 보기*/
+/*BI ed*/
+
+
+/*INFRA st*/
+#infraWrap .titleArea {padding:120px 0 100px; background:url(../../../images/deploy/ispark/infra/bg01.jpg) center top no-repeat; background-size:cover; }
+#infraWrap .titleArea h3 {color:#fff; margin-bottom:40px;}
+#infraWrap .titleArea p {width:100%; margin: 0 auto; text-align:center; color:#fff; font-weight:500; font-size:1.125em;}
+#infraWrap .titleArea p span {line-height:26px; color:#fff; font-size:1em; display:block;}
+
+#infraWrap .info {padding:80px 0; background:url(../../../images/deploy/ispark/infra/bg02.jpg) center top no-repeat; background-size:cover; }
+#infraWrap .info .iCon {overflow:hidden; width:1000px; margin:0 auto; position:relative; height:445px; }
+#infraWrap .info .iCon .pic {display:none;}
+#infraWrap .info .iCon .txt {width:529px; right:0; bottom:20px; position:absolute;}
+#infraWrap .info .iCon .txt h4 {font-size:1.563em; font-weight:500; color:#fff; line-height:35px; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt.png) left top no-repeat; margin-bottom:20px; margin-left:-25px;}
+#infraWrap .info .iCon .txt p {font-size:0.875em; color:#fff; line-height:25px;}
+#infraWrap .info .iCon .txt ul li {font-size:0.938em; color:#fff; line-height:25px; padding-left:10px; background:url(../../../images/deploy/ispark/infra/bul_spot.png) left 11px no-repeat; opacity:0.7; -ms-filter:alpha(opacity:.7);}
+
+#infraWrap .storage {padding:100px 0; background:url(../../../images/deploy/ispark/infra/bg03.jpg) center top no-repeat;}
+#infraWrap .storage .sCon {width:1000px; margin:0 auto; text-align:center;} 
+#infraWrap .storage .sCon ul {background:url(../../../images/deploy/ispark/infra/bg_square.gif) no-repeat; overflow:hidden; height:400px; display:inline-block; zoom:1; *display:inline; padding-left:56px;}
+#infraWrap .storage .sCon ul li  {float:left; width:395px; margin-left:-55px; color:#fff; font-weight:700; margin-top:180px;}
+#infraWrap .storage .sCon ul li b {display:block; color:#fff; font-size:2.375em;}
+
+#infraWrap .solution .sCon {width:1000px; margin:0 auto; text-align:center;}
+
+#infraWrap .solution.bg01 {padding:140px 0; background:url(../../../images/deploy/ispark/infra/bg04.jpg) center top no-repeat; background-size:cover; }
+#infraWrap .solution.bg01 h3 {color:#fff;}
+#infraWrap .solution.bg01 h4 {font-size:1.75em; color:#fff; text-align:center; font-weight:600; margin-bottom:50px;}
+#infraWrap .solution.bg01 h5 {font-size:1em; color:#fff; font-weight:500; line-height:23px; width:100%; margin:60px auto 0;}
+#infraWrap .solution.bg01 h5 span {display:inline-block; zoom:1; *display:inline; font-size:1em; color:#fff; font-weight:500;  line-height:23px; }
+#infraWrap .solution.bg01 p {background:url(../../../images/deploy/ispark/infra/line.gif) center bottom no-repeat; font-size:0.875em; line-height:22px; text-align:center; padding-bottom:65px; }
+#infraWrap .solution.bg01 p span {font-size:1em; display:block; line-height:22px;}
+#infraWrap .solution.bg01 .title { margin:0 auto;}
+#infraWrap .solution.bg01 ul.ulList {width:100%; margin:65px auto 0;}
+#infraWrap .solution.bg01 ul.ulList li {margin-top:30px; text-align:center; line-height:24px; color:#fff; opacity:0.7; -ms-filter:alpha(opacity:.7);}
+#infraWrap .solution.bg01 ul.ulList li span {display:inline-block; zoom:1; *display:inline; line-height:24px; text-align:center; line-height:24px; color:#fff; }
+
+#infraWrap .solution.bg01 ul.box {overflow:hidden; display:inline-block; zoom:1; *display:inline; margin-top:50px;}
+#infraWrap .solution.bg01 ul.box li {float:left; width:208px; text-align:center; background:url(../../../images/deploy/ispark/infra/bg_square2.png) center top no-repeat; height:160px; margin-left:10px;}
+#infraWrap .solution.bg01 ul.box li:first-child {margin-left:0;}
+#infraWrap .solution.bg01 ul.box li span {position:relative;line-height:16px; color:#bbb;  font-size:0.85em; }
+#infraWrap .solution.bg01 ul.box li.b1 span {top:10px;}
+#infraWrap .solution.bg01 ul.box li.b2 span {top:50px;}
+
+#infraWrap .solution.bg02 {padding:140px 0; background:url(../../../images/deploy/ispark/infra/bg05.jpg) center top;}
+#infraWrap .solution.bg02 .title {width:100%; margin:0 auto;}
+#infraWrap .solution.bg02 h4 {font-size:1.75em; color:#333; text-align:center; font-weight:600; margin-bottom:50px;}
+#infraWrap .solution.bg02 p {background:url(../../../images/deploy/ispark/infra/line2.gif) center bottom no-repeat; font-size:0.875em; line-height:22px; text-align:center; padding-bottom:65px; color:#a1a2a2;}
+#infraWrap .solution.bg02 p span {display:block; color:#a1a2a2; font-size:1em; line-height:22px;}
+#infraWrap .solution.bg02 ul.ulList {width:100%; margin:65px auto 0;}
+#infraWrap .solution.bg02 ul.ulList li {margin-top:30px; text-align:center; line-height:24px; color:#333; opacity:0.7; -ms-filter:alpha(opacity:.7);}
+#infraWrap .solution.bg02 ul.ulList li span {display:inline-block; zoom:1; *display:inline; text-align:center; line-height:24px; color:#333; }
+
+#infraWrap .solution.bg02 ul.box {overflow:hidden; display:inline-block; zoom:1; *display:inline; margin-top:50px;}
+#infraWrap .solution.bg02 ul.box li {float:left; width:208px; text-align:center; background:url(../../../images/deploy/ispark/infra/bg_square.png) center top no-repeat; height:160px; margin-left:10px; line-height:18px;}
+#infraWrap .solution.bg02 ul.box li:first-child {margin-left:0;}
+#infraWrap .solution.bg02 ul.box li span {position:relative;line-height:20px; color:#333;  font-size:0.875em; opacity:0.6; filter:alpha(opacity:.6); line-height:18px;}
+#infraWrap .solution.bg02 ul.box li.b1 span {top:55px;}
+#infraWrap .solution.bg02 ul.box li.b2 span {top:65px;}
+#infraWrap .solution.bg02 ul.box li.b3 span {top:55px;}
+#infraWrap .solution.bg02 ul.box li.b4 span {top:45px;}
+
+#infraWrap .primary {padding:90px 0 75px; background:url(../../../images/deploy/ispark/infra/bg06.jpg) center top no-repeat; background-size:cover; }
+#infraWrap .primary h3 {color:#fff; margin-bottom:40px;}
+#infraWrap .primary h4 {color:#fff; margin-bottom:40px; font-size:1.876em; font-weight:400; text-align:center;}
+#infraWrap .primary p {width:540px; margin: 0 auto; text-align:center; line-height:22px; color:#fff; font-weight:500; font-size:0.875em; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#infraWrap .primary ul li {margin-top:60px; margin-bottom:25px;}
+#infraWrap .primary ul li:first-child {margin-top:0;}
+#infraWrap .primary a {display:block; margin:0 auto; width:340px; border:2px solid #fff; color:#fff; text-align:center; height:31px; line-height:31px;  border-radius:5px; font-size:0.938em;}
+
+#infraWrap .ict {padding:90px 0 75px; background:url(../../../images/deploy/ispark/infra/bg07.jpg) center top no-repeat; background-size:cover;  text-align:center;}
+#infraWrap .ict h3 {color:#fff; margin-bottom:40px; line-height:60px;}
+#infraWrap .ict p {width:100%; margin: 0 auto 25px; text-align:center; line-height:22px; color:#fff; font-size:0.875em; opacity:0.5; -ms-filter:alpha(opacity:.5);}
+#infraWrap .ict p span {display:block; font-size:1em; line-height:22px; color:#fff;}
+#infraWrap .ict ul {display:inline-block; zoom:1; *display:inline; padding-left:14px;}
+#infraWrap .ict ul li{float:left; width:239px; padding:85px 0; color:#fff; text-align:center; background:url(../../../images/deploy/ispark/bi/bg_circle1.png) no-repeat; line-height:1.063em; line-height:24px; margin-left:-14px;}
+/*INFRA ed*/
+
+
+
+/*고객지원 st*/
+#customerWrap {background:url(../../../images/deploy/ispark/cscenter/bg01.gif) repeat; padding-top:95px; padding-bottom:560px;}
+#customerWrap .customer {width:1800px; margin:0 auto;}
+#customer {height:1030px;}
+#customer_write {display:none;}
+#consult {height:1030px;}
+#consultWrap {background:url(../../../images/deploy/ispark/cscenter/bg02.gif) repeat; padding-top:95px; padding-bottom:560px;}
+#consultWrap .consult {width:1800px; margin:0 auto;}
+/*고객지원 ed*/
+
+/*교육센터 st*/
+#introductionWrap {background:url(../../../images/deploy/ispark/education/bg01.jpg) center top no-repeat fixed; padding:95px 0; background-size:cover;}
+#introductionWrap h3.bigTitle {color:#fff;}
+#introductionWrap #content {width:1000px; margin:0 auto;}
+#introductionWrap #content ul.educationTab {width:80.5%; margin:0 auto; }
+#introductionWrap #content ul.educationTab:after {content:""; clear:both; display:block;}
+#introductionWrap #content ul.educationTab li {width:16.5%; float:left; text-align:center; border:1px solid #828286; margin-left:-1px; height:35px; border-radius:3px; }
+#introductionWrap #content ul.educationTab li.selected {border-radius:3px; background:#2ba0ff; border:1px solid #2ba0ff;}
+#introductionWrap #content ul.educationTab li a {display:block; width:100%; height:100%; line-height:35px;color:#fff; font-size:0.813em;}
+
+.eduCon {padding-top:45px; width:80.5%; margin:0 auto;}
+.eduCon h4 {font-size:1.563em; font-weight:500; color:#fff; padding-top:15px; padding-left:25px; background:url(../../../images/deploy/ispark/common/bul_tlt.png) left top no-repeat; margin-bottom:45px; display:inline-block; zoom:1; *display:inline; margin-left:-25px;}
+.eduCon table {width:100%; border-top:2px solid #cecdcf;}
+.eduCon table th {width:13.5%; font-weight:400; color:#fff; opacity:0.5; -ms-filter: alpha(opacity=.5); font-size:0.813em; padding:10px 0; border-bottom:1px solid #8a898b; background:url(../../../images/deploy/ispark/common/th_bar.gif) right top no-repeat; }
+.eduCon table td {font-size:0.813em; color:#fff; font-weight:400; padding:15px 25px; border-bottom:1px solid #8a898b; line-height:16px;}
+.eduCon table td b {font-size:1em; color:#ff8400; font-weight:400;}
+.eduCon table td li {font-size:0.813em; color:#fff; margin-top:5px; line-height:16px;}
+.eduCon table td li:first-child {margin-top:0;}
+.eduCon table td ol > li {margin-top:15px;}
+.eduCon table td ol li:first-child {margin-top:0;}
+.eduCon table td ol ul {margin-top:5px; margin-left:10px;}
+.eduCon table td ul.spotList li {position:relative; padding-left:10px;}
+.eduCon table td ul.spotList li:before {content:"· "; position:absolute; left:0;}
+
+#scheduleWrap {background:url(../../../images/deploy/ispark/education/bg02.jpg) center top no-repeat; padding:95px 0;}
+#scheduleWrap #calendar {width:80.5%; margin:0 auto;}
+#siteWrap {background:url(../../../images/deploy/ispark/education/bg03.jpg) center top; padding:95px 0;}
+#siteWrap h3.bigTitle {color:#fff;}
+#siteWrap .site {width:1000px; margin:0 auto;}
+#siteWrap .site.s02 {margin-top:90px;}
+#siteWrap .site h4 {color:#fff; font-size:1.875em; font-weight:400; text-align:center; margin-bottom:25px;}
+#siteWrap .site p {color:#fff; font-size:0.875em; text-align:center; margin-top:10px; opacity:0.5; -ms-filter: alpha(opacity=.5);}
+#siteWrap .site p:first-child {margin-top:0;}
+.map {height:450px; width:100%; margin-top:25px;}
+.map iframe {width:100%; height:450px;}
+
+
+#requestWrap {background:url(../../../images/deploy/ispark/education/bg04.jpg) left top; padding:95px 0 560px;}
+#requestWrap .request {width:1000px; margin:0 auto; }
+#requestWrap .request p {font-size:1em; text-align:center; color:#666; line-height:20px; font-weight:500; width:90.3%; margin:0 auto;}
+#requestWrap .request p b {font-size:1em; color:#ff8400; font-weight:500;}
+
+#requestWrap .request .alert {font-size:0.875em; color:#333; font-weight:500; text-align:center; width:70.5%; margin:40px auto; line-height:22px;}
+#requestWrap .request .alert  .icoAlert {margin-bottom:20px; display:inline-block; zoom:1; *display:inline; width:34px;}
+#requestWrap .request .alert u {font-size:1em; color:#333;}
+#request {height:1380px;}
+
+div.pager {text-align: center;}
+div.pager a,
+div.pager span.current {vertical-align: middle;}
+div.pager a.first {margin-right: 20px;}
+div.pager a.last {margin-left: 20px;}
+div.pager span.current {margin:0 26px; line-height: 1; font-size: 30px; font-family: 'Tahoma', sans-serif; font-weight: bold; color: #333;}
+div.pager a.btnArrow {position:relative; top:10px;}
+
+table.calendar {width: 805px; margin: 28px auto 0;}
+table.calendar th,
+table.calendar td {line-height: 1.5;}
+table.calendar th {height: 30px; background: #2ba0ff; font-size: 13px; color: #fff;}
+table.calendar td {height: 90px; padding: 7px 0; border-right: solid 1px #e0e0e0; border-bottom: solid 1px #e0e0e0; background: #fff; vertical-align: top; text-align: center; font-family: 'Tahoma', sans-serif; font-size: 15px; font-weight: bold; color: #333;}
+table.calendar td:first-child {border-left: solid 1px #e0e0e0;}
+table.calendar td.sun,
+table.calendar td.holi {color: #ed0505;}
+table.calendar td.sat {color: #2ba0ff;}
+table.calendar td > div {margin-top: 10px; padding: 5px; line-height: 1.2; text-align: left; font-family: 'Dotum', sans-serif; font-size: 12px; font-weight: normal;}
+table.calendar td > div.color01 {border-top: solid 5px #666; color: #666; font-size:0.75em;}
+table.calendar td > div.color02 {border-top: solid 5px #ff8400; color: #ff8400; font-size:0.75em;}
+table.calendar td > div span.color01_txt { color: #666;  font-size:1em; font-family:"돋움",Dotum; line-height:14px;}
+table.calendar td > div span.color02_txt { color: #ff8400; font-size:1em; font-family:"돋움",Dotum; line-height:14px;}
+/*교육센터 ed*/
+
+/*커뮤니티 st*/
+#noticeWrap {background:url(../../../images/deploy/ispark/community/bg01.gif) repeat; padding-top:95px; padding-bottom:560px;}
+#noticeWrap .notice {width:1000px; margin:0 auto;}
+#notice2 {height:900px;}
+#news {height:990px;}
+#newsWrap {background:url(../../../images/deploy/ispark/cscenter/bg02.gif) repeat; padding-top:95px; padding-bottom:560px;}
+#newsWrap .news {width:1800px; margin:0 auto;}
+/*커뮤니티 ed*/
+/*서브시작*/
+

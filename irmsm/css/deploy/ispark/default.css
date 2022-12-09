@@ -1,0 +1,44 @@
+/* 공통 */
+
+* {margin:0; padding:0; font-size:16px; font-family: "Noto Sans CJKkr", Sans-serif; color:#909091; line-height:1; letter-spacing:-0.03em;}
+
+img{border:0; vertical-align:top;}
+form{border:0;}
+fieldset{border:0;}
+caption {display:none;}
+h1,h2,h3,h4,h5,h6,b{ font-weight:700;}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td {margin:0; padding:0}
+ul,ol,li{list-style:none}
+input, select {height:20px; border:1px solid #878787; vertical-align:middle; padding:0 0 0 3px;}
+table {border-spacing:0px; border-collapse:collapse;}
+textarea, button{vertical-align:middle;}
+a{text-decoration:none}
+a:hover, a:focus, a:active{text-decoration:none}
+body{-webkit-text-size-adjust:none; }
+
+
+@media screen and (min-width:1400px){
+/*quick ST*/
+#STATICMENU {position:absolute; z-index:100; width:120px; top:135px; background:url(../../../images/deploy/ispark/common/bg_q01.png); right:70px;}
+#STATICMENU ul li {text-align:center; border-bottom:1px solid rgba(255,255,255,0.3);}
+#STATICMENU ul li a {text-align:center; color:#2c2c2c; display:block; padding:20px 0; font-size:0.875em; line-height:20px;}
+#STATICMENU ul li.banner {background:url(../../images/common/bg_q02.png); padding:18px 0;}
+#STATICMENU ul li.banner p {font-size:0.875em; color:#fff;}
+#STATICMENU ul li.banner p span {font-size:1em;  color:#fff; display:block; text-align:center; line-height:18px; margin-bottom:10px;}
+#STATICMENU ul li.banner p.tel {padding-top:50px; background:url(../../images/common/ico_tel.png) center top no-repeat; margin-bottom:20px;}
+#STATICMENU ul li.banner p.mail {padding-top:50px; background:url(../../images/common/ico_mail.png) center top no-repeat;}
+
+#STATICMENU ul li.top {background:#2487ff url(../../images/common/ico_top.png) 68% center no-repeat; border-bottom:none;}
+#STATICMENU ul li.top a {padding:15px 0; color:#fff; font-size:0.75em;}
+/*quick ED*/
+}
+
+
+
+
+
+
+
+
+
+

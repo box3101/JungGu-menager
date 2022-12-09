@@ -1,0 +1,653 @@
+/*=============================================
+=           20220923 새로 추가되는 CSS            =
+=============================================*/
+section.admin-login {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #484848;
+}
+section.admin-login article.admin-login__box {
+  text-align: center;
+  background-color: #484848;
+  border-radius: 9px;
+  border-top: 10px solid rgb(0, 124, 178);
+  border-bottom: 10px solid #484848;
+  box-shadow: 1px 1px 108.8px 19.2px rgb(14, 16, 22);
+  width: 400px;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  top: -100%;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section.admin-login article.admin-login__box:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+section.admin-login article.admin-login__box form h2.admin-login__tit {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #dfdeee;
+  font-weight: 400;
+  font-size: 31px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+section.admin-login article.admin-login__box form input.admin-login__input {
+  display: block;
+  margin: 20px auto;
+  background: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 320px;
+  outline: none;
+  color: #333;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+section.admin-login article.admin-login__box form input[type=submit] {
+  border: 0;
+  background-color: rgb(0, 124, 178);
+  color: #dfdeee;
+  border-radius: 100px;
+  width: 314px;
+  height: 49px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  transition: 0.5s;
+  margin-top: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+
+section.admin-login article.admin-login__box form input[type=submit]:hover {
+  top: -10px;
+}
+
+section.admin-login article.admin-login__box form .admin-login__desc-wrap {
+  padding: 20px 0;
+}
+
+section.admin-login article.admin-login__box form .admin-login__desc-wrap p.admin-login__desc {
+  margin-top: 10px;
+  color: #fff;
+  opacity: 0.8;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+section.admin-login.on article {
+  top: 0;
+}
+
+.ex-poa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1305px;
+  margin: 0 auto;
+}
+
+section.admin-dashboard {
+  width: 100%;
+  padding: 20px;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+}
+
+section.admin-dashboard .flex-w50 {
+  display: flex;
+  gap: 40px;
+}
+
+section.admin-dashboard .flex-w50>* {
+  flex: 1 1 40% !important;
+}
+
+section.admin-dashboard article.admin-dashboard__box {
+  margin-top: 40px;
+}
+
+section.admin-dashboard article.admin-dashboard__box.mt0 {
+  margin-top: 0;
+}
+
+section.admin-dashboard article.admin-dashboard__box p.admin-dashboard__tit {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+section.admin-dashboard article.admin-dashboard__box p.admin-dashboard__tit:before {
+  content: "";
+  display: block;
+  display: inline-block;
+  margin-right: 15px;
+  width: 26px;
+  height: 22px;
+  background-image: url("../img/blt-h4.png");
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 52px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap p.admin-dashboard__txt {
+  font-size: 18px;
+  color: #2d7ec0;
+  font-weight: bold;
+  flex: 0 0 117px;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap ul.admin-dashboard__list {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap ul.admin-dashboard__list li.admin-dashboard__item a.admin-dashboard__link {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  background: #eeeeee;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.5s;
+  color: #333;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap ul.admin-dashboard__list li.admin-dashboard__item a.admin-dashboard__link:hover {
+  background: #3981d7;
+  color: #fff;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap ul.admin-dashboard__list li.admin-dashboard__item a.admin-dashboard__link:hover span {
+  color: #fff;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap ul.admin-dashboard__list li.admin-dashboard__item a.admin-dashboard__link span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3981d7;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__canva-wrap {
+  margin-top: 15px;
+  height: 310px;
+}
+
+section.admin-dashboard article.admin-dashboard__box .admin-dashboard__canva-wrap .mw100 {
+  width: 100%;
+}
+
+
+/*=============================================
+=           admin_수신자조회팝업 css            =
+
+=============================================*/
+
+.pop-receive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.popup {
+  width: 890px;
+  background: #fff;
+  border: 2px solid #484848;
+}
+
+.sendMail .pop-receive__info {}
+
+.sendMail .pop-receive__info h2.pop-receive__tit {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sendMail .pop-receive__info h2.pop-receive__tit:before {
+  content: "";
+  display: block;
+  display: inline-block;
+  margin-right: 15px;
+  width: 26px;
+  height: 22px;
+  background-image: url(../img/blt-h4.png);
+}
+
+.sendMail .pop-receive__info .pop-receive__box .flex-w50 {
+  position: relative;
+  display: flex;
+  gap: 55px;
+  min-height: 146px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .flex-w50>* {
+  flex: 1 1 40% !important;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__search-bar {
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  width: 47.5%;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__search-bar p.pop-receive__desc {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--basic-color-tertiary);
+  margin-right: 15px;
+  flex: 0 0 50px;
+  padding-left: 14px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__search-bar p.pop-receive__desc::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 14px;
+  background: rgb(37, 51, 120);
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__search-bar input.pop-receive__input {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  font-size: 15px;
+  color: #333;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__search-bar input.pop-receive__submit {
+  flex: 0 0 70px;
+  cursor: pointer;
+  height: 40px;
+  background: #0195d3;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef {
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-list {
+  display: flex;
+  background: #fff;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-list li.pop-receive__tab-item {
+  flex: 1;
+  margin: -1px;
+}
+
+.sendMail .ui-widget.ui-widget-content{
+  border: none;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-list li.pop-receive__tab-item a.pop-receive__tab-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  height: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  transition: 0.2s;
+  margin-top: -1px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-list li.pop-receive__tab-item a.pop-receive__tab-link.on,
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-list li.pop-receive__tab-item a.pop-receive__tab-link:hover {
+  background: #0195d3;
+  color: #fff;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents {
+  display: none;
+    padding: 15px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents select{
+  width: 95%; margin: 10px;
+  height: 40px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents.on {
+  display: block;
+  height: 100%;
+  /* max-height: 20; */
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents .pop-receive__tab-contents-info {
+  padding: 20px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents .pop-receive__tab-contents-info ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item {
+  font-size: 12px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents .pop-receive__tab-contents-info ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.sendMail li.pop-receive__tab-contents-item a span {
+  display: inline-block;
+  font-size: 13px;
+  color: #333;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents .pop-receive__tab-contents-info ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item span.pop-receive__email {
+  color: #0195d3;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__lef .pop-receive__tab-contents .pop-receive__tab-contents-info ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item a {
+  display: inline-block;
+  padding: 6px;
+}
+
+.sendMail li.pop-receive__tab-contents-item a.is-active {
+  background: #dbdada;
+}
+
+.sendMail .pop-receive__info .pop-receive__box ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item {
+  font-size: 12px;
+}
+.sendMail .pop-receive__info .pop-receive__box ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item a{
+  display: inline-block;
+  padding: 6px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.sendMail .pop-receive__info .pop-receive__box ul.pop-receive__tab-contents-list li.pop-receive__tab-contents-item span.pop-receive__email {
+  color: #0195d3;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__ref .wrap {
+  position: relative;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__ref-tit {
+  margin-top: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 17px;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__ref-info {
+  margin-top: 5px;
+  padding: 15px;
+  min-height: 64px;
+  border: 1px solid #eaeaea;
+}
+
+.sendMail .pop-receive__info .pop-receive__box .pop-receive__ref-info select{
+  width: 95%;
+  margin: 10px;
+  height: 40px;
+}
+
+.sendMail .btn-sets {
+  position: absolute;
+  left: -41px;
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+.sendMail .btn-sets__next {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background: url(../img/arr-next-btn.png);
+  background-size: cover;
+  filter: grayscale(1);
+}
+
+.sendMail .btn-sets__prev {
+  display: block;
+  margin-top: 5px;
+  width: 27px;
+  height: 27px;
+  background: url(../img/arr-prev-btn.png);
+  background-size: cover;
+  filter: grayscale(1);
+}
+
+
+.tbl-btn {
+  margin: 10px 0px 0px;
+}
+
+.tbl-btn>a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tbl-btn a.new {
+  background: #0195d3;
+}
+
+.tbl-btn a.delete {
+  padding: 9px 9px;
+  background: #f8f8f8;
+  border: 1px solid #0195d3;
+  color: #333333;
+  letter-spacing: -0.6px;
+}
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=ui.css.map */
+
+/* 20221014 관리자 수신 , 조회팝업 */
+.popup.w1200 .tbl-type02 th{
+  padding: 0 10px!important; text-align: center;
+}
+.popup.w1200 .tbl-type02 td{
+  padding: 5px 10px!important; text-align: center;
+  border: 1px solid #eee;
+}
+.popup.w1200 table input[type="checkbox"] + label span, table input[type="checkbox"] + input[type="hidden"] + label span{
+  margin-right: 0; padding: 0;
+}
+table input[type="checkbox"] + label, table input[type="checkbox"] + input[type="hidden"] + label{
+  margin-left: 0;
+}
+.sch-bx > ul.h-auto{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  padding-right: 95px;
+}
+.sch-bx > ul.h-auto li{
+  float: none;
+  width: 33.333%;
+  margin: 0;
+  display: flex; align-items: center;
+}
+.sch-bx > ul.h-auto li label{
+  /* width: 70px; */
+  padding-left: 25px;
+  flex: 0 0 130px;
+  margin-right: 0;
+}
+.sch-bx > ul.h-auto li input{
+  width: 70%!important;
+}
+.popup.w1200 table input[type="radio"]+label span{
+  margin-right: 0;
+}
+/* 에러페이지 css */
+body.nopage {
+  background-color: #f3f4f6;
+}
+
+body.nopage .wrapper {
+  padding: 0 !important;
+}
+
+.nopage-wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f4f6;
+  padding: 4.6875rem 0 6.25rem 0;
+}
+
+.nopage-inner {
+  display: block;
+  width: 43.4375rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nopage-wrap .nopage-incheon {
+  display: block;
+  overflow: hidden;
+  width: 10.5625rem;
+  height: 2.375rem;
+  background-image: url("../img/icon-no-content.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-indent: -625000000000000000000rem;
+  font-size: 0;
+}
+
+.nopage-wrap .nopage-sorry {
+  display: block;
+  margin: 5rem auto 2rem auto;
+  color: #1c236c;
+  font-family: "Noto Sans";
+  font-size: 2.25rem;
+  line-height: 1.5;
+}
+
+.nopage-wrap .nopage-img {
+  display: block;
+  width: 16rem;
+  height: 16rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("../img/arr-img.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.nopage-wrap .nopage-guide {
+  display: block;
+  margin: 0 auto;
+  padding: 1.875rem;
+  color: #717171;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.nopage-wrap .nopage-btn-wrap {
+  overflow: hidden;
+  width: 37.5rem;
+  max-width: 90%;
+  margin: 2.5rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page {
+  display: block;
+  position: relative;
+  flex: 1;
+  height: 3.875rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  line-height: 3.75rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #aaa;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page.bg-main{
+  background: rgb(0, 141, 255) !important;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page:nth-child(2n) {
+  margin-right: 0;
+}
+
+.nopage-wrap .btn-wrap .btn-lg span {
+  color: #fff !important;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page>span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* 20221209 추가 */
