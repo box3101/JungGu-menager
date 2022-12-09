@@ -673,6 +673,10 @@ body.nopage .wrapper {
   border-spacing: 0;
   border-collapse: collapse;
   border-top: 2px solid #484848;
+  background: #fff;
+}
+.tbl-type02 .comTable-2{
+  border-top: none;
 }
 .tbl-type02 input[type="text"],.tbl-type02 select{
   height: 30px;
@@ -681,13 +685,33 @@ body.nopage .wrapper {
   width: 100%;
   height: 30px;
 }
+td.left.oneLine span{
+  display: block;
+  width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+td.left.twoLine span{
+  width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .comBtn {
   height: 30px;
   background: #0195d3;
-  padding: 0 20px;
+  padding: 0 10px;
   color: #fff;
-  border: 1px solid #0195d3;
+  border: none;
   box-sizing: border-box;
+}
+.comBtn.red{
+  background: darkgreen;
 }
 .flex {
   display: flex;
@@ -823,4 +847,38 @@ table input[type="radio"] + label{
 }
 .readOnly{
   background: #eee;
+}
+.sch-bx input[type="radio"] {
+  display: none;
+}
+
+.sch-bx input[type="radio"]+label {
+  margin-left: 0px;
+  font-size: 13px;
+  color: #666666;
+  font-weight: normal;
+}
+
+.sch-bx input[type="radio"]:first-child+label {
+  margin-left: 8px;
+}
+
+.sch-bx input[type="radio"]+label span {
+  text-indent: -9999px;
+  display: inline-block;
+  margin-right: 8px;
+  width: 18px;
+  height: 17px;
+  vertical-align: middle;
+  background: url(../images/common/img-radio-chk.png) left top no-repeat;
+  cursor: pointer;
+}
+
+.sch-bx input[type="radio"]:checked+label span {
+  background: url(../images/common/img-radio-chk-ov.png) left top no-repeat;
+}
+.ptitle{
+  margin-top: 0;
+  padding-top: 20px;
+  background-position: 0 27px;
 }
