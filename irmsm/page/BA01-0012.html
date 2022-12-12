@@ -1124,7 +1124,7 @@
           </ul>
           <a id="bookmarkIcon" href="#" class="favo" onclick="addToBookmark();return false;">즐겨찾기</a>
         </div>
-        <h3 class=""><span id="title">접수관리</span></h3>
+        <h3 class=""><span id="title">강좌 통계</span></h3>
         <div class="contents" style="opacity: 1;">
           <!-- 조직성과도, 전략체계도 -->
           <!--
@@ -1153,14 +1153,6 @@
             <div class="sch-bx">
               <ul>
                 <li>
-                  <label for="findNtcePd">신청일자</label>
-                  <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx100 datepicker hasDatepicker"
-                    type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
-                  <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx100 datepicker hasDatepicker"
-                    type="text" value="">
-                </li>
-
-                <li>
                   <label for="a1">기관그룹</label>
                   <select id="a1" name="" class="select wx150">
                     <option value="" selected="selected">전체</option>
@@ -1172,48 +1164,39 @@
                     <option value="" selected="selected">전체</option>
                   </select>
                 </li>
+                <li>
+                    <label for="a3">분야</label>
+                    <select id="a3" name="" class="select wx150">
+                      <option value="" selected="selected">전체</option>
+                    </select>
+                  </li>
               </ul>
               <ul>
                 <li>
-                  <label for="a3">성별</label>
-                  <td>
-                    <input id="a3" name="gender" type="radio" value="" checked="checked">
-                    <label for="a3"><span></span>전체</label>
-                    <input id="a4" name="gender" type="radio" value="">
-                    <label for="a4"><span></span>남</label>
-                    <input id="a5" name="gender" type="radio" value="">
-                    <label for="a5"><span></span>여</label>
-                  </td>
+                  <label for="findNtcePd">교육기간</label>
+                  <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx100 datepicker hasDatepicker"
+                        type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                  <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx100 datepicker hasDatepicker"
+                        type="text" value="">
                 </li>
                 <li>
-                  <label for="a6">결제수단</label>
-                  <select id="a6" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a7">결제상태</label>
-                  <select id="a7" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a8">접수상태</label>
-                  <select id="a8" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
+                    <label for="a4">수강료</label>
+                    <td>
+                      <input id="a4" name="recodeStatus" type="radio" value="" checked="checked">
+                      <label for="a4"><span></span>전체</label>
+                      <input id="a5" name="recodeStatus" type="radio" value="">
+                      <label for="a5"><span></span>유료</label>
+                      <input id="a6" name="recodeStatus" type="radio" value="">
+                      <label for="a6"><span></span>무료</label>
+                    </td>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <label for="a9">검색조건</label>
-                  <select id="a9" name="" class="select wx150">
-                    <option value="" selected="selected">이름</option>
-                    <option value="" selected="selected">연락처</option>
-                  </select>
-                <li class="search">
-                  <input type="text" class="wx200">
+                    <label for="a7">강의명</label>
+                    <input type="text" class="comInput wx200">
                 </li>
+                <a href="#" class="btn-sch" onclick="searchList();return false;">검색</a>
               </ul>
             </div>
             <!-- 검색 container eee -->
@@ -1223,148 +1206,183 @@
               <div class="comGridContainer">
                 <div class="comSearchBox">
                   <p class="txt">
-                    총 <span>163</span>명의 접수자가 있습니다.
+                    총 <span>280</span>개의 강의가 있습니다.
                   </p>
                 </div>
                 <div class="comTableWrap-1">
                   <table class="comTable-1">
                     <colgroup>
-                      <col width="100px">
-                      <col width="100px">
-                      <col width="80px">
-                      <col width="150px">
+                      <col width="60px">
+                      <col width="120px">
+                      <col width="130px">
                       <col width="auto">
                       <col width="150px">
-                      <col width="80px">
-                      <col width="80px">
-                      <col width="80px">
+                      <col width="200px">
+                      <col width="70px">
+                      <col width="70px">
+                      <col width="70px">
+                      <col width="100px">
+                      <col width="100px">
                     </colgroup>
                     <thead>
-                      <tr>
-                        <th>접수번호</th>
-                        <th>아이디</th>
-                        <th>성명</th>
+                        <tr>
+                        <th>번호</th>
+                        <th>기관그룹</th>
                         <th>기관명</th>
                         <th>강좌명</th>
-                        <th>접수일시</th>
-                        <th>접수상태</th>
+                        <th>교육분야</th>
+                        <th>교육기간</th>
+                        <th>수강<br>인원</th>
+                        <th>수료<br>인원</th>
+                        <th>주요<br>연령대</th>
+                        <th>수강료</th>
                         <th>결제수단</th>
-                        <th>결제상태</th>
-                      </tr>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">댄스스포츠 & 라틴솔로(여성전용)</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        <tr>
+                        <td>329</td>
+                        <td>평생교육센터</td>
+                        <td class="twoLine">평생교육관</td>
+                        <td class="left twoLine">댄스스포츠 &amp; 라틴솔로(여성전용)</td>
+                        <td>스포츠</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">2022년 성인교육강좌 '고고학자의 앞 이야기, 뒷이야기</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
-                        <td>신용카드</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        </tr>
+                        <tr>
+                        <td>328</td>
+                        <td>행정복지센터</td>
+                        <td class="twoLine">운서동 행정복지센터</td>
+                        <td class="left twoLine">2022년 성인교육강좌 '고고학자의 앞 이야기, 뒷이야기 </td>
+                        <td>어학</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>40대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        </tr>
+                        <tr>
+                        <td>327</td>
+                        <td>행정복지센터</td>
+                        <td class="twoLine">영종동 행정복지센터</td>
+                        <td class="left twoLine">한민족 공식 이민 120주년 기념 &lt;그날의 물결, 제물포로 ..</td>
+                        <td>인문</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        </tr>
+                        <tr>
+                        <td>326</td>
+                        <td>행정복지센터</td>
+                        <td class="twoLine">영종1동 행정복지센터</td>
+                        <td class="left twoLine">팝송 영어 교실</td>
+                        <td>스포츠</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>30대</td>
+                        <td>15,000원</td>
+                        <td>인터넷결제</td>
+                        </tr>
+                        <tr>
+                        <td>325</td>
+                        <td>행정복지센터</td>
+                        <td class="twoLine">용유동 행정복지센터</td>
+                        <td class="left twoLine">민요랑 장구랑</td>
+                        <td>어학</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>53대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        </tr>
+                        <tr>
+                        <td>324</td>
+                        <td>문화센터</td>
+                        <td class="twoLine">롯데마트 문화센터</td>
+                        <td class="left twoLine">방송&amp;다이어트댄스</td>
+                        <td>인문</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        </tr>
+                        <tr>
+                        <td>323</td>
+                        <td>문화센터</td>
+                        <td class="twoLine">하늘문화센터</td>
+                        <td class="left twoLine">바리스타 커피 2급(오후)B</td>
+                        <td>스포츠</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>30,000원</td>
+                        <td>인터넷결제</td>
+                        </tr>
+                        <tr>
+                        <td>322</td>
+                        <td>문화센터</td>
+                        <td class="twoLine">청소년 수련관</td>
+                        <td class="left twoLine">댄스스포츠 &amp; 라틴솔로(여성전용)</td>
+                        <td>어학</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
+                        <td>인터넷결제</td>
+                        </tr>
+                        <tr>
+                        <td>321</td>
+                        <td>평생교육센터</td>
+                        <td class="twoLine">평생교육관</td>
+                        <td class="left twoLine">2022년 성인교육강좌 '고고학자의 앞 이야기, 뒷이야기 </td>
+                        <td>인문</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
-                      <tr>
-                        <td>1234567</td>
-                        <td>ace***</td>
-                        <td>홍*동</td>
-                        <td>평생학습센터</td>
-                        <td class="left twoLine">
-                          <a
-                            href="#" class="lecture">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>2022-12-01 12:14:35</td>
-                        <td>결제완료</td>
+                        </tr>
+                        <tr>
+                        <td>320</td>
+                        <td>평생교육센터</td>
+                        <td class="twoLine">평생교육관</td>
+                        <td class="left twoLine">한민족 공식 이민 120주년 기념 &lt;그날의 물결, 제물포로 ..</td>
+                        <td>스포츠</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
                         <td>무통장입금</td>
-                        <td>결제완료</td>
-                      </tr>
+                        </tr>
+                        <tr>
+                        <td>319</td>
+                        <td>행정복지센터</td>
+                        <td class="twoLine">운서동 행정복지센터</td>
+                        <td class="left twoLine">팝송 영어 교실</td>
+                        <td>어학</td>
+                        <td>2022-11-01 ~ 2022-11-10</td>
+                        <td>30명</td>
+                        <td>30명</td>
+                        <td>50대</td>
+                        <td>무료</td>
+                        <td>무통장입금</td>
+                        </tr>
                     </tbody>
                   </table>
                 </div>
