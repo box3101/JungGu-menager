@@ -683,10 +683,13 @@ body.nopage .wrapper {
 }
 .tbl-type02 input[type="text"],.tbl-type02 select{
   height: 30px;
+  box-sizing: border-box;
 }
 .comInput,.comSelect{
   width: 100%;
   height: 30px;
+  box-sizing: border-box;
+  padding-left: 10px;
 }
 td.left.oneLine span{
   display: block;
@@ -713,6 +716,12 @@ td.left.twoLine span{
   border: none;
   box-sizing: border-box;
 }
+.comBtn.m5{
+  margin: 5px 0;
+}
+.comBtn.hAuto{
+  height: auto;
+}
 .comBtn.red{
   background: darkgreen;
 }
@@ -722,6 +731,9 @@ td.left.twoLine span{
 }
 .flex0{
   flex: 0!important;
+}
+.flex.ais{
+  align-items: stretch;
 }
 .flex.column{
   flex-direction: column;
@@ -903,4 +915,85 @@ table input[type="radio"] + label{
 }
 .btnDel{
   background: darkred;
+}
+
+.comPopupWrap{
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+.comPopupWrap.on{
+  display: block;
+}
+.comPopupWrap .dim{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+}
+.comPopupContainer{
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.comPopupInfo {
+  width: 100%; height: 100%;
+  padding: 10px 15px;
+  background: #eaeaea;
+  box-sizing: border-box;
+}
+.comPopupInfoBox{
+  padding: 10px;
+  background: #fff;
+}
+.comPopupBox{
+  width: 480px; height: auto;
+  background: #fff;
+}
+.comPopupHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0195d3;
+}
+.comPopupHeader h2{
+  padding: 10px 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  color: #Fff;
+  text-align: left;
+  padding-left: 23px;
+  position: relative;
+  line-height: 1;
+}
+.comPopupHeader h2::before{
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 11px;
+  top: 12px;
+}
+.comPopupHeader .popClose{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  background: none;
+  border: none;
+}
+.comPopupHeader .popClose::after{
+  display: inline-block;
+  content: "\00d7";
+  font-size: 15pt;
+  line-height: 50px;
+  color: #fff;
 }

@@ -1180,7 +1180,7 @@
                           <th>강좌명</th>
                           <td colspan="3">
                             <div class="flex gap5">
-                            <span class="padding">생활속에 함께하는 도자기</span>
+                              <span class="padding" style="padding-left: 0;">생활속에 함께하는 도자기</span>
                               <button type="button" class="comBtn" value="">상세보기</button>
                             </div>
                           </td>
@@ -1227,9 +1227,14 @@
                         </tr>
                         <tr>
                           <th>결제여부</th>
-                          <td>입금대기
-                            <input type="checkbox" name="chx" value="" checked>결제처리
-                            <button type="button" class="comBtn" value="">완료</button>
+                          <td>
+                            <div class="flex">
+                              입금대기
+                              <input type="checkbox" name="chx" value="" id="chk1" style="width:25px;flex:0 0 25px;">
+                              <label for="chk1" style="cursor: pointer;">결제처리</label>
+                              &nbsp;&nbsp;
+                              <button type="button" class="comBtn" value="">완료</button>
+                            </div>
                           </td>
                           <th>감면대상</th>
                           <td>대상자 (사유 : 장애인)</td>
@@ -1239,15 +1244,19 @@
                           <td>환불완료</td>
                           <th>환불금액</th>
                           <td>
-                            <input type="text">원
-                            <button type="button" class="comBtn" value="">환불완료</button>
+                            <div class="flex gap5">
+                              <input type="text" class="wx100">원
+                              <button type="button" class="comBtn" value="">환불완료</button>
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th>관리자 메모</th>
                           <td colspan="3">
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
-                            <button type="button" class="comBtn" value="">메모저장</button>
+                            <div class="flex ais gap5">
+                              <textarea name="" id="" cols="30" rows="3"></textarea>
+                              <button type="button" class="comBtn wx100 hAuto m5" value="">메모저장</button>
+                            </div>
                           </td>
                         </tr>
                       </tbody>
@@ -1255,15 +1264,15 @@
                   </div>
                 </div>
 
-               
+
               </div>
             </div>
             <!-- 내용 container eee -->
 
             <!-- 하단 버튼 container -->
-            <div class="tbl-bottom tbl-bottom2">
+            <div class="tbl-bottom">
               <div class="tbl-btn">
-                <a href="#" class="new" onclick="goAddForm();return false;">기관등록</a>
+                <a href="#" class="new" onclick="goAddForm();return false;">목록</a>
               </div>
             </div>
             <!-- 하단 버튼 container eee -->
