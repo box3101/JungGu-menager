@@ -1171,34 +1171,143 @@
                         </td>
                         <th>기관명</th>
                         <td>
-                          <select name="" id="">
-                            <option value="선택">선택</option>
-                          </select>
+                          <div class="flex gap10">
+                            <select name="" id="">
+                              <option value="선택">선택</option>
+                            </select>
+                            <input id="b1" type="checkbox" class="cbox" name="jqg_list_1">
+                            <label for="b1" class="wx70">외부 링크</label>
+                          </div>
                         </td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th>교육분야</th>
-                        <td colspan="3"></td>
-                      </tr>
-                      <tr>
+                        <td>
+                          <select name="" id="">
+                            <option value="선택">선택</option>
+                          </select>
+                        </td>
                         <th>강의명</th>
-                        <td colspan="3"></td>
+                        <td>
+                          <div class="flex gap5">
+                            <button type="button" class="comBtn">기존강좌 불러오기</button>
+                            <input type="text">
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <th>섬네일 이미지</th>
-                        <td colspan="3"></td>
-                      </tr>
-                      <tr>
+                        <td>
+                          <div class="flex gap5">
+                            <input type="text" class="comInput">
+                            <button type="button" class="comBtn">찾기</button>
+                          </div>
+                        </td>
                         <th>선정방법</th>
-                        <td></td>
-                        <th>추첨일</th>
-                        <td></td>
+                        <td>
+                          <input id="a4" name="type1" type="radio" value="" checked="checked">
+                          <label for="a4"><span></span>선착순</label>
+                          <input id="a5" name="type1" type="radio" value="">
+                          <label for="a5"><span></span>추첨</label>
+                        </td>
                       </tr>
                       <tr>
+                        <th>추첨일</th>
+                        <td>
+                          <li>
+                            <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx150 datepicker hasDatepicker"
+                              type="text" value="">
+                          </li>
+                        </td>
                         <th>신청기간</th>
-                        <td colspan="3"></td>
+                        <td>
+                          <li class="flex gap5">
+                            <input id="findNtcePdFrom" name="findNtcePdFrom"
+                              class="t-box03 wx100 datepicker hasDatepicker" type="text"
+                              value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                            <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx100 datepicker hasDatepicker"
+                              type="text" value="">
+                            <!-- 정원 -->
+                            <span>
+                              정원
+                              <input type="text" class="wx50"> 명
+                            </span>
+
+                            <!-- 대기자정원 -->
+                            <span>
+                              대기자 정원
+                              <input type="text" class="wx50"> 명
+                            </span>
+                          </li>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>교육기간</th>
+                        <td>
+                          <li>
+                            <input id="findNtcePdFrom" name="findNtcePdFrom"
+                              class="t-box03 wx100 datepicker hasDatepicker" type="text"
+                              value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                            <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx100 datepicker hasDatepicker"
+                              type="text" value="">
+                          </li>
+                        </td>
+                        <th>추첨일</th>
+                        <td>
+                          <ul class="flex column gap5">
+                            <li class="flex gap5">
+                              <select name="" id="">
+                                <option value="">월요일</option>
+                              </select>
+                              <select name="" id="">
+                                <option value="">10시</option>
+                              </select>
+                              <select name="" id="">
+                                <option value="">00분</option>
+                              </select>
+                              &nbsp;&nbsp;~&nbsp;&nbsp;
+                              <select name="" id="">
+                                <option value="">10시</option>
+                              </select>
+                              <select name="" id="">
+                                <option value="">00분</option>
+                              </select>
+                              <button type="button" class="comBtn wx50">추가</button>
+                            </li>
+                            <li class="flex gap5">
+                              <select name="" id="">
+                                <option value="">월요일</option>
+                              </select>
+                              <select name="" id="">
+                                <option value="">10시</option>
+                              </select>
+                              <select name="" id="">
+                                <option value="">00분</option>
+                              </select>
+                              &nbsp;&nbsp;~&nbsp;&nbsp;
+                              <select name="" id="">
+                                <option value="">10시</option>
+                              </select>
+                              <select name="" id="">
+                                <option value="">00분</option>
+                              </select>
+                              <button type="button" class="comBtn wx50 btnDel ">삭제</button>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>수료증 여부</th>
+                        <td>
+                          <div class="flex aic gap5">
+                            <input type="checkbox" class="flex0" id="chk1">
+                            <label for="chk1">수료증 여부</label>
+                          </div>
+                        </td>
+                        <th>수료증 여부</th>
+                        <td></td>
                       </tr>
                       <tr>
                         <th>교육기간</th>

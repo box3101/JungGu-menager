@@ -678,6 +678,9 @@ body.nopage .wrapper {
 .tbl-type02 .comTable-2{
   border-top: none;
 }
+.tbl-type02 input[type="checkbox"]{
+  display: block;
+}
 .tbl-type02 input[type="text"],.tbl-type02 select{
   height: 30px;
 }
@@ -716,6 +719,19 @@ td.left.twoLine span{
 .flex {
   display: flex;
   align-items: center;
+}
+.flex0{
+  flex: 0!important;
+}
+.flex.column{
+  flex-direction: column;
+  padding: 5px 0;
+}
+.flex.aic{
+  align-items: center;
+}
+.flex.column>.flex{
+  width: 100%;
 }
 .tbl-type02 th {
   height: 40px;
@@ -883,5 +899,8 @@ table input[type="radio"] + label{
   background-position: 0 27px;
 }
 .tbl-btn>a.del {
+  background: darkred;
+}
+.btnDel{
   background: darkred;
 }
