@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../irmsm/css/common3.css">
+  <link rel="stylesheet" href="../../irmsm/css/ui.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- 기본 팝업 TYPE -->
+  <button type="button" class="comBtn modalBtn" data-id="managerSearchPop">일반 팝업</button>
+
+  <!-- alert 화인 1개 TYPE -->
+  <button type="button" class="comBtn modalBtn" data-id="alert1">Alert</button>
+
+  <!-- alert 확인, 취소 버튼2개 TYPE -->
+  <button type="button" class="comBtn modalBtn" data-id="alert2">Alert type2</button>
+
+  <!-- 담당자 찾기 팝업 -->
+  <div class="comPopupWrap" id="managerSearchPop">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupHeader">
+          <h2>담당자 찾기</h2>
+          <button type="button" class="popClose"></button>
+        </div>
+        <div class="comPopupInfo">
+          <div class="comPopupInfoBox">
+            <div class="searchBox flex gap5">
+              <select name="" id="" class="comSelect wx100">
+                <option value="아이디">아이디</option>
+              </select>
+              <input type="text" class="comInput">
+              <button type="button" class="comBtn">검색</button>
+            </div>
+            <div class="comTableHeightWrap">
+              <table class="comTable-1">
+                <colgroup>
+                  <col width="20%">
+                  <col width="auto">
+                  <col width="30%">
+                  <col width="15%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>이름</th>
+                    <th>아이디</th>
+                    <th>전화번호</th>
+                    <th>선택</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>홍*동</td>
+                    <td>글자테스트글자테스트글자테스트글자테스트</td>
+                    <td>032-124-5032</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>홍*동</td>
+                    <td>honggildong</td>
+                    <td>032-124-5032</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>박*</td>
+                    <td>parkjaehoon</td>
+                    <td>032-234-8903</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- 페이징 -->
+              <div id="paginate" class="customPaginateBar" style="margin: 0px 20px;">
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td width="29%"></td>
+                      <td align="center" class="customPage"><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-first"></i></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-prev"></i></span><span class="customPageNumberBtn"><a
+                            href="javascript:goPage(&quot;list&quot;, 1);" id="1"
+                            title="1페이지로 이동"><strong>1</strong></a></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-next"></i></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-end"></i></span></td>
+                      <td width="29%" align="right"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 페이징 eee -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 담당자 찾기 팝업  eee-->
+
+  <!-- alert 팝업 기본 닫기-->
+  <div class="comPopupWrap" id="alert1">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupInfo bgfff">
+          <div class="comPopupInfoBox">
+            <div class="comTxt">
+              <p>
+                기관 그룹은 필수 선택항목 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" class="comBtn popClose">닫기</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert 팝업  eee-->
+
+  <!-- alert 팝업 취소 확인 -->
+  <div class="comPopupWrap" id="alert2">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupInfo bgfff">
+          <div class="comPopupInfoBox">
+            <div class="comTxt">
+              <p>
+                기관 그룹은 필수 선택항목 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" class="comBtn cancel popClose">취소</button>
+              </li>
+              <li>
+                <button type="button" class="comBtn">확인</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert 팝업  eee-->
+
+
+  <script>
+    (function () {
+
+      window.onload = () => {
+        eventBinding();
+      }
+
+      // 함수모음
+      const eventBinding = () => {
+        comPopup();
+      }
+
+      // 공통 레이어 팝업
+      const comPopup = () => {
+
+        const $$comPopupWrap = document.querySelectorAll(".comPopupWrap");
+        const $$modalBtn = document.querySelectorAll(".modalBtn");
+        const $$closeBtn = document.querySelectorAll(".popClose");
+        const $$comPopContainer = document.querySelectorAll(".comPopupContainer");
+
+        // open popup
+        $$modalBtn.forEach((el) => {
+          el.addEventListener("click", () => {
+            openPop(el);
+          });
+        });
+
+        // close popup
+        $$comPopupWrap.forEach((popWrap) => {
+          popWrap.addEventListener("click", (e) => {
+            $$comPopContainer.forEach((element) => {
+              $$closeBtn.forEach((el) => {
+                const curentTarget = e.target;
+                if (curentTarget == el || curentTarget == element) {
+                  closePop(el);
+                }
+              });
+            });
+          });
+        });
+      }
+
+      const openPop = (el) => {
+        const target = el.getAttribute("data-id");
+        const targetId = `#${target}`;
+        document.querySelector(targetId).classList.add("on");
+      }
+
+      const closePop = (el) => {
+        el.closest(".comPopupWrap").classList.remove("on");
+      }
+
+
+    })();
+  </script>
+</body>
+
+</html>

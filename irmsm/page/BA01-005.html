@@ -1184,13 +1184,15 @@
                     <tbody>
                       <tr>
                         <th>교육분야</th>
-                        <td>
+                        <td colspan="3">
                           <select name="" id="">
                             <option value="선택">선택</option>
                           </select>
                         </td>
+                      </tr>
+                      <tr>
                         <th>강의명</th>
-                        <td>
+                        <td colspan="3">
                           <div class="flex gap5">
                             <button type="button" class="comBtn">기존강좌 불러오기</button>
                             <input type="text">
@@ -1199,12 +1201,14 @@
                       </tr>
                       <tr>
                         <th>섬네일 이미지</th>
-                        <td>
+                        <td colspan="3">
                           <div class="flex gap5">
                             <input type="text" class="comInput">
                             <button type="button" class="comBtn">찾기</button>
                           </div>
                         </td>
+                      </tr>
+                      <tr>
                         <th>선정방법</th>
                         <td>
                           <input id="a4" name="type1" type="radio" value="" checked="checked">
@@ -1212,8 +1216,6 @@
                           <input id="a5" name="type1" type="radio" value="">
                           <label for="a5"><span></span>추첨</label>
                         </td>
-                      </tr>
-                      <tr>
                         <th>추첨일</th>
                         <td>
                           <li>
@@ -1221,8 +1223,10 @@
                               type="text" value="">
                           </li>
                         </td>
+                      </tr>
+                      <tr>
                         <th>신청기간</th>
-                        <td>
+                        <td colspan="3">
                           <li class="flex gap5">
                             <input id="findNtcePdFrom" name="findNtcePdFrom"
                               class="t-box03 wx100 datepicker hasDatepicker" type="text"
@@ -1245,55 +1249,69 @@
                       </tr>
                       <tr>
                         <th>교육기간</th>
-                        <td>
-                          <li>
+                        <td colspan="3">
+                          <div class="flex gap5">
                             <input id="findNtcePdFrom" name="findNtcePdFrom"
                               class="t-box03 wx100 datepicker hasDatepicker" type="text"
                               value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
                             <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx100 datepicker hasDatepicker"
                               type="text" value="">
-                          </li>
+                          </div>
                         </td>
-                        <th>추첨일</th>
-                        <td>
+                      </tr>
+                      <tr>
+                        <th>교육시간</th>
+                        <td colspan="3">
                           <ul class="flex column gap5">
                             <li class="flex gap5">
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx100">
                                 <option value="">월요일</option>
                               </select>
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">10시</option>
                               </select>
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">00분</option>
                               </select>
-                              &nbsp;&nbsp;~&nbsp;&nbsp;
-                              <select name="" id="">
+
+                              &nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+
+                              <select name="" id="" class="comSelect wx100">
+                                <option value="">월요일</option>
+                              </select>
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">10시</option>
                               </select>
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">00분</option>
                               </select>
-                              <button type="button" class="comBtn wx50">추가</button>
+
+                              <button type="button" class="comBtn">추가</button>
                             </li>
                             <li class="flex gap5">
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx100">
                                 <option value="">월요일</option>
                               </select>
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">10시</option>
                               </select>
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">00분</option>
                               </select>
-                              &nbsp;&nbsp;~&nbsp;&nbsp;
-                              <select name="" id="">
+
+                              &nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+
+                              <select name="" id="" class="comSelect wx100">
+                                <option value="">월요일</option>
+                              </select>
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">10시</option>
                               </select>
-                              <select name="" id="">
+                              <select name="" id="" class="comSelect wx70">
                                 <option value="">00분</option>
                               </select>
-                              <button type="button" class="comBtn wx50 btnDel ">삭제</button>
+
+                              <button type="button" class="comBtn btnDel">삭제</button>
                             </li>
                           </ul>
                         </td>
@@ -1303,31 +1321,259 @@
                         <td>
                           <div class="flex aic gap5">
                             <input type="checkbox" class="flex0" id="chk1">
-                            <label for="chk1">수료증 여부</label>
+                            <label for="chk1" class="wx100">수료증 여부</label>
+                            <span>
+                              총
+                              <input type="text" class="wx50">
+                              회 중
+                            </span>
+
+                            <!-- 대기자정원 -->
+                            <span>
+                              대기자 정원
+                              <input type="text" class="wx50"> 명
+                            </span>
                           </div>
                         </td>
-                        <th>수료증 여부</th>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th>교육기간</th>
-                        <td colspan="3"></td>
-                      </tr>
-                      <tr>
-                        <th>교육시간</th>
-                        <td colspan="3"></td>
-                      </tr>
-                      <tr>
-                        <th>수료증 여부</th>
-                        <td colspan="3"></td>
                       </tr>
                       <tr>
                         <th>교육대상</th>
-                        <td colspan="3"></td>
+                        <td colspan="3">
+                          <div class="flex gap20">
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c1">
+                              <label for="c1">성인</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c2">
+                              <label for="c2">여성</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c3">
+                              <label for="c3">어린이</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c4">
+                              <label for="c4">장애인</label>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <th>강사</th>
-                        <td colspan="3"></td>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" class="comInput">
+                            <button type="button" class="comBtn">찾기</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>링크 URL</th>
+                        <td colspan="3">
+                          <input type="text" class="comInput">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>수강료</th>
+                        <td colspan="3">
+                          <input id="a6" name="type3" type="radio" value="" checked="checked">
+                          <label for="a6"><span></span>유료</label>
+                          &nbsp;&nbsp;
+                          <input type="text" class="comInput wx100"> 원
+                          <input id="a7" name="type3" type="radio" value="">
+                          <label for="a7"><span></span>무료</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>결제방법</th>
+                        <td colspan="3">
+                          <input id="a8" name="type4" type="radio" value="" checked="checked">
+                          <label for="a8"><span></span>인터넷 결제</label>
+                          <input id="a9" name="type4" type="radio" value="">
+                          <label for="a9"><span></span>무통장입금</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>재료비</th>
+                        <td>
+                          <input type="text" class="comInput wx100"> 원
+                        </td>
+                        <th>교재비</th>
+                        <td>
+                          <input type="text" class="comInput wx100"> 원
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>교육장소 주소</th>
+                        <td colspan="3">
+                          <ul class="flex column gap15">
+                            <li class="flex gap5">
+                              <input type="text" class="comInput wx100">
+                              <button type="button" class="comBtn">주소찾기</button>
+                            </li>
+                            <li class="flex gap5">
+                              <input type="text" class="comInput"><input type="text" class="comInput">
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>교육장소</th>
+                        <td colspan="3">
+                          <input type="text" class="comInput">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>감면사용여부</th>
+                        <td colspan="3">
+                          <ul class="flex column gap5">
+                            <li class="flex gap5">
+                              <input type="checkbox" class="flex0" id="q1"> <label for="q1">감면사용</label>
+                              &nbsp;&nbsp;
+                              <label for="r1">감면율</label>
+                              <input type="text" class="comInput wx70"> %
+                            </li>
+                            <li class="flex gap5">
+                              <div class="flex gap20">
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra1">
+                                  <label for="ra1">기초생활수급자</label>
+                                </div>
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra2">
+                                  <label for="ra2">저소득한부모가족</label>
+                                </div>
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra3">
+                                  <label for="ra3">국가유공자</label>
+                                </div>
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra4">
+                                  <label for="ra4">의사상자</label>
+                                </div>
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra5">
+                                  <label for="ra5">다자녀</label>
+                                </div>
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra6">
+                                  <label for="ra6">65세이상</label>
+                                </div>
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="ra7">
+                                  <label for="ra7">장애인</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>면제사용여부</th>
+                        <td colspan="3">
+                          <ul class="flex column gap15">
+                            <li class="flex gap5">
+                              <input type="checkbox" class="flex0" id="l1"> <label for="l1">면제 사용</label>
+                            </li>
+                            <li class="flex gap5">
+                              <div class="flex gap20">
+                                <div class="chkWrap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa1">
+                                  <label for="raa1">기초생활수급자</label>
+                                </div>
+                                <div class="chkWraap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa2">
+                                  <label for="raa2">저소득한부모가족</label>
+                                </div>
+                                <div class="chkWraap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa3">
+                                  <label for="raa3">국가유공자</label>
+                                </div>
+                                <div class="chkWraap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa4">
+                                  <label for="raa4">의사상자</label>
+                                </div>
+                                <div class="chkWraap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa5">
+                                  <label for="raa5">다자녀</label>
+                                </div>
+                                <div class="chkWraap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa6">
+                                  <label for="raa6">65세이상</label>
+                                </div>
+                                <div class="chkWraap flex gap5">
+                                  <input type="checkbox" class="flex0" id="raa7">
+                                  <label for="raa7">장애인</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>이용자 제한</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <span>지역제한 :</span>
+                            <input id="a14" name="type5" type="radio" value="" checked="checked">
+                            <label for="a14"><span></span>전체</label>
+                            <input id="a15" name="type5" type="radio" value="">
+                            <label for="a15"><span></span>인천중구</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>강사</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input id="a16" name="type6" type="radio" value="" checked="checked">
+                            <label for="a16"><span></span>공개</label>
+                            <input id="a17" name="type6" type="radio" value="">
+                            <label for="a17"><span></span>비공개</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>상세정보</th>
+                        <td colspan="3">
+                          <!-- Todo HTML 에디터 -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>유의사항</th>
+                        <td colspan="3">
+                          <!-- Todo HTML 에디터 -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>첨부파일</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" class="comInput">
+                            <button class="comBtn">찾기</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>최초 등록일</th>
+                        <td>
+                          2022-10-30 10:30:39
+                        </td>
+                        <th>최초 등록자</th>
+                        <td>
+                          홍길동
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>최근 수정일</th>
+                        <td>
+                          2022-10-30 10:30:39
+                        </td>
+                        <th>최근 수정자</th>
+                        <td>
+                          홍길동
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -1341,6 +1587,7 @@
               <div class="tbl-wbtn">
               </div>
               <div class="tbl-btn">
+                <a href="#" class="del" onclick="goList();return false;">QR코드 인쇄</a>
                 <a href="#" class="close" onclick="saveData();return false;">취소</a>
                 <a href="#" class="view" onclick="goList();return false;">등록</a>
               </div>

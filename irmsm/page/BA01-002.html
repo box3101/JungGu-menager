@@ -1199,12 +1199,10 @@
                       </tr>
                       <tr>
                         <th>대표 전화번호 *</th>
-                        <td class="flex gap5">
-                          <input type="text" class="comInput">
-                        </td>
-                        <th>홈페이지</th>
-                        <td class="flex gap5">
-                          <input type="text" class="comInput">
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" class="comInput">
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -1218,14 +1216,26 @@
                         </td>
                       </tr>
                       <tr>
+                        <th>홈페이지</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" class="comInput">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
                         <th>PG사 상점ID *
                         </th>
-                        <td class="flex gap5">
-                          <input type="text" class="comInput">
-                          <p class="desc">* 상점 ID를 입력하세요.</p>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" class="comInput">
+                            <p class="desc">* 상점 ID를 입력하세요.</p>
+                          </div>
                         </td>
+                      </tr>
+                      <tr>
                         <th>입금 계좌번호 *</th>
-                        <td>
+                        <td colspan="3">
                           <div class="flex gap5">
                             <select class="comSelect wx200" name="" id="">
                               <option value="">은행선택</option>
@@ -1236,8 +1246,6 @@
                             <input type="text" class="comInput">
                           </div>
                         </td>
-                      </tr>
-                      <tr>
                       </tr>
                     </tbody>
                   </table>
@@ -1251,8 +1259,9 @@
               <div class="tbl-wbtn">
               </div>
               <div class="tbl-btn">
-                <a href="#" class="close" onclick="saveData();return false;">취소</a>
-                <a href="#" class="view" onclick="goList();return false;">등록</a>
+                <a href="#" class="close">취소</a>
+                <a href="#" class="view modalBtn" data-id="alert1">등록</a>
+                <a href="#" class="view modalBtn" data-id="alert2">삭제</a>
               </div>
             </div>
             <!-- 하단 버튼 container eee -->
@@ -1316,62 +1325,164 @@
               <input type="text" class="comInput">
               <button type="button" class="comBtn">검색</button>
             </div>
-            <table class="comTable-1">
-              <colgroup>
-                <col width="20%">
-                <col width="auto">
-                <col width="30%">
-                <col width="15%">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>이름</th>
-                  <th>아이디</th>
-                  <th>전화번호</th>
-                  <th>선택</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>홍*동</td>
-                  <td>글자테스트글자테스트글자테스트글자테스트</td>
-                  <td>032-124-5032</td>
-                  <td>
-                    <button type="button" class="comBtn">선택</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>홍*동</td>
-                  <td>honggildong</td>
-                  <td>032-124-5032</td>
-                  <td>
-                    <button type="button" class="comBtn">선택</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>김*호</td>
-                  <td>Kimjung</td>
-                  <td>032-344-4592</td>
-                  <td>
-                    <button type="button" class="comBtn">선택</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>박*</td>
-                  <td>parkjaehoon</td>
-                  <td>032-234-8903</td>
-                  <td>
-                    <button type="button" class="comBtn">선택</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="comTableHeightWrap">
+              <table class="comTable-1">
+                <colgroup>
+                  <col width="20%">
+                  <col width="auto">
+                  <col width="30%">
+                  <col width="15%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>이름</th>
+                    <th>아이디</th>
+                    <th>전화번호</th>
+                    <th>선택</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>홍*동</td>
+                    <td>글자테스트글자테스트글자테스트글자테스트</td>
+                    <td>032-124-5032</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>홍*동</td>
+                    <td>honggildong</td>
+                    <td>032-124-5032</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>박*</td>
+                    <td>parkjaehoon</td>
+                    <td>032-234-8903</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- 페이징 -->
+              <div id="paginate" class="customPaginateBar" style="margin: 0px 20px;">
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td width="29%"></td>
+                      <td align="center" class="customPage"><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-first"></i></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-prev"></i></span><span class="customPageNumberBtn"><a
+                            href="javascript:goPage(&quot;list&quot;, 1);" id="1"
+                            title="1페이지로 이동"><strong>1</strong></a></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-next"></i></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-end"></i></span></td>
+                      <td width="29%" align="right"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 페이징 eee -->
+
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- 담당자 찾기 팝업  eee-->
+
+  <!-- alert 팝업 기본 닫기-->
+  <div class="comPopupWrap" id="alert1">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupInfo">
+          <div class="comPopupInfoBox">
+            <div class="comTxt">
+              <p>
+                기관 그룹은 필수 선택항목 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" class="comBtn popClose">닫기</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert 팝업  eee-->
+
+  <!-- alert 팝업 취소 확인 -->
+  <div class="comPopupWrap" id="alert2">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupInfo">
+          <div class="comPopupInfoBox">
+            <div class="comTxt">
+              <p>
+                기관 그룹은 필수 선택항목 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" class="comBtn cancel popClose">취소</button>
+              </li>
+              <li>
+                <button type="button" class="comBtn">확인</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert 팝업  eee-->
 
 
 </body>
