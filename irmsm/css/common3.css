@@ -1261,3 +1261,9 @@ div.jqgridTextareaDiv {
 /* 20221212 kye추가 */
 .sch-bx ul .search {display: inline-block; margin-left: 10px; line-height: 38px;}
 .comTable-1 td .lecture {text-decoration: none;}
+.comTable-2 tr .padding-1 {padding: 20px;}
+.comTable-2 tr .padding-2 {padding: 5px 20px;}
+.comTable-2 tr .flex-wp {flex-wrap: wrap;}
+.comTable-2 tr .flex-wp span {width: calc(100% / 8); line-height: 25px;}
+.comTable-2 tr .pd0 span{padding-left: 0;}
+.comTable-2 tr .gap625{gap: 6.25rem;}
