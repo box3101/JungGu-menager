@@ -983,6 +983,10 @@ table input[type="radio"] + label{
   height: 100vh;
   background: rgba(0,0,0,0.4);
 }
+.comPopupWrap .comBtn{
+  min-width: auto;
+  border-radius: 0;
+}
 .comPopupContainer{
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
@@ -1008,6 +1012,7 @@ table input[type="radio"] + label{
   padding: 40px 0;
 }
 .comPopupBox{
+  position: relative;
   width: 480px; height: auto;
   background: #fff;
 }
@@ -1065,6 +1070,7 @@ table input[type="radio"] + label{
 .comTableHeightWrap th{
   position:sticky;
   top: -2px;
+  z-index: 10;
 }
 .comPopupBotBtn{
   top: 10px;
@@ -1116,4 +1122,22 @@ table input[type="radio"] + label{
 }
 .tbl-btn>a{
   padding: 0!important;
+}
+.accPopClose::after{
+  display: inline-block;
+  content: "\00d7";
+  font-size: 15pt;
+  line-height: 50px;
+  color: #fff;
+}
+.accPopClose{
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  right: 5px;
+  top: -5px;
+  position: absolute;
 }
