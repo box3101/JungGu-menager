@@ -10,8 +10,6 @@
   <link rel="stylesheet" type="text/css" href="../css/ui.jqgrid.css">
   <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css">
   <link rel="stylesheet" type="text/css" href="../css/common3.css">
-
-
   <link rel="stylesheet" type="text/css" href="../css/contents.css">
 
 
@@ -1120,11 +1118,11 @@
           <ul>
             <li><a href="#" class="home">홈</a></li>
             <li>강좌관리</li>
-            <li class="active">강좌관리</li>
+            <li class="active">대관관리</li>
           </ul>
           <a id="bookmarkIcon" href="#" class="favo" onclick="addToBookmark();return false;">즐겨찾기</a>
         </div>
-        <h3 class=""><span id="title">강좌관리</span></h3>
+        <h3 class=""><span id="title">대관관리</span></h3>
         <div class="contents" style="opacity: 1;">
           <!-- 조직성과도, 전략체계도 -->
           <!--
@@ -1143,198 +1141,234 @@
           <!--
 필독 : 다국어 지원기능에 의해서 화면에 나타나는 한글명칭은 message properties파일을 이용하여 수정할 것.
  -->
-
+          <div class="ptitle">
+            대관관리</div>
           <form id="form" name="form"
             action="/irmsm/main.do?findYear=2017&amp;findMon=12&amp;findAnalCycle=Y&amp;findScDeptId=S60&amp;findDeptId=&amp;findUseYn=&amp;findEvalGrpId=&amp;pgmId=PGM1568&amp;_=1670554988891"
             method="post"><input id="confmFairNo" name="confmFairNo" type="hidden" value=""><input type="text"
               id="preventElement" class="hide">
 
-            <!-- 검색 container -->
-            <div class="sch-bx">
-              <ul>
-                <li>
-                  <label for="a1">기관그룹</label>
-                  <select id="a1" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a2">기관그룹</label>
-                  <select id="a2" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a3">분야</label>
-                  <select id="a3" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <label for="a4">상태</label>
-                  <td>
-                    <input id="a4" name="recodeStatus" type="radio" value="" checked="checked">
-                    <label for="a4"><span></span>전체</label>
-                    <input id="a5" name="recodeStatus" type="radio" value="">
-                    <label for="a5"><span></span>접수중</label>
-                    <input id="a6" name="recodeStatus" type="radio" value="">
-                    <label for="a6"><span></span>접수마감</label>
-                  </td>
-                </li>
-                <li>
-                  <label for="a7">수강료</label>
-                  <td>
-                    <input id="a7" name="recodeStatus" type="radio" value="" checked="checked">
-                    <label for="a7"><span></span>전체</label>
-                    <input id="a8" name="recodeStatus" type="radio" value="">
-                    <label for="a8"><span></span>유료</label>
-                    <input id="a9" name="recodeStatus" type="radio" value="">
-                    <label for="a9"><span></span>무료</label>
-                  </td>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <label for="findNtcePd">신청기간</label>
-                  <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx150 datepicker hasDatepicker"
-                    type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
-                  <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx150 datepicker hasDatepicker"
-                    type="text" value="">
-                </li>
-                <li>
-                  <label for="findNtcePd">교육기간</label>
-                  <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx150 datepicker hasDatepicker"
-                    type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
-                  <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx150 datepicker hasDatepicker"
-                    type="text" value="">
-                </li>
-                <li>
-                  <label for="a10">강의명</label>
-                  <input type="text" class="comInput wx200">
-                </li>
-              </ul>
-              <a href="#" class="btn-sch" onclick="searchList();return false;">검색</a>
-            </div>
-            <!-- 검색 container eee -->
 
             <!-- 내용 container -->
             <div class="gridContainer">
-              <div class="comGridContainer">
-                <div class="comSearchBox">
-                  <p class="txt">
-                    총 <span>13</span>개의 기관이 있습니다.
-                  </p>
-                  <button class="comBtn new" onclick="goAddForm();return false;">강의등록</button>
-                </div>
-                <div class="comTableWrap-1">
-                  <table class="comTable-1">
+              <div class="comGridContainer pt0">
+                <div class="tbl-type02 bd">
+                  <table class="comTable-2">
                     <colgroup>
-                      <col width="70px">
-                      <col width="120px">
-                      <col width="auto">
-                      <col width="auto">
-                      <col width="180px">
-                      <col width="180px">
-                      <col width="70px">
+                      <col width="200px">
                       <col width="100px">
-                      <col width="110px">
-                      <col width="100px">
-                      <col width="130px">
-                      <col width="130px">
+                      <col width="200px">
+                      <col width="auto">
                     </colgroup>
                     <thead>
                       <tr>
-                        <th>번호</th>
-                        <th>기관그룹</th>
-                        <th>기관명</th>
-                        <th>강의명</th>
-                        <th>신청기간</th>
-                        <th>교육기간</th>
-                        <th>수강료</th>
-                        <th>상태</th>
-                        <th>등록일시</th>
-                        <th>등록자</th>
-                        <th>접수현황</th>
-                        <th>출석현황</th>
+                        <th>대관명</th>
+                        <td colspan="3">
+                          <input type="text" class="comInput">
+                        </td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>13</td>
-                        <td>평생교육센터</td>
-                        <td class="left twoLine">
-                          <span>
-                            글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
-                          </span>
-                        </td>
-                        <td class="left">드론조종자 양성과정(드론국가자격증 1종 취득) 평일반 ..</td>
-                        <td>2022-10-20 ~2022-10-30</td>
-                        <td>2022-11-01 ~2022-11-10</td>
-                        <td>유료</td>
-                        <td>접수중</td>
-                        <td>2022-10-20<br>12:21:31</td>
-                        <td>최*동</td>
-                        <td>
-                          <button type="button" class="comBtn">접수현황</button>
-                        </td>
-                        <td>
-                          <button type="button" class="comBtn bgGreen">출석현황</button>
+                        <th>요금</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            오전
+                            <input type="text" class="comInput wx150"> 원
+                            &nbsp;&nbsp;&nbsp;
+                            오후
+                            <input type="text" class="comInput wx150"> 원
+                            &nbsp;&nbsp;&nbsp;
+                            야간
+                            <input type="text" class="comInput wx150"> 원
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>12</td>
-                        <td>행정복지센터</td>
-                        <td class="left oneLine">
-                          <span>운서동 운서동 행정복지센터운서동 행정복지센터운서동 행정복지센터운서동 행정복지센터운서동 행정복지센터</span>
+                        <th>운영기간</th>
+                        <td colspan="3">
+                          <input id="findNtcePdFrom" name="findNtcePdFrom"
+                            class="t-box03 wx150 datepicker hasDatepicker" type="text"
+                            value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                          <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx150 datepicker hasDatepicker"
+                            type="text" value="">
                         </td>
-                        <td class="left twoLine">
-                          <span>
-                            푸드테라피-돌봄교육지도자 전문연수푸드테라피-돌봄교육지도자 전문연수푸드테라피-돌봄교육지도자 전문연수푸드테라피-돌봄교육지도자 전문연수푸드테라피-돌봄교육지도자
-                            전문연수푸드테라피-돌봄교육지도자 전문연수푸드테라피-돌봄교육지도자 전문연수
-                          </span>
+                      </tr>
+                      <tr>
+                        <th>최대수용인원</th>
+                        <td colspan="3">
+                          <input type="text" class="comInput wx150"> 명
                         </td>
-                        <td>2022-10-20 ~ 2022-10-30</td>
-                        <td>2022-11-01 ~ 2022-11-10</td>
-                        <td>무료</td>
-                        <td>접수마감</td>
-                        <td>2022-10-20<br>12:21:31</td>
-                        <td>이*동</td>
-                        <td>
-                          <button type="button" class="comBtn">접수현황</button>
+                      </tr>
+                      <tr>
+                        <th>예약불가능 일자</th>
+                        <td colspan="3">
+                          <button type="button" class="comBtn">예약불가능 관리</button>
                         </td>
-                        <td>
-                          <button type="button" class="comBtn bgGreen">출석현황</button>
+                      </tr>
+                      <tr>
+                        <th rowspan="3">운영시간</th>
+                        <td class="tac">
+                          <div class="flex aic gap10">
+                            <input type="checkbox" id="a1">
+                            <label for="a1">오전</label>
+                          </div>
+                        </td>
+                        <td colspan="2">
+                          <div class="flex gap20">
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c1">
+                              <label for="c1">월요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c2">
+                              <label for="c2">화요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c3">
+                              <label for="c3">수요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c4">
+                              <label for="c4">목요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c5">
+                              <label for="c5">금요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c6">
+                              <label for="c6">토요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="c7">
+                              <label for="c7">일요일</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tac">
+                          <div class="flex aic gap10">
+                            <input type="checkbox" id="a2">
+                            <label for="a2">오후</label>
+                          </div>
+                        </td>
+                        <td colspan="2">
+                          <div class="flex gap20">
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d1">
+                              <label for="d1">월요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d2">
+                              <label for="d2">화요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d3">
+                              <label for="d3">수요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d4">
+                              <label for="d4">목요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d5">
+                              <label for="d5">금요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d6">
+                              <label for="d6">토요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="d7">
+                              <label for="d7">일요일</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tac">
+                          <div class="flex aic gap10">
+                            <input type="checkbox" id="a3">
+                            <label for="a3">야간</label>
+                          </div>
+                        </td>
+                        <td colspan="2">
+                          <div class="flex gap20">
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f1">
+                              <label for="f1">월요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f2">
+                              <label for="f2">화요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f3">
+                              <label for="f3">수요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f4">
+                              <label for="f4">목요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f5">
+                              <label for="f5">금요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f6">
+                              <label for="f6">토요일</label>
+                            </div>
+                            <div class="chkWrap flex gap5">
+                              <input type="checkbox" class="flex0" id="f7">
+                              <label for="f7">일요일</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>부대시설</th>
+                        <td colspan="3">
+                          <div class="flex gap5 aic">
+                            <input type="checkbox" class="flex0" id="e1">
+                            <label for="e1">빔프로젝트</label>
+                            &nbsp;&nbsp;
+                            <input type="text" class="comInput wx150"> 원
+                            &nbsp;&nbsp;
+                            <input type="checkbox" class="flex0" id="q1">
+                            <label for="q1">냉난방기</label>
+                            &nbsp;&nbsp;
+                            <input type="text" class="comInput wx150"> 원
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>운영여부</th>
+                        <td colspan="3">
+                          <input id="a4" name="type1" type="radio" value="" checked="checked">
+                          <label for="a4"><span></span>운영</label>
+                          <input id="a5" name="type1" type="radio" value="">
+                          <label for="a5"><span></span>비운영</label>
                         </td>
                       </tr>
                     </tbody>
                   </table>
-
                 </div>
-
-                <!-- 페이징 -->
-                <div id="paginate" class="customPaginateBar" style="width: 100%; margin: 0px 20px;">
-                  <table width="100%">
-                    <tbody>
-                      <tr>
-                        <td width="29%"></td>
-                        <td align="center" class="customPage"><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-first"></i></span><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-prev"></i></span><span class="customPageNumberBtn"><a
-                              href="javascript:goPage(&quot;list&quot;, 1);" id="1"
-                              title="1페이지로 이동"><strong>1</strong></a></span><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-next"></i></span><span class="customPageMoveBtn"><i
-                              class="ui-icon ui-icon-seek-end"></i></span></td>
-                        <td width="29%" align="right"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- 페이징 eee -->
               </div>
             </div>
             <!-- 내용 container eee -->
+
+            <!-- 하단 버튼 container -->
+            <div class="tbl-bottom">
+              <div class="tbl-wbtn">
+              </div>
+              <div class="tbl-btn">
+                <a href="#" class="comBtn bgRed">취소</a>
+                <a href="#" class="comBtn">등록</a>
+              </div>
+            </div>
+            <!-- 하단 버튼 container eee -->
 
           </form>
         </div>

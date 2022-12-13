@@ -738,7 +738,10 @@ td.left.twoLine span{
 .comBtn.hAuto{
   height: auto;
 }
-.comBtn.red{
+.comBtn.green{
+  background: darkgreen;
+}
+.comBtn.bgGreen {
   background: darkgreen;
 }
 .comBtn.bgWhite {
@@ -787,12 +790,21 @@ td.left.twoLine span{
 .comTable-2 th{
   height: 40px;
 }
-.tbl-type02 td{
+.tbl-type02 td {
   height: 40px;
+}
+.tbl-type02.bd td{
+  border: 1px solid #ddd;
+}
+.tbl-type02 td.tac{
+  text-align: center;
 }
 .comTable-1 th,.comTable-1 td{
   padding: 10px 0;
   border: 1px solid #eee;
+}
+table input[type="checkbox"]+label {
+  cursor: pointer;
 }
 .comTable-1 th.left,
 .comTable-1 td.left {
@@ -1081,7 +1093,7 @@ table input[type="radio"] + label{
   align-items: center;
 }
 .comTab-1 ul li{
-  padding: 10px;
+  padding: 10px 17px;
   border: 1px solid #000;
   box-sizing: border-box;
   margin-left: -1px;
