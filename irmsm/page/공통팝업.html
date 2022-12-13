@@ -21,6 +21,13 @@
   <!-- alert 확인, 취소 버튼2개 TYPE -->
   <button type="button" class="comBtn modalBtn" data-id="alert2">Alert type2</button>
 
+  <!-- alert 2개 이상 팝업 -->
+  <button type="button" class="comBtn modalBtn" data-id="alert3">Alert type3</button>
+
+  <!-- 접근성 팝업 -->
+  <!-- popup div에 data-popup="팝업 고유 ID 값"으로 popup button과 popup div에 매칭되는 같은 값을 넣어준다 -->
+  <button type="button" class="comBtn modalBtn" data-id="alert5" data-popup="accessibility">접근성 팝업</button>
+
   <!-- 담당자 찾기 팝업 -->
   <div class="comPopupWrap" id="managerSearchPop">
     <div class="dim"></div>
@@ -197,6 +204,190 @@
     </div>
   </div>
   <!-- alert 팝업  eee-->
+
+  <!-- alert 팝업 취소 확인 -->
+  <div class="comPopupWrap" id="alert3">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupInfo bgfff">
+          <div class="comPopupInfoBox">
+            <div class="comTxt">
+              <p>
+                기관 그룹은 필수 선택항목 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" class="comBtn cancel popClose">취소</button>
+              </li>
+              <li>
+                <button type="button" class="comBtn modalBtn" data-id="alert4">확인</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert 팝업  eee-->
+
+  <!-- alert 팝업 취소 확인 -->
+  <div class="comPopupWrap" id="alert4">
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupInfo bgfff">
+          <div class="comPopupInfoBox">
+            <div class="comTxt">
+              <p>
+                확인22
+              </p>
+            </div>
+          </div>
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" class="comBtn cancel popClose">닫기</button>
+              </li>
+              <li>
+                <button type="button" class="comBtn">확인</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert 팝업  eee-->
+
+  <!-- 접근성 팝업 -->
+  <!-- popup div에 role=dialog를 넣어주어 해당 요소가 popup 요소라는 것을 알려준다. -->
+  <div class="comPopupWrap" role="dialog" data-popup="accessibility" id="alert5">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <!-- popup title에 tabindex=“0” 추가 필요 -->
+        <div class="comPopupHeader" tabindex="0">
+          <h2>담당자 찾기</h2>
+          <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
+        </div>
+        <div class="comPopupInfo">
+          <div class="comPopupInfoBox">
+            <div class="searchBox flex gap5">
+              <select name="" id="" class="comSelect wx150">
+                <option value="아이디">아이디</option>
+              </select>
+              <input type="text" class="comInput">
+              <button type="button" class="comBtn">검색</button>
+            </div>
+            <div class="comTableHeightWrap">
+              <table class="comTable-1">
+                <colgroup>
+                  <col width="20%">
+                  <col width="auto">
+                  <col width="30%">
+                  <col width="15%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>이름</th>
+                    <th>아이디</th>
+                    <th>전화번호</th>
+                    <th>선택</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>홍*동</td>
+                    <td>글자테스트글자테스트글자테스트글자테스트</td>
+                    <td>032-124-5032</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>홍*동</td>
+                    <td>honggildong</td>
+                    <td>032-124-5032</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>김*호</td>
+                    <td>Kimjung</td>
+                    <td>032-344-4592</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>박*</td>
+                    <td>parkjaehoon</td>
+                    <td>032-234-8903</td>
+                    <td>
+                      <button type="button" class="comBtn">선택</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- 페이징 -->
+              <div id="paginate" class="customPaginateBar" style="margin: 0px 20px;">
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td width="29%"></td>
+                      <td align="center" class="customPage"><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-first"></i></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-prev"></i></span><span class="customPageNumberBtn"><a
+                            href="javascript:goPage(&quot;list&quot;, 1);" id="1"
+                            title="1페이지로 이동"><strong>1</strong></a></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-next"></i></span><span class="customPageMoveBtn"><i
+                            class="ui-icon ui-icon-seek-end"></i></span></td>
+                      <td width="29%" align="right"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 페이징 eee -->
+
+            </div>
+          </div>
+        </div>
+
+        <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
+        <button type="button" class="popClose accPopClose" popup-close="accessibility"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 접근성 팝업  eee-->
 
 
   <script>
