@@ -714,7 +714,7 @@ td.left.twoLine span{
 }
 .comBtn {
   position: relative;
-  min-width: 100px;
+  min-width: 70px;
   text-align: center;
   height: 30px;
   background: #00489E;
