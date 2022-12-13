@@ -660,6 +660,11 @@ body.nopage .wrapper {
 .comGridContainer .tbl-type02{
   margin: 0;
 }
+.comSearchBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .comSearchBox .txt{
   font-size: 15px;
 }
