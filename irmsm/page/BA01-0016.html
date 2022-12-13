@@ -1118,11 +1118,11 @@
           <ul>
             <li><a href="#" class="home">홈</a></li>
             <li>강좌관리</li>
-            <li class="active">기관관리</li>
+            <li class="active">대관관리</li>
           </ul>
           <a id="bookmarkIcon" href="#" class="favo" onclick="addToBookmark();return false;">즐겨찾기</a>
         </div>
-        <h3 class=""><span id="title">기관관리</span></h3>
+        <h3 class=""><span id="title">대관관리</span></h3>
         <div class="contents" style="opacity: 1;">
           <!-- 조직성과도, 전략체계도 -->
           <!--
@@ -1151,22 +1151,14 @@
             <div class="sch-bx">
               <ul>
                 <li>
-                  <label for="a1">기관그룹</label>
+                  <label for="a1">운영여부</label>
                   <select id="a1" name="" class="select wx150">
                     <option value="" selected="selected">전체</option>
                   </select>
                 </li>
                 <li>
-                  <label for="a2">기관그룹</label>
-                  <select id="a2" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="a2">담당자 성명</label>
-                  <select id="a2" name="" class="select wx150">
-                    <option value="" selected="selected">전체</option>
-                  </select>
+                  <label for="a2">대관명</label>
+                  <input id="a2" type="text" class="comInput wx200">
                 </li>
               </ul>
               <a href="#" class="btn-sch" onclick="searchList();return false;">검색</a>
@@ -1178,97 +1170,134 @@
               <div class="comGridContainer">
                 <div class="comSearchBox">
                   <p class="txt">
-                    총 <span>13</span>개의 기관이 있습니다.
+                    총 <span>11</span>개의 기관이 있습니다.
                   </p>
-                  <a href="#" class="comBtn new" onclick="goAddForm();return false;">기관등록</a>
+                  <button class="comBtn new" onclick="goAddForm();return false;">대관등록</button>
                 </div>
                 <div class="comTableWrap-1">
                   <table class="comTable-1">
                     <colgroup>
-                      <col width="80px">
-                      <col width="200px">
+                      <col width="70px">
                       <col width="auto">
-                      <col width="200px">
-                      <col width="200px">
-                      <col width="200px">
+                      <col width="70px">
+                      <col width="auto">
+                      <col width="auto">
+                      <col width="100px">
+                      <col width="auto">
+                      <col width="100px">
                     </colgroup>
                     <thead>
                       <tr>
                         <th>번호</th>
-                        <th>기관그룹</th>
-                        <th>기관명</th>
-                        <th>담당자</th>
-                        <th>등록일</th>
-                        <th>등록자</th>
+                        <th>대관명</th>
+                        <th>운영여부</th>
+                        <th>운영기간 만료여부</th>
+                        <th>운영기간</th>
+                        <th>최대수용인원</th>
+                        <th>최종 수정일시</th>
+                        <th>최종 수정자</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>13</td>
-                        <td>평생학습관</td>
-                        <td class="left oneLine">
-                          <a
-                            href="#">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                        </td>
-                        <td>홍*동</td>
-                        <td>2022-10-20</td>
-                        <td>최*동</td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>행정복지센터</td>
-                        <td class="left"><a href="#">운서동행정복지센터</a></td>
-                        <td>김*동</td>
-                        <td>2022-10-20</td>
-                        <td>이*동</td>
-                      </tr>
-                      <tr>
                         <td>11</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
                         <td></td>
-                        <td class="left"><a href="#">영종동행정복지센터</a></td>
-                        <td>최*동</td>
-                        <td>2022-10-20</td>
-                        <td>박*동</td>
+                        <td>2022.10.01 ~2022.12.31</td>
+                        <td>30명</td>
+                        <td>2022-12-0112:14:35</td>
+                        <td>홍길동</td>
                       </tr>
-                      <tr>
+                      <tr class="bgRed">
                         <td>10</td>
-                        <td></td>
-                        <td class="left"><a href="#">영종1동 행정복지센터</a></td>
-                        <td>이*동</td>
-                        <td>2022-10-20</td>
-                        <td>홍*자</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
+                        <td class="colorRed">기간만료</td>
+                        <td>2022.10.01 ~2022.10.31</td>
+                        <td>40명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
+                      </tr>
+                      <tr class="bgBlue">
+                        <td>9</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
+                        <td class="colorBlue">기간만료</td>
+                        <td>2022.10.01 ~2022.10.31</td>
+                        <td>50명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
                       </tr>
                       <tr>
-                        <td>9</td>
+                        <td>8</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
                         <td></td>
-                        <td class="left"><a href="#">용유동행정복지센터</a></td>
-                        <td>박*동</td>
-                        <td>2022-10-20</td>
-                        <td>김*자</td>
+                        <td>2022.10.01 ~2022.12.31</td>
+                        <td>30명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
+                        <td></td>
+                        <td>2022.10.01 ~2022.12.31</td>
+                        <td>40명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
+                        <td></td>
+                        <td>2022.10.01 ~2022.12.31</td>
+                        <td>50명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
                       </tr>
                       <tr>
                         <td>5</td>
-                        <td>문화센터</td>
-                        <td class="left"><a href="#">롯데마트 문화센터</a></td>
-                        <td>홍*자</td>
-                        <td>2022-10-20</td>
-                        <td>홍*동</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">N</td>
+                        <td class="colorBlue">기간만료</td>
+                        <td>2022.10.01 ~2022.10.31</td>
+                        <td>30명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
                       </tr>
                       <tr>
                         <td>4</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
                         <td></td>
-                        <td class="left"><a href="#">하늘문화센터</a></td>
-                        <td>김*자</td>
-                        <td>2022-10-20</td>
-                        <td>김*자</td>
+                        <td>2022.10.01 ~2022.12.31</td>
+                        <td>40명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
                       </tr>
                       <tr>
                         <td>3</td>
-                        <td>청소년 수련관</td>
-                        <td class="left"><a href="#">청소년 수련관</a></td>
-                        <td>홍*동</td>
-                        <td>2022-10-20</td>
-                        <td>홍*동</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">Y</td>
+                        <td></td>
+                        <td>2022.10.01 ~2022.12.31</td>
+                        <td>50명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>평생학습센터</td>
+                        <td class="colorBlue">N</td>
+                        <td class="colorRed">기간만료</td>
+                        <td>2022.10.01 ~2022.10.31</td>
+                        <td>50명</td>
+                        <td>2022-12-01 12:14:35</td>
+                        <td>홍길동</td>
                       </tr>
                     </tbody>
                   </table>

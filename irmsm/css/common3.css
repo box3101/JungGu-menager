@@ -371,7 +371,7 @@ body {background:#484848; border-top:2px solid #272727;}
 .wx60 {width:50px !important; flex:0 0 50px!important;}
 .wx70 {width:70px !important; flex:0 0 70px!important;}
 .wx80 {width:80px !important; flex:0 0 80px!important;}
-.wx100 {width:100px !important; flex:0 0 100px!important;}
+.wx150 {width:100px !important; flex:0 0 100px!important;}
 .wx110 {width:110px !important; flex:0 0 110px!important;}
 .wx120 {width:120px !important; flex:0 0 120px!important;}
 .wx130 {width:130px !important; flex:0 0 130px!important;}
@@ -404,7 +404,7 @@ body {background:#484848; border-top:2px solid #272727;}
 .wx850 {width:850px !important; flex:0 0 850px!important;}
 .wx900 {width:900px !important; flex:0 0 900px!important;}
 .wx950 {width:950px !important; flex:0 0 950px!important;}
-.wx1000 {width:1000px !important;}
+.wx1500 {width:1000px !important;}
 .wx1057 {width:1057px !important;}
 .wx1100 {width:1100px !important;}
 .wx1150 {width:1150px !important;}

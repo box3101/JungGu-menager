@@ -464,19 +464,6 @@ section.admin-dashboard article.admin-dashboard__box .admin-dashboard__canva-wra
 }
 
 
-.tbl-btn {
-  margin: 10px 0px 0px;
-}
-
-.tbl-btn>a {
-  display: inline-block;
-  padding: 10px 15px;
-  color: #fff;
-  font-size: 13px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .tbl-btn a.new {
   background: #0195d3;
@@ -680,6 +667,18 @@ body.nopage .wrapper {
   border-top: 2px solid #484848;
   background: #fff;
 }
+.comTable-1 tr.bgRed td{
+  background: #ffe9e9;
+}
+.comTable-1 tr.bgBlue td {
+  background: #e8f7ff;
+}
+.comTable-1 .colorRed{
+  color: red!important;
+}
+.comTable-1 .colorBlue {
+  color: blue !important;
+}
 .tbl-type02 .comTable-2{
   border-top: none;
 }
@@ -714,12 +713,21 @@ td.left.twoLine span{
   -webkit-box-orient: vertical;
 }
 .comBtn {
+  position: relative;
+  min-width: 100px;
+  text-align: center;
   height: 30px;
-  background: #0195d3;
+  background: #00489E;
   padding: 0 10px;
   color: #fff;
+  font-size: 14px;
+  font-weight: 500;
   border: none;
   box-sizing: border-box;
+  border-radius: 5px;
+  top: 0;
+  line-height: 30px;
+  color: #fff!important;
 }
 .comBtn.cancel {
   background: darkred;
@@ -732,6 +740,21 @@ td.left.twoLine span{
 }
 .comBtn.red{
   background: darkgreen;
+}
+.comBtn.bgWhite {
+  position: relative;
+  top: 1px;
+  background: #fff;
+  border: 1px solid #555;
+  box-sizing: border-box;
+  color: #2D2D2D!important;
+  font-weight: 500;
+}
+.comBtn.bgRed{
+  background: darkred;
+}
+.comBtn.bgBlue {
+  background: #00489E;
 }
 .flex {
   display: flex;
@@ -1069,13 +1092,16 @@ table input[type="radio"] + label{
   border: none;
 }
 .comTab-1 li.on{
-  background: #0195d3;
+  background: #00489E;
     color: #fff;
 }
 .comTab-1 li.on button{
-  background: #0195d3;
+  background: #00489E;
   color: #fff;
 }
 .comSelectBox{
   margin-top: 20px;
+}
+.tbl-btn>a{
+  padding: 0!important;
 }
