@@ -1269,3 +1269,7 @@ div.jqgridTextareaDiv {
 .comTable-2 tr .gap625{gap: 6.25rem;}
 
 /* 20221213 kye추가 */
+.comTable-2 tr .w100 {height: 160px;}
+.comTable-2 tr textarea.left {text-align: left;}
+.comTable-2 tr .flex-ais {display: flex;}
+.comTable-2 tr .profile {width: 150px; height: 150px; border: 1px solid #000;}

@@ -1180,13 +1180,13 @@
                         </tr>
                         <tr>
                           <th>*교육분야</th>
-                          <td colspan="3">
+                          <td colspan="3" class="flex">
                             <label for="a1"></label>
                             <select id="a1" name="" class="select wx150">
                               <option value="" selected="selected">기초문해교육</option>
                             </select>
-                            <label for="a2"></label>
-                            <select id="a2" name="" class="select wx200">
+                            <label for="a2" class="m5"></label>
+                            <select id="a2" name="" class="select comSelect">
                               <option value="" selected="selected">문자해독(초/중급 한글교실, 미인정 한글강좌)</option>
                             </select>
                           </td>
@@ -1194,7 +1194,7 @@
                         <tr>
                           <th>*소속기관</th>
                           <td colspan="3">
-                            <input type="text" class="wx200">
+                            <input type="text" class="comInput">
                           </td>
                         </tr>
                         <tr>
@@ -1214,28 +1214,69 @@
                           </td>
                         </tr>
                         <tr>
-                          <th>*강의경력 <br>
-                            (최대 50건)
-                          <td colspan="3">
-                            <ul>
-                              <li>
-                                강의명
-                              </li>
-                              <li></li>
-                            </ul>
-                          </td>
-                          </th>
+                          <th>*강의경력 <br>(최대 50건)</th>
+                            <td colspan="3">
+                                <ul class="flex ais column gap5">
+                                    <li class="gap5">
+                                    강의명&nbsp;&nbsp;<input type="text">
+                                    <label for="findNtcePd"><span>기간</span></label>&nbsp;&nbsp;
+                                    <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx150 datepicker hasDatepicker"
+                                        type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                                    <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx150 datepicker hasDatepicker"
+                                        type="text" value="">
+                                    <span>주관기관&nbsp;&nbsp;<input type="text"></span>
+                                    <button type="button" class="comBtn" value="">추가</button>
+                                    </li>
+                                    <li>
+                                    강의명&nbsp;&nbsp;<input type="text">
+                                    <label for="findNtcePd"><span>기간</span></label>&nbsp;&nbsp;
+                                    <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx150 datepicker hasDatepicker"
+                                        type="text" value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+                                    <input id="findNtcePdTo" name="findNtcePdTo" class="t-box03 wx150 datepicker hasDatepicker"
+                                        type="text" value="">
+                                    <span>주관기관&nbsp;&nbsp;<input type="text"></span>
+                                    <button type="button" class="comBtn" value="">삭제</button>
+                                    </li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                          <th>자격 및 면허 <br>
-                            (최대 20건)
-                          </th>
-                          <td colspan="3">
-                          </td>
+                          <th>자격 및 면허 <br>(최대 20건)</th>
+                            <td colspan="3">
+                                <ul class="flex ais column gap5">
+                                    <li>
+                                        명칭&nbsp;&nbsp;<input type="text">
+                                        <span>
+                                        발행기관&nbsp;&nbsp;<input type="text">
+                                        </span>
+                                        <label for="findNtcePd"><span>발행일</span></label>&nbsp;&nbsp;
+                                        <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx150 datepicker hasDatepicker" type="text" value="">
+                                        <button type="button" class="comBtn" value="">추가</button>
+                                    </li>
+                                    <li>
+                                        명칭&nbsp;&nbsp;<input type="text">
+                                        <span>
+                                        발행기관&nbsp;&nbsp;<input type="text">
+                                        </span>
+                                        <label for="findNtcePd"><span>발행일</span></label>&nbsp;&nbsp;
+                                        <input id="findNtcePdFrom" name="findNtcePdFrom" class="t-box03 wx150 datepicker hasDatepicker" type="text" value="">
+                                        <button type="button" class="comBtn" value="">삭제</button>
+                                    </li>
+                                </ul>
+                            </td>
                         </tr>
-                        <tr>
+                        <tr class="w100">
                           <th>사진</th>
-                          <td colspan="3"></td>
+                          <td colspan="3" class="flex gap5">
+                            <div class="flex ais">
+                                <div class="profile">
+                                    <div></div>
+                                    <button type="button" class="comBtn" value="">삭제</button>
+                                </div>
+                            </div>
+                            <input type="text" class="wx200">
+                            <button type="button" class="comBtn" value="">찾기</button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -1247,10 +1288,13 @@
 
             <!-- 하단 버튼 container -->
             <div class="tbl-bottom">
-              <div class="tbl-btn">
-                <a href="#" class="new" onclick="goAddForm();return false;">목록</a>
+                <div class="tbl-btn">
+                    <a href="#" class="comBtn bgWhite">취소</a>
+                  <a href="#" class="comBtn">저장</a>
+                  <a href="#" class="comBtn bgRed">승인</a>
+                </div>
               </div>
-            </div>
+  
             <!-- 하단 버튼 container eee -->
           </form>
         </div>
