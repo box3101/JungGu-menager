@@ -817,7 +817,7 @@ td.left.twoLine *{
 }
 .comTable-1 th,.comTable-1 td{
   padding: 10px 0;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
 }
 table input[type="checkbox"]+label {
   cursor: pointer;

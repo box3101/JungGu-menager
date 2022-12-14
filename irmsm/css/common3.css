@@ -520,7 +520,7 @@ body {background:#484848; border-top:2px solid #272727;}
 .tbl-type02 th {padding-left:20px; text-align:left; height:29px; font-size:13px; color:#000000; font-weight:normal; border-top:1px solid #d1d1d1; border-bottom:1px solid #d1d1d1; border-left:1px solid #d1d1d1; border-right:1px solid #d1d1d1; background:#eaeaea;}
 .tbl-type02 th:first-child {border-left:0px;}
 .tbl-type02 th.th-type01 {text-align:center;}
-.tbl-type02 td {height:29px;background:#fff; padding:0px 10px; border-top:1px solid #eeeeee; font-size:13px;}
+.tbl-type02 td {height:29px;background:#fff; padding:0px 10px; border-top:1px solid #ddd; font-size:13px;}
 .tbl-type02 td.auto{
     height: auto!important;
 }
