@@ -1141,3 +1141,6 @@ table input[type="radio"] + label{
   top: -5px;
   position: absolute;
 }
+.comTable-2 tr .profile{
+  border: 1px solid #ddd;
+}

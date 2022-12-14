@@ -150,7 +150,7 @@
               <div id="menu" class="menu"
                 style="background: url(&quot;/irmsm/images/common/gnb-menu-bg.png&quot;) no-repeat rgb(0, 124, 178); height: 859px;">
                 <p class="allmenu"><a href="#"
-                    style="background: #82d8fc; border: 1px solid #000;"><span>전체메뉴</span></a></p>
+                    style="background: #82d8fc; border: 1px solid #aaa;"><span>전체메뉴</span></a></p>
                 <div class="am-bx" style="display: none;">
                   <div id="allMenu" class="am-bx2">
 
@@ -1180,15 +1180,15 @@
                         </tr>
                         <tr>
                           <th>*교육분야</th>
-                          <td colspan="3" class="flex">
-                            <label for="a1"></label>
-                            <select id="a1" name="" class="select wx150">
-                              <option value="" selected="selected">기초문해교육</option>
-                            </select>
-                            <label for="a2" class="m5"></label>
-                            <select id="a2" name="" class="select comSelect">
-                              <option value="" selected="selected">문자해독(초/중급 한글교실, 미인정 한글강좌)</option>
-                            </select>
+                          <td colspan="3">
+                            <div class="flex gap5">
+                              <select id="a1" name="" class="select wx150">
+                                <option value="" selected="selected">기초문해교육</option>
+                              </select>
+                              <select id="a2" name="" class="select comSelect">
+                                <option value="" selected="selected">문자해독(초/중급 한글교실, 미인정 한글강좌)</option>
+                              </select>
+                            </div>
                           </td>
                         </tr>
                         <tr>
@@ -1214,7 +1214,7 @@
                           <th>*강의경력 <br>(최대 50건)</th>
                           <td colspan="3">
                             <ul class="flex ais column gap5">
-                              <li class="gap5">
+                              <li>
                                 <div class="flex gap5">
                                   강의명&nbsp;&nbsp;<input type="text" class="comInput wx150">
                                   <label for="findNtcePd"><span>기간</span></label>&nbsp;&nbsp;
