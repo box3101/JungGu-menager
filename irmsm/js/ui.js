@@ -7,6 +7,7 @@
   // 함수모음
   const eventBinding = () => {
     comPopup();
+    comInputNumber();
   }
 
   // 공통 레이어 팝업
@@ -47,6 +48,24 @@
 
   const closePop = (el) => {
     el.closest(".comPopupWrap").classList.remove("on");
+  }
+
+  // input 금액 콤마 이력
+
+  const comInputNumber = () => {
+    const $$input = document.querySelectorAll('.comNumber');
+    $$input.forEach((el) => {
+      el.addEventListener('keyup', function (e) {
+        let value = e.target.value;
+        value = Number(value.replaceAll(',', ''));
+        if (isNaN(value)) {
+          el.value = 0;
+        } else {
+          const formatValue = value.toLocaleString('ko-KR');
+          el.value = formatValue;
+        }
+      })
+    })
   }
 
 

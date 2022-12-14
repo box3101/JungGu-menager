@@ -652,6 +652,21 @@ body.nopage .wrapper {
   align-items: center;
   justify-content: space-between;
 }
+.comSearchBox .comBtn{
+  font-size: 16px!important;
+  font-weight: bold;
+  color: #00489e!important;
+  background: #fff!important;
+  border: 1px solid #00489e!important;
+  height: 34px!important;
+  line-height: 33px!important;
+  border-radius: 0!important;
+  transition: all 0.4s;
+}
+.comSearchBox .comBtn:hover{
+  color: #fff !important;
+  background: #00489e !important;
+}
 .comSearchBox .txt{
   font-size: 15px;
 }
@@ -668,10 +683,10 @@ body.nopage .wrapper {
   background: #fff;
 }
 .comTable-1 tr.bgRed td{
-  background: #ffe9e9;
+  background: #fff3f3;
 }
 .comTable-1 tr.bgBlue td {
-  background: #e8f7ff;
+  background: #f3fbff;
 }
 .comTable-1 .colorRed{
   color: red!important;
@@ -695,14 +710,14 @@ body.nopage .wrapper {
   box-sizing: border-box;
   padding-left: 10px;
 }
-td.left.oneLine span{
+td.left.oneLine *{
   display: block;
   width: calc(100% - 20px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-td.left.twoLine span{
+td.left.twoLine *{
   width: calc(100% - 20px);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -714,13 +729,13 @@ td.left.twoLine span{
 }
 .comBtn {
   position: relative;
-  min-width: 60px;
+  min-width: 67px;
   text-align: center;
   height: 30px;
   background: #00489E;
   padding: 0 10px;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   border: none;
   box-sizing: border-box;
@@ -730,7 +745,7 @@ td.left.twoLine span{
   color: #fff !important;
 }
 .comBtn.cancel {
-  background: darkred;
+  background: #be0000;
 }
 .comBtn.m5{
   margin: 5px 0;
@@ -742,14 +757,12 @@ td.left.twoLine span{
   background: #555;
 }
 .comBtn.green{
-  background: darkgreen;
+  background: #299E00;
 }
 .comBtn.bgGreen {
-  background: darkgreen;
+  background: #299E00;
 }
 .comBtn.bgWhite {
-  position: relative;
-  top: 1px;
   background: #fff;
   border: 1px solid #555;
   box-sizing: border-box;
@@ -757,7 +770,7 @@ td.left.twoLine span{
   font-weight: 500;
 }
 .comBtn.bgRed{
-  background: darkred;
+  background: #be0000;
 }
 .comBtn.bgBlue {
   background: #00489E;
@@ -962,10 +975,10 @@ table input[type="radio"] + label{
   background-position: 0 27px;
 }
 .tbl-btn>a.del {
-  background: darkred;
+  background: #be0000;
 }
 .btnDel{
-  background: darkred;
+  background: #be0000;
 }
 
 .comPopupWrap{
@@ -1146,4 +1159,56 @@ table input[type="radio"] + label{
 }
 .comTable-2 tr .profile{
   border: 1px solid #ddd;
+}
+.tbl-bottom .tbl-btn{
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
+  display: flex;
+  gap: 10px;
+}
+.tbl-bottom .tbl-btn .comBtn{
+  min-width: 100px!important;
+  height: 36px!important;
+  line-height: 36px!important;
+  border: 1px solid #00489e;
+  color: #00489e!important;
+  background: #fff;
+  border-radius: 5px!important;
+  font-size: 18px!important;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.tbl-bottom .tbl-btn.left{
+  left: 0;
+  transform: translateX(0);
+}
+.tbl-bottom .tbl-btn .comBtn:hover {
+  color: #fff !important;
+  background: #00489e !important;
+}
+.tbl-bottom .tbl-btn .comBtn.bgRed{
+  border: 1px solid #be0000;
+  color: #be0000 !important;
+}
+.tbl-bottom .tbl-btn .comBtn.bgRed:hover{
+  color: #fff!important;
+  background: #be0000!important;
+}
+.tbl-bottom .tbl-btn .comBtn.bgWhite{
+  border: 1px solid #999999;
+  color: #999999 !important;
+}
+.tbl-bottom .tbl-btn .comBtn.bgWhite:hover {
+  color: #fff !important;
+  background: #999999 !important;
+}
+.tbl-bottom .tbl-btn .comBtn.bgGreen {
+  border: 1px solid #299E00;
+  color: #299E00 !important;
+}
+
+.tbl-bottom .tbl-btn .comBtn.bgGreen:hover {
+  color: #fff !important;
+  background: #299E00 !important;
 }
