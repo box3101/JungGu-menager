@@ -738,6 +738,9 @@ td.left.twoLine span{
 .comBtn.hAuto{
   height: auto;
 }
+.comBtn.bgBlack{
+  background: #555;
+}
 .comBtn.green{
   background: darkgreen;
 }
