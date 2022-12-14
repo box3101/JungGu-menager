@@ -1121,7 +1121,7 @@ table input[type="radio"] + label{
   margin-top: 20px;
 }
 .tbl-btn>a{
-  padding: 0!important;
+  padding: 0 10px!important;
 }
 .accPopClose::after{
   display: inline-block;
