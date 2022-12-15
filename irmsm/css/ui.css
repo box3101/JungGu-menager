@@ -688,10 +688,10 @@ body.nopage .wrapper {
 .comTable-1 tr.bgBlue td {
   background: #f3fbff;
 }
-.comTable-1 .colorRed{
+.colorRed{
   color: red!important;
 }
-.comTable-1 .colorBlue {
+.colorBlue {
   color: blue !important;
 }
 .tbl-type02 .comTable-2{
@@ -710,12 +710,17 @@ body.nopage .wrapper {
   box-sizing: border-box;
   padding-left: 10px;
 }
+.comInput.number{
+  text-align: right;
+}
 td.left.oneLine *{
+  position: relative;
   display: block;
   width: calc(100% - 20px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding-bottom:4px;
 }
 td.left.twoLine *{
   width: calc(100% - 20px);
@@ -798,6 +803,9 @@ td.left.twoLine *{
 .tbl-type02 th {
   height: 40px;
 }
+.tbl-type02.btNone{
+  border-top: none;
+}
 .tbl-type02 h4{
   margin-top: 20px;
   font-size: 16px;
@@ -808,6 +816,12 @@ td.left.twoLine *{
 }
 .tbl-type02 td {
   height: 40px;
+}
+.tbl-type02 td.hAuto{
+  height: auto;
+}
+.tbl-type02 td.p10{
+  padding: 10px!important;
 }
 .tbl-type02.bd td{
   border: 1px solid #ddd;
@@ -1136,9 +1150,9 @@ table input[type="radio"] + label{
 .comSelectBox{
   margin-top: 20px;
 }
-.tbl-btn>a{
+.tbl-btn>a.comBtn{
   padding: 0 10px!important;
-}
+} 
 .accPopClose::after{
   display: inline-block;
   content: "\00d7";
@@ -1160,7 +1174,7 @@ table input[type="radio"] + label{
 .comTable-2 tr .profile{
   border: 1px solid #ddd;
 }
-.tbl-bottom .tbl-btn{
+.gridContainer + .tbl-bottom .tbl-btn{
   left: 50%;
   transform: translateX(-50%);
   right: auto;
@@ -1211,4 +1225,12 @@ table input[type="radio"] + label{
 .tbl-bottom .tbl-btn .comBtn.bgGreen:hover {
   color: #fff !important;
   background: #299E00 !important;
+}
+.flex.jcb{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.gridContainer .ui-widget.ui-widget-content {
+  margin: 0;
 }

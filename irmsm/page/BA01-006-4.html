@@ -1144,7 +1144,7 @@
 필독 : 다국어 지원기능에 의해서 화면에 나타나는 한글명칭은 message properties파일을 이용하여 수정할 것.
  -->
           <div class="ptitle">
-            강좌접수 현황</div>
+            강좌 수동 접수</div>
           <form id="form" name="form"
             action="/irmsm/main.do?findYear=2017&amp;findMon=12&amp;findAnalCycle=Y&amp;findScDeptId=S60&amp;findDeptId=&amp;findUseYn=&amp;findEvalGrpId=&amp;pgmId=PGM1568&amp;_=1670554988891"
             method="post"><input id="confmFairNo" name="confmFairNo" type="hidden" value=""><input type="text"
@@ -1155,7 +1155,6 @@
               <div class="comGridContainer pt0">
 
                 <div class="tbl-type02">
-                  <h4>강좌 정보</h4>
                   <table class="comTable-2">
                     <colgroup>
                       <col width="200px">
@@ -1166,10 +1165,17 @@
                     <thead>
                       <tr>
                         <th>강좌명</th>
-                        <td colspan="3">Build-UpHRD(기업을 키워내는 인재양성 전문가 과정)</td>
+                        <td colspan="3">Build-UpHRD(기업을 키워내는 인재양성 전문가
+                          과정)</td>
                       </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <th>강좌번호</th>
+                        <td>SDFE000000300123</td>
+                        <th>강사명</th>
+                        <td>홍길순</td>
+                      </tr>
                       <tr>
                         <th>기관명</th>
                         <td>평생학습센터</td>
@@ -1178,102 +1184,111 @@
                       </tr>
                       <tr>
                         <th>신청기간</th>
-                        <td>2022-10-20 ~2022-10-30</td>
+                        <td>2022-10-20 ~2022-10-25</td>
                         <th>교육기간</th>
                         <td>2022-11-01 ~2022-11-10</td>
                       </tr>
                       <tr>
                         <th>선정방법</th>
-                        <td>선착순</td>
+                        <td>선착순 or 추첨 (추첨일 :2022-10-26)</td>
                         <th>수강료</th>
-                        <td>25,000원 (인터넷결제 or 무통장입금)</td>
+                        <td>25,000원 (무통장입금)</td>
                       </tr>
                       <tr>
                         <th>정원</th>
-                        <td>50 명</td>
+                        <td>정원 50 명, 대기 10명</td>
                         <th>교육대상자</th>
                         <td>일반인, 노인</td>
                       </tr>
                     </tbody>
                   </table>
+
+                  <table class="comTable-2">
+                    <colgroup>
+                      <col width="200px">
+                      <col width="auto">
+                      <col width="200px">
+                      <col width="auto">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>회원(신청자) 검색</th>
+                        <td colspan="3">
+                          <button type="button" class="comBtn">회원검색</button>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>성명</th>
+                        <td>홍길동</td>
+                        <th>아이디</th>
+                        <td>Honggildong</td>
+                      </tr>
+                      <tr>
+                        <th>생년월일</th>
+                        <td>1981년 8월 29일</td>
+                        <th>성별</th>
+                        <td>남자</td>
+                      </tr>
+                      <tr>
+                        <th>휴대폰 번호</th>
+                        <td>010-123-2834</td>
+                        <th>이메일</th>
+                        <td>msdkf134@sddc.com</td>
+                      </tr>
+                      <tr>
+                        <th>면제대상</th>
+                        <td>
+                          <select name="" id="" class="comSelect wx150">
+                            <option value="">선택</option>
+                          </select>
+                        </td>
+                        <th>감면대상</th>
+                        <td>
+                          <select name="" id="" class="comSelect wx150">
+                            <option value="">선택</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>감면금액</th>
+                        <td>
+                          <input type="text" class="comInput wx150 readOnly number" readonly value="50,000"> 원
+                        </td>
+                        <th>최종수강료</th>
+                        <td>
+                          <input type="text" class="comInput wx150 readOnly number" readonly value="50,000"> 원
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>결제수단</th>
+                        <td colspan="3">무통장입금 (현금)</td>
+                      </tr>
+                      <tr>
+                        <th>관리자 메모</th>
+                        <td colspan="3">
+                          <div class="flex ais gap5">
+                            <textarea name="" id="" cols="30" rows="3"></textarea>
+                            <button type="button" class="comBtn wx150 hAuto m5" value="">메모저장</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-
-                <div class="comTab-1">
-                  <ul>
-                    <li class="on">
-                      <button type="button">수강신청자</button>
-                    </li>
-                    <li>
-                      <button type="button">선착순 대기자</button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="comSearchBox">
-                  <p class="txt">
-                    총 <span>13</span>개의 기관이 있습니다.
-                  </p>
-                </div>
-
-                <table class="comTable-1">
-                  <colgroup>
-                    <col width="80px">
-                    <col width="250px">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>접수번호</th>
-                      <th>접수일시</th>
-                      <th>접수현황</th>
-                      <th>아이디</th>
-                      <th>성명</th>
-                      <th>생년월일</th>
-                      <th>휴대전화</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1234567</td>
-                      <td>2022-12-0112:14:35</td>
-                      <td>신청완료</td>
-                      <td>ace***</td>
-                      <td>홍*동</td>
-                      <td>1976.**.**</td>
-                      <td>010-****-6666</td>
-                    </tr>
-                    <tr>
-                      <td>1234566</td>
-                      <td>2022-12-01 12:14:35</td>
-                      <td>신청완료</td>
-                      <td>ace***</td>
-                      <td>김*동</td>
-                      <td>1970.**.**</td>
-                      <td>010-****-8888</td>
-                    </tr>
-                    <tr>
-                      <td>1234565</td>
-                      <td>2022-12-01 12:14:35</td>
-                      <td>결제대기</td>
-                      <td>ace***</td>
-                      <td>최*동</td>
-                      <td>1980.**.**</td>
-                      <td>010-****-3333</td>
-                    </tr>
-                    <tr>
-                      <td>1234564</td>
-                      <td>2022-12-01 12:14:35</td>
-                      <td>신청취소</td>
-                      <td>ace***</td>
-                      <td>이*동</td>
-                      <td>1969.**.**</td>
-                      <td>010-****-1111</td>
-                    </tr>
-                  </tbody>
-                </table>
-
               </div>
             </div>
             <!-- 내용 container eee -->
+
+            <!-- 하단 버튼 container -->
+            <div class="tbl-bottom">
+              <div class="tbl-btn">
+                <a href="#" class="comBtn bgWhite">취소</a>
+                <a href="#" class="comBtn modalBtn" data-id="alert1">등록</a>
+              </div>
+            </div>
+            <!-- 하단 버튼 container eee -->
           </form>
         </div>
       </div>
