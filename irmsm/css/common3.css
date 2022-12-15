@@ -1282,5 +1282,10 @@ div.jqgridTextareaDiv {
 .comTable-2 .flex.p10{ padding: 10px;}
 
 /* 20221215 kye추가 */
-.tbl-type02 tr .picture {width: 300px; height: 150px; border: 1px solid #ddd}
+.tbl-type02 tr .picture {
+    width: 300px; height: 150px; border: 1px solid #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .tbl-type02 tr .colorBlue {color: blue;}
