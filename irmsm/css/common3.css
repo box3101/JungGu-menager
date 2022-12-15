@@ -1275,21 +1275,12 @@ div.jqgridTextareaDiv {
 .comTable-2 tr .w100 {height: 160px;}
 .comTable-2 tr textarea.left {text-align: left;}
 .comTable-2 tr .flex-ais {display: flex;}
-.comTable-2 tr .profile { 
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-padding: 20px;}
-.comTable-2 tr .profile>div{
-    width: 150px; height: 150px;
-    border: 1px solid #000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.comTable-2 tr .profile {display: flex; flex-direction: column; padding: 20px;}
+.comTable-2 tr .profile>div{ width: 150px; height: 150px; background-repeat: no-repeat; background-size: cover; background-position: center;
 }
-.comTable-2 tr .profile .comBtn{
-    margin-top: 10px;
-}
-.comTable-2 .flex.p10{
-    padding: 10px;
-}
+.comTable-2 tr .profile .comBtn{ margin-top: 10px;}
+.comTable-2 .flex.p10{ padding: 10px;}
+
+/* 20221215 kye추가 */
+.tbl-type02 tr .picture {width: 300px; height: 150px; border: 1px solid #ddd}
+.tbl-type02 tr .colorBlue {color: blue;}
