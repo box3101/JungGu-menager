@@ -8,6 +8,7 @@
   const eventBinding = () => {
     comPopup();
     comInputNumber();
+    addBtn();
   }
 
   // 공통 레이어 팝업
@@ -51,7 +52,6 @@
   }
 
   // input 금액 콤마 이력
-
   const comInputNumber = () => {
     const $$input = document.querySelectorAll('.comNumber');
     $$input.forEach((el) => {
@@ -67,6 +67,52 @@
       })
     })
   }
+
+  // 강좌관리 추가버튼 눌를시 라인 추가
+  const addBtn = () => {
+    const $addLineBtn = document.querySelector(".addLineBtn");
+    const $comAddLine = document.querySelector(".comAddLine");
+
+    $addLineBtn.addEventListener('click', () => {
+      let li = document.createElement("li");
+      li.classList.add("flex", "gap5");
+      li.innerHTML = `
+       <select name="" id="" class="comSelect wx150">
+          <option value="">월요일</option>
+       </select>
+      <select name="" id="" class="comSelect wx70">
+          <option value="">10시</option>
+      </select>
+      <select name="" id="" class="comSelect wx70">
+          <option value="">00분</option>
+      </select>
+
+        &nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
+
+        <select name="" id="" class="comSelect wx150">
+          <option value="">월요일</option>
+        </select>
+        <select name="" id="" class="comSelect wx70">
+          <option value="">10시</option>
+        </select>
+        <select name="" id="" class="comSelect wx70">
+          <option value="">00분</option>
+        </select>
+        <button type="button" class="comBtn bgRed removeLineBtn">삭제</button>
+    `
+      $comAddLine.append(li);
+
+      const $$removeLineBtn = document.querySelectorAll(".removeLineBtn");
+      $$removeLineBtn.forEach((el) => {
+        el.addEventListener('click', (e) => {
+          const target = e.target;
+          target.closest("li").remove();
+        });
+      });
+    });
+
+  }
+
 
 
 })();

@@ -106,6 +106,8 @@
   <script src="/irmsm/assets/javascripts/custom/human.call.cms.func.js"></script>
   <script src="/irmsm/assets/javascripts/custom/jquery.validation.rule.js"></script>
 
+  <script src="../js/ui.js"></script>
+
 </head>
 
 <body style="">
@@ -1213,7 +1215,7 @@
                         <tr>
                           <th>*강의경력 <br>(최대 50건)</th>
                           <td colspan="3">
-                            <ul class="flex ais column gap5">
+                            <ul class="flex ais column gap5 comAddLine2">
                               <li>
                                 <div class="flex gap5">
                                   강의명&nbsp;&nbsp;<input type="text" class="comInput wx150">
@@ -1224,20 +1226,7 @@
                                   <input id="findNtcePdTo" name="findNtcePdTo"
                                     class="t-box03 wx150 datepicker hasDatepicker" type="text" value="">
                                   <span>주관기관&nbsp;&nbsp;<input type="text"></span>
-                                  <button type="button" class="comBtn" value="">추가</button>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="flex gap5">
-                                  강의명&nbsp;&nbsp;<input type="text" class="wx150">
-                                  <label for="findNtcePd"><span>기간</span></label>&nbsp;&nbsp;
-                                  <input id="findNtcePdFrom" name="findNtcePdFrom"
-                                    class="t-box03 wx150 datepicker hasDatepicker" type="text"
-                                    value="">&nbsp;&nbsp;&nbsp;~&nbsp;&nbsp;&nbsp;
-                                  <input id="findNtcePdTo" name="findNtcePdTo"
-                                    class="t-box03 wx150 datepicker hasDatepicker" type="text" value="">
-                                  <span>주관기관&nbsp;&nbsp;<input type="text"></span>
-                                  <button type="button" class="comBtn bgRed" value="">삭제</button>
+                                  <button type="button" class="comBtn addLineBtn2" value="">추가</button>
                                 </div>
                               </li>
                             </ul>

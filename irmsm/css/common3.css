@@ -1289,3 +1289,42 @@ div.jqgridTextareaDiv {
     background-size: cover;
 }
 .tbl-type02 tr .colorBlue {color: blue;}
+.customPageMoveBtn{
+    border:none;
+    cursor: pointer;
+    margin: 0 1px;
+}
+.customPaginateBar{
+    margin-top: 15px!important;
+}
+.ui-icon-seek-first{
+    width: 33px;
+    height: 33px;
+    background-size: cover;
+    background: url(../img/btn_page_first.png)no-repeat;
+}
+.ui-icon-seek-prev{
+    width: 33px;
+    height: 33px;
+    background-size: cover;
+    background: url(../img/btn_page_pre.png)no-repeat;
+}
+.customPageNumberBtn{
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    border: none;
+    font-size: 13px;
+}
+.ui-icon-seek-next{
+    width: 33px;
+    height: 33px;
+    background-size: cover;
+    background: url(../img/btn_page_next.png)no-repeat;
+}
+.ui-icon-seek-end{
+    width: 33px;
+height: 33px;
+    background-size: cover;
+    background: url(../img/btn_page_last.png)no-repeat;
+}

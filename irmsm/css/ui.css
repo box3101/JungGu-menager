@@ -738,15 +738,15 @@ td.left.twoLine *{
   text-align: center;
   height: 30px;
   background: #00489E;
-  padding: 0 10px;
+  padding: 2px 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   border: none;
   box-sizing: border-box;
   border-radius: 5px;
   top: 0;
-  line-height: 30px;
+  line-height: 27px;
   color: #fff !important;
 }
 .comBtn.cancel {
@@ -830,8 +830,10 @@ td.left.twoLine *{
   text-align: center;
 }
 .comTable-1 th,.comTable-1 td{
-  padding: 10px 0;
+  padding: 3px 0;
+  height: 34px;
   border: 1px solid #ddd;
+  min-height: 50px;
 }
 table input[type="checkbox"]+label {
   cursor: pointer;
@@ -855,6 +857,8 @@ table input[type="checkbox"]+label {
   border-left: none;
   font-size: 13px;
   font-weight: 400;
+  height: 34px;
+  box-sizing: border-box;
 }
 .comTable-1 td.oneLine{
   position: relative;
