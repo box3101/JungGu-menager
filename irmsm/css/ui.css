@@ -1234,3 +1234,10 @@ table input[type="radio"] + label{
 .gridContainer .ui-widget.ui-widget-content {
   margin: 0;
 }
+.pictureWrap{
+  flex-wrap: wrap;
+}
+.pictureWrap .comBtn.bgRed{
+  width: 100%;
+  margin-top: 10px;
+}
