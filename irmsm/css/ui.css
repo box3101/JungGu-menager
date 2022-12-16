@@ -746,7 +746,7 @@ td.left.twoLine *{
   box-sizing: border-box;
   border-radius: 5px;
   top: 0;
-  line-height: 27px;
+  line-height: 24px;
   color: #fff !important;
 }
 .comBtn.cancel {
