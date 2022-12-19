@@ -1187,8 +1187,8 @@ table input[type="radio"] + label{
 }
 .tbl-bottom .tbl-btn .comBtn{
   min-width: 100px!important;
-  height: 36px!important;
-  line-height: 36px!important;
+  height: 40px!important;
+  line-height: 40px!important;
   border: 1px solid #00489e;
   color: #00489e!important;
   background: #fff;
@@ -1244,4 +1244,14 @@ table input[type="radio"] + label{
 .pictureWrap .comBtn.bgRed{
   width: 100%;
   margin-top: 10px;
+}
+.tbl-type02 .datepicker,.sch-bx .datepicker{
+  background: url(../img/icon_date_cal_btn.png) no-repeat;
+  position: relative;
+  background-position: right;
+  padding-left: 0.6875rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background-size: contain;
+  box-sizing: border-box;
 }
