@@ -1178,7 +1178,7 @@ table input[type="radio"] + label{
 .comTable-2 tr .profile{
   border: 1px solid #ddd;
 }
-.gridContainer + .tbl-bottom .tbl-btn{
+.tbl-bottom.newTblBottom .tbl-btn{
   left: 50%;
   transform: translateX(-50%);
   right: auto;
