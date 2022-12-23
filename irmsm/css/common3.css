@@ -1315,6 +1315,11 @@ div.jqgridTextareaDiv {
     text-align: center;
     border: none;
     font-size: 13px;
+    font-weight: 500;
+}
+.customPageNumberBtn.on{
+    font-weight: bold;
+    color: #00489E;
 }
 .ui-icon-seek-next{
     width: 33px;

@@ -1047,7 +1047,7 @@ table input[type="radio"] + label{
 }
 .comPopupBox{
   position: relative;
-  width: 480px; height: auto;
+  width: 850px; height: auto;
   background: #fff;
 }
 .comPopupHeader{
