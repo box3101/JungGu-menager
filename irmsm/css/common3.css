@@ -1315,11 +1315,22 @@ div.jqgridTextareaDiv {
     text-align: center;
     border: none;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 300!important;
+    opacity: 0.4;
+    color: #555!important;
+    transition: all 0.4s;
+}
+.customPageNumberBtn:hover{
+    color: blue !important;
+    opacity: 1;
 }
 .customPageNumberBtn.on{
-    font-weight: bold;
-    color: #00489E;
+    position: relative;
+    top: 1px;
+    font-weight: bold!important;
+    font-size: 15px;
+    color: blue!important;
+    opacity: 1;
 }
 .ui-icon-seek-next{
     width: 33px;
