@@ -1255,3 +1255,35 @@ table input[type="radio"] + label{
   background-size: contain;
   box-sizing: border-box;
 }
+
+
+/* 20230103 qr코드 css 추가 */
+.qrCode .top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qrCode .top ul li dl{
+  display: flex;
+  gap:10px;
+  margin: 15px 0;
+}
+.qrCode .top ul li dl dt{
+  font-size: 18px;
+  font-weight: bold;
+}
+.qrCode .top ul li dl dd{
+  font-size: 16px;
+  color: #666;
+}
+.qrCode .img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+.qrCode .tbl-bottom{
+  overflow: initial;
+}

@@ -1190,6 +1190,7 @@
                         <th>담당자 ID *</th>
                         <td colspan="1" class="p10">
                           <button type="button" class="comBtn modalBtn" data-id="managerSearchPop">담당자 검색</button>
+                          <button type="button" class="comBtn modalBtn" data-id="managerSearchPop2">QR코드 검색</button>
                           <ul class="mt5">
                             <!-- li 반복 -->
                             <li class="mt5">
@@ -1346,6 +1347,7 @@
           id="fancybox-right-ico"></span></a>
     </div>
   </div>
+
 
 
   <!-- 담당자 찾기 팝업 -->
@@ -1565,6 +1567,62 @@
     </div>
   </div>
   <!-- alert 팝업  eee-->
+
+  <!-- QR팝업 -->
+  <div class="comPopupWrap" id="managerSearchPop2">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupHeader">
+          <h2>QR 코드</h2>
+          <button type="button" class="popClose"></button>
+        </div>
+        <div class="comPopupInfo">
+          <div class="comPopupInfoBox">
+            <div class="qrCode">
+              <div class="top">
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>강좌명:</dt>
+                      <dd>
+                        <span>글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</span>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>강사명:</dt>
+                      <dd>
+                        <span>홍*동</span>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>교육 기간:</dt>
+                      <dd>
+                        <span>2022.01.02</span> ~ <span>2022.03.02</span>
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+                <!-- TODO w400xh400 -->
+                <div class="img"
+                  style="background-image: url(https://mblogthumb-phinf.pstatic.net/20110104_157/cheju7376_1294141009038xXIYP_JPEG/QR%C4%DA%B5%E5%28%BE%C6%BA%FC-356%29.jpg?type=w2);">
+                </div>
+                <div class="tbl-bottom newTblBottom">
+                  <div class="tbl-btn">
+                    <a href="#" class="comBtn bgGreen">인쇄</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>
