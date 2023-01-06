@@ -1000,7 +1000,7 @@ table input[type="radio"] + label{
 }
 
 .comPopupWrap{
-  display: none;
+  visibility: hidden;
   position: fixed;
   top: 0; bottom: 0;
   left: 0; right: 0;
@@ -1009,7 +1009,7 @@ table input[type="radio"] + label{
   z-index: 10;
 }
 .comPopupWrap.on{
-  display: block;
+  visibility:visible;
 }
 .comPopupWrap .dim{
   position: absolute;
