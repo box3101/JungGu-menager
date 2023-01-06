@@ -16,6 +16,12 @@
 
   <link rel="stylesheet" type="text/css" href="../css/select2.min.css">
   <link rel="stylesheet" type="text/css" href="../css/ui.css">
+
+  <!-- 20230106 달력 js 추가-->
+  <script src='../js/index.global.min.js'></script>
+  <script src='../js/locales-all.js'></script>
+
+
   <script type="text/javascript" src="/irmsm/js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="/irmsm/js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="/irmsm/js/jquery.form-validator.min.js"></script>
@@ -32,6 +38,8 @@
   <script type="text/javascript" src="/irmsm/js/jquery.fancybox-1.3.4.pack.js"></script>
   <script type="text/javascript" src="/irmsm/js/layout/common.js"></script>
   <script type="text/javascript" src="/irmsm/js/Chart.bundle.min.js"></script>
+
+
   <style type="text/css">
     /* Chart.js */
     @-webkit-keyframes chartjs-render-animation {
@@ -1203,7 +1211,8 @@
                       <tr>
                         <th>예약불가능 일자</th>
                         <td colspan="3">
-                          <button type="button" class="comBtn">예약불가능 관리</button>
+                          <button type="button" class="comBtn modalBtn" data-id="ManageUnavailableDatePop">예약불가능
+                            관리</button>
                         </td>
                       </tr>
                       <tr>
@@ -1410,6 +1419,208 @@
           id="fancybox-right-ico"></span></a>
     </div>
   </div>
+
+
+  <!-- 대관 예약 불가능 일자 관리 팝업 -->
+  <div class="comPopupWrap on" id="ManageUnavailableDatePop">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupHeader">
+          <h2>예약 불가능 일자 관리</h2>
+          <button type="button" class="popClose"></button>
+        </div>
+        <div class="comPopupInfo">
+          <div class="comPopupInfoBox">
+            <!-- 달력  -->
+            <div class="calendarWrap">
+              <div class="left">
+                <ul class="txtWrap">
+                  <li>
+                    예약 가능
+                  </li>
+                  <li>
+                    예약 불가능
+                  </li>
+                </ul>
+                <!-- 달력 플로그인 -->
+                <div class="calendar" id="calendar">
+                </div>
+                <!-- 달력 플로그인 eee -->
+              </div>
+              <div class="right">
+                <div class="impossibleDate">
+                  <!-- 멀티플레스 박스 -->
+                  <ul class="multiplexBox">
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                    <li>
+                      2022-10-15
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const initialLocaleCode = 'ko'; // 한글
+                  const calendarEl = document.getElementById('calendar');
+                  const calendar = new FullCalendar.Calendar(calendarEl, {
+                    selectable: false, // 날짜 클릭시 활성화
+                    initialView: 'dayGridMonth',
+                    locale: initialLocaleCode,
+                  });
+                  calendar.render();
+                });
+              </script>
+            </div>
+          </div>
+          <!-- 달력 eee -->
+        </div>
+        <div class="comPopupBotBtn type-2">
+          <ul>
+            <li>
+              <button type="button" class="comBtn cancel popClose">
+                취소
+              </button>
+            </li>
+            <li>
+              <button type="button" class="comBtn">
+                저장
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 대관 예약 불가능 일자 관리 팝업 eee -->
+
+  <script>
+    (function () {
+
+      window.onload = () => {
+        eventBinding();
+      }
+
+      // 함수모음
+      const eventBinding = () => {
+        comPopup();
+      }
+
+      // 공통 레이어 팝업
+      const comPopup = () => {
+
+        const $$comPopupWrap = document.querySelectorAll(".comPopupWrap");
+        const $$modalBtn = document.querySelectorAll(".modalBtn");
+        const $$closeBtn = document.querySelectorAll(".popClose");
+        const $$comPopContainer = document.querySelectorAll(".comPopupContainer");
+
+        // open popup
+        $$modalBtn.forEach((el) => {
+          el.addEventListener("click", () => {
+            openPop(el);
+          });
+        });
+
+        // close popup
+        $$comPopupWrap.forEach((popWrap) => {
+          popWrap.addEventListener("click", (e) => {
+            $$comPopContainer.forEach((element) => {
+              $$closeBtn.forEach((el) => {
+                const curentTarget = e.target;
+                if (curentTarget == el || curentTarget == element) {
+                  closePop(el);
+                }
+              });
+            });
+          });
+        });
+      }
+
+      const openPop = (el) => {
+        const target = el.getAttribute("data-id");
+        const targetId = `#${target}`;
+        document.querySelector(targetId).classList.add("on");
+      }
+
+      const closePop = (el) => {
+        el.closest(".comPopupWrap").classList.remove("on");
+      }
+
+
+    })();
+  </script>
+
 </body>
 
 </html>
