@@ -1355,8 +1355,8 @@ table input[type="radio"] + label{
   content: '';
   width: 10px;
   height: 10px;
-  background: #3788d8;
-  opacity: .1;
+  background: #dbecfa;
+  border: 1px solid #666;
 }
 .calendarWrap .txtWrap li:nth-of-type(2)::before {
   position: absolute;
@@ -1368,6 +1368,7 @@ table input[type="radio"] + label{
   width: 10px;
   height: 10px;
   background: #aaa;
+  border: 1px solid #666;
 }
 .calendarWrap .fc-today-button{
   display: none!important;
@@ -1393,5 +1394,5 @@ margin: 0 2px!important;
   background-color: #ddd;
 }
 .available{
-  background: aliceblue;
+  background: #dbecfa;
 }
