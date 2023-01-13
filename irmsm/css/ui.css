@@ -765,7 +765,16 @@ td.left.twoLine *{
   background: #299E00;
 }
 .comBtn.bgGreen {
-  background: #299E00;
+  border: 1px solid #299E00;
+  color: #299E00 !important;
+  border: 1px solid #299E00!important;
+}
+.comBtn.bgGreen:hover{
+  background: #299E00!important;
+  color: #fff;
+}
+.comBtn.cFFF{
+  color:#fff!important;
 }
 .comBtn.bgWhite {
   background: #fff;
