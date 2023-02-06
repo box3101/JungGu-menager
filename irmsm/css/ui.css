@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200;1,300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /*=============================================
 =           20220923 새로 추가되는 CSS            =
 =============================================*/
@@ -736,7 +737,7 @@ td.left.twoLine *{
   position: relative;
   min-width: 61px;
   text-align: center;
-  height: 27px;
+  height: 30px;
   background: #00489E;
   padding: 2px 10px;
   color: #fff;
@@ -748,6 +749,24 @@ td.left.twoLine *{
   top: 0;
   line-height: 24px;
   color: #fff !important;
+}
+.comBtn2 {
+      position: relative;
+    min-width: 61px;
+    text-align: center;
+    height: 23px;
+    background: #00489E;
+    padding: 1px 10px;
+    font-size: 13px!important;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    top: 0;
+    line-height: 24px;
+    color: #fff !important;
 }
 .comBtn.cancel {
   background: #be0000;
@@ -763,8 +782,9 @@ td.left.twoLine *{
 }
 .comBtn.green{
   background: #299E00;
+
 }
-.comBtn.bgGreen {
+.qrCode .tbl-bottom .tbl-btn .comBtn.bgGreen {
   border: 1px solid #299E00;
   color: #299E00 !important;
   border: 1px solid #299E00!important;
@@ -789,6 +809,48 @@ td.left.twoLine *{
   background: #be0000;
 }
 .comBtn.bgBlue {
+  background: #00489E;
+}
+.comBtn2.cancel {
+  background: #be0000;
+}
+.comBtn2.m5{
+  margin: 5px 0;
+}
+.comBtn2.hAuto{
+  height: auto;
+}
+.comBtn2.bgBlack{
+  background: #555;
+}
+.comBtn2.green{
+  background: #299E00;
+}
+.comBtn2.bgGreen {
+  border: 1px solid #299E00;
+  color: #299E00 !important;
+  border: 1px solid #299E00!important;
+  background: #299E00!important;
+  color: #fff!important;
+}
+.comBtn2.bgGreen:hover{
+  background: #299E00!important;
+  color: #fff;
+}
+.comBtn2.cFFF{
+  color:#fff!important;
+}
+.comBtn2.bgWhite {
+  background: #fff;
+  border: 1px solid #555;
+  box-sizing: border-box;
+  color: #2D2D2D!important;
+  font-weight: 500;
+}
+.comBtn2.bgRed{
+  background: #be0000;
+}
+.comBtn2.bgBlue {
   background: #00489E;
 }
 .flex {
@@ -1061,6 +1123,9 @@ table input[type="radio"] + label{
   width: 850px; height: auto;
   background: #fff;
 }
+.comPopupBox.large{
+  width: 1000px;
+}
 .comPopupHeader{
   display: flex;
   align-items: center;
@@ -1173,7 +1238,7 @@ table input[type="radio"] + label{
 }
 .tbl-btn>a.comBtn{
   padding: 0 10px!important;
-} 
+}
 .accPopClose::after{
   display: inline-block;
   content: "\00d7";
@@ -1406,4 +1471,152 @@ margin: 0 2px!important;
 }
 .available{
   background: #dbecfa;
+}
+.comSearchBox .hidden{
+  opacity: 0;
+}
+.comTable-1 input{
+  display: block!important;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.comBtn3{
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background: #0195d3;
+  border: 1px solid #0195d3;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.questionWrap{}
+.questionWrap .row{
+  margin-top: 20px;
+}
+.questionWrap .row dl{
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: flex-start;
+  gap:10px;
+}
+.questionWrap .row dl dt{
+  margin-top: 10px;
+}
+.questionWrap .row dl dd{
+  flex:1;
+  width: 100%;
+  align-items: flex-start;
+}
+.questionWrap .flexColumn{
+  flex-direction: column;
+}
+.questionWrap .header{
+  width: 100%;
+  flex:0 0 100%;
+}
+.questionWrap .info{
+  width: 100%;
+}
+.questionWrap .info label.comInput{
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: 1px solid #aaa;
+  background: #fff;
+  line-height: 30px;
+  color: #333;
+}
+.questionWrap .before{
+  position: relative;
+}
+.questionWrap .before::before{
+  display: inline-block;
+  content: '✔️';
+  color: #0195d3;
+}
+.questionWrap .info ul li{
+  margin-bottom: 5px;
+}
+.questionWrap textarea{
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+#question-container{
+  width: 84.2%;
+}
+.comPopupInfo{
+  max-height: 80vh;
+  overflow: auto;
+}
+.comPopupInfoBox .titWrap{}
+.comPopupInfoBox .titWrap ul{}
+.comPopupInfoBox .titWrap ul li{
+  padding: 7px 0;
+  font-size: 16px;
+}
+.comPopupInfoBox .tabWrap{
+  margin-top: 30px;
+}
+.comPopupInfoBox .tabWrap>ul{
+  display: flex;
+  border-bottom: 1px solid #aaa;
+  margin-top: -1px;
+}
+.comPopupInfoBox .tabWrap>ul li{}
+.comPopupInfoBox .tabWrap>ul li a{
+  display: inline-block;
+  width: 200px;
+  height: 45px; line-height: 45px;
+  border:1px solid #aaa;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: -1px;
+  font-size: 16px;
+  border-bottom: none;
+}
+.comPopupInfoBox .tabWrap ul li a.on{
+  background: #00489e;
+  color: #fff;
+}
+
+.comPopupInfoBox .tabContents{
+  padding: 15px;
+  display: none;
+}
+.comPopupInfoBox .tabContents.on{
+  display: block;
+}
+.comPopupInfoBox .tabContents .header{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.comPopupInfoBox .tabContents .graphBox .info{
+  height: 250px;
+  width: 550px;
+  border:1px solid #000;
+  margin-bottom: 20px;
+}
+.comPopupInfoBox .tabContents .info ul{
+  width: 100%;
+}
+.comPopupInfoBox .tabContents .info ul li{
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.comPopupInfoBox .tabContents .row{
+  margin-bottom: 25px;
+}
+.comPopupInfoBox .tabContents .header{
+  font-weight: bold;
+  font-size: 17px;
 }
