@@ -1736,3 +1736,42 @@ margin: 0 2px!important;
 .type6 .comPopupInfo input[type=submit] {
   cursor: pointer;
 }
+
+.sch-bx .bg-none label {
+  background: none;
+  padding-left: 3px;
+  margin-right: 18px;
+} 
+.sch-bx .bg-none .bg{
+  background: url(../images/common/ico-bullet3.png) no-repeat 20px center;
+  padding-left: 30px;
+  margin-right: 10px;
+}
+
+.tbl-type04 {
+  border-top: 2px solid #000;
+  border-bottom: none;
+  padding-bottom: 1.2rem;
+}
+
+.gridContainer .comGridContainer.ip {
+  padding: 0;
+}
+
+.comTableWrap-3 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.comTableWrap-3 ul li {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 1.2rem;
+  padding: 0.8rem;
+  white-space: nowrap;
+}
+
+.comTableWrap-3 .top li{
+  border-top: none !important;
+  border-bottom: none !important;
+}
