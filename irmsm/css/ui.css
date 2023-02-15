@@ -1554,6 +1554,7 @@ margin: 0 2px!important;
 .comPopupInfo{
   max-height: 80vh;
   overflow: auto;
+  overflow-x: hidden;
 }
 .comPopupInfoBox .titWrap{}
 .comPopupInfoBox .titWrap ul{}
@@ -1619,4 +1620,119 @@ margin: 0 2px!important;
 .comPopupInfoBox .tabContents .header{
   font-weight: bold;
   font-size: 17px;
+}
+.type6 .comPopupInfo {
+  text-align: left;
+}
+.type6 .comPopupInfo .list-01 li:nth-child(1) {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 1.6rem;
+}
+.type6 .comPopupInfo .list-01 li:nth-child(2) {
+  line-height: 1.6rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.type6 .comPopupInfo .flex {
+  justify-content: center;
+}
+.type6 .comPopupInfo .comBtn {
+  background-color: #00489e;
+  color: #fff !important;
+  border-radius: 0.3125rem;
+  font-size: 19px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  line-height: 0;
+  margin: 20px 0;
+}
+.type6 .comPopupInfo .list-02 li {
+  padding-bottom: 0.8rem !important;
+}
+.type6 .comPopupInfo .list-02 p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.type6 .comPopupInfo .list-02 li:nth-child(1) {
+  text-align: left;
+  padding-top: 0.4rem;
+}
+.type6 .comPopupInfo .list-02 li:nth-child(2) {
+  border-bottom: none;
+  text-align: left;
+}
+.type6 .comPopupInfo .list-02 div {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 2.5375rem;
+}
+.type6 .comPopupInfo .list-02 textarea {
+  width: 97%;
+  height: 9.375rem;
+  padding: 0.625rem;
+  line-height: 1.2rem;
+  margin-top: 0.5rem;
+}
+.type5 .comPopupInfo {
+  background: #fff !important;
+}
+
+.type5 .comPopupInfo .list-01 strong {
+  font-weight: bold;
+}
+
+.type5 .comPopupInfo .list-02 {
+  margin-top: 1.25rem;
+}
+
+.type5 .comPopupInfo .list-02 li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4375rem;
+}
+
+.type5 .comPopupInfo .list-02 li label {
+  flex: 0 0 15%;
+}
+
+.type5 .comPopupInfo .list-01 li:nth-child(1) {
+  padding-bottom: 0 !important;
+}
+
+.type6 .comPopupInfo {
+  background: #fff;
+}
+
+.type6 .list-01 {
+  padding: 1.375rem 0;
+  padding-bottom: 0 !important;
+}
+
+.type6 .comPopupInfo .list-01 li:nth-child(1) {
+  font-size: 1.6rem !important;
+}
+
+.type5 .comPopupInfo .list-01 li:nth-child(2) p {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.type6 .comPopupInfo .list-02 textarea {
+  border: 1px solid #aaa;
+  color: #333;
+  font-weight: 400;
+}
+
+.type6 .comPopupInfo .list-02 form {
+  padding-left: 2.6rem !important;
+}
+
+.type6 .comPopupInfo .list-02 form label,
+.type6 .comPopupInfo input[type=submit] {
+  cursor: pointer;
 }

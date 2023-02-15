@@ -28,6 +28,9 @@
   <!-- popup div에 data-popup="팝업 고유 ID 값"으로 popup button과 popup div에 매칭되는 같은 값을 넣어준다 -->
   <button type="button" class="comBtn modalBtn" data-id="alert5" data-popup="accessibility">접근성 팝업</button>
 
+  <!-- 강좌만족도조사 -->
+  <button type="button" class="comBtn modalBtn" data-id="alert6">설문 미리보기</button>
+
   <!-- 담당자 찾기 팝업 -->
   <div class="comPopupWrap" id="managerSearchPop">
     <div class="dim"></div>
@@ -388,6 +391,128 @@
     </div>
   </div>
   <!-- 접근성 팝업  eee-->
+
+  <!-- 강좌 만족도 조사 팝업 -->
+  <div class="comPopupWrap type6" id="alert6">
+    <div class="dim"></div>
+    <div class="comPopupContainer">
+      <div class="comPopupBox">
+        <div class="comPopupHeader" tabindex="0">
+          <h2>강좌 만족도 조사</h2>
+        </div>
+        <div class="comPopupInfo" style="background: #fff;">
+          <ul class="list-01">
+            <li style="font-weight:bold">
+              강좌 만족도조사
+            </li>
+            <li>
+              강좌명 : 푸드테라피-돌봄교육지도자 전문연수 <br>
+              교육기간 : 2022-11-01 ~ 2022-11-10
+            </li>
+            <li>
+              <ul class="list-02">
+                <li>
+                  <p>
+                    <span>
+                      질문 1)
+                    </span>
+                    강좌의 교육은 전반적으로 만족하셨습니까?
+                  </p>
+                  <div>
+                    <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                    <label for="very-satisfied">매우만족</label><br>
+
+                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                    <label for="satisfied">만족</label><br>
+
+                    <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
+                      value="neither-dissatisfied-nor-satisfied">
+                    <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
+
+                    <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                    <label for="dissatisfied">불만족</label><br>
+
+                    <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+                    <label for="very-dissatisfied">매우 불만족</label><br>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <span>
+                      질문 2)
+                    </span>
+                    교육에서 활용한 교육방법(강의, 시청각, 교재, 실습 등)은 적절했습니까?
+                  </p>
+                  <div>
+                    <input type="radio" id="very-satisfied2" name="satisfaction2" value="very-satisfied2">
+                    <label for="very-satisfied2">매우만족</label><br>
+
+                    <input type="radio" id="satisfied2" name="satisfaction2" value="satisfied2">
+                    <label for="satisfied2">만족</label><br>
+
+                    <input type="radio" id="neither-dissatisfied-nor-satisfied2" name="satisfaction2"
+                      value="neither-dissatisfied-nor-satisfied2">
+                    <label for="neither-dissatisfied-nor-satisfied2">보통</label><br>
+
+                    <input type="radio" id="dissatisfied2" name="satisfaction2" value="dissatisfied2">
+                    <label for="dissatisfied2">불만족</label><br>
+
+                    <input type="radio" id="very-dissatisfied2" name="satisfaction2" value="very-dissatisfied2">
+                    <label for="very-dissatisfied2">매우 불만족</label><br>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <span>
+                      질문 3)
+                    </span>
+                    교육 강사가 역량과 전문성을 갖추었습니까?
+                  </p>
+                  <div>
+                    <input type="radio" id="very-satisfied3" name="satisfaction3" value="very-satisfied3">
+                    <label for="very-satisfied3">매우만족</label><br>
+
+                    <input type="radio" id="satisfied3" name="satisfaction3" value="satisfied3">
+                    <label for="satisfied3">만족</label><br>
+
+                    <input type="radio" id="neither-dissatisfied-nor-satisfied3" name="satisfaction3"
+                      value="neither-dissatisfied-nor-satisfied3">
+                    <label for="neither-dissatisfied-nor-satisfied3">보통</label><br>
+
+                    <input type="radio" id="dissatisfied3" name="satisfaction3" value="dissatisfied3">
+                    <label for="dissatisfied3">불만족</label><br>
+
+                    <input type="radio" id="very-dissatisfied3" name="satisfaction3" value="very-dissatisfied3">
+                    <label for="very-dissatisfied2">매우 불만족</label><br>
+                  </div>
+                </li>
+                <!-- 주관식 class short-form 추가 -->
+                <li class="short-form">
+                  <p>
+                    <label for="a7">
+                      <span>
+                        질문 4)
+                      </span>
+                      강좌에 대한 개선의견, 불만, 칭찬 등 하고 싶은 말씀을 자유롭게 작성해 주세요. (최대 500자 이내)</label>
+                  </p>
+                  <textarea name="" id="a7" cols="30" rows="10"></textarea>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="flex">
+            <input type="submit" value="제출하기" class="comBtn bgMain sizeLg">
+          </div>
+        </div>
+
+        <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
+        <button type="button" class="popClose accPopClose" popup-close="accessibility"></button>
+      </div>
+    </div>
+  </div>
+  <!-- 강좌 만족도 조사 팝업  eee-->
+
+
 
 
   <script>
