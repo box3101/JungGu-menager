@@ -1775,3 +1775,558 @@ margin: 0 2px!important;
   border-top: none !important;
   border-bottom: none !important;
 }
+
+/*=============================================
+=            스킨변경 칼라 선택            =
+=============================================*/
+
+ /* TODO BODY ADD CLASS 따라서 색상 변경 */
+
+ body.Basic{
+  /* TODO 원하는 색상 hsla값 넣어주세요 */
+  --basic-color: hsla(201,100%,41%,1);
+
+  /* TODO 공통: Hsla 세번째 인자값 위에서 -10% 빼주세요 */
+  --basic-color-secondary :  hsla(213,100%,31%,1);
+}
+body.Purple{
+  --basic-color: hsla(284,52%,61%,1);
+  /* TODO 공통: 서브 color Hsla 세번째 인자값 위에서 -20% 빼주세요 */
+  --basic-color-secondary: hsla(296,51%,36%,1);
+}
+
+body.Orange{
+  --basic-color: hsla(11,79%,57%,1);
+  /* TODO 공통: 서브 color Hsla 세번째 인자값 위에서 -20% 빼주세요 */
+  --basic-color-secondary: hsla(23,79%,37%,1);
+}
+
+body.Green{
+  --basic-color: hsla(94,71%,44%,1);
+  /* TODO 공통: 서브 color Hsla 세번째 인자값 위에서 -20% 빼주세요 */
+  --basic-color-secondary: hsla(94,71%,24%,1);
+}
+
+body.Yellow{
+  --basic-color: hsla(42, 100%, 51%,1);
+  /* TODO 공통: 서브 color Hsla 세번째 인자값 위에서 -20% 빼주세요 */
+  --basic-color-secondary: hsla(42, 100%, 31%,1);
+}
+
+.cusTomUi{
+  padding: 48px 15px;
+  background: #fff;
+}
+.searchBox{
+  padding: 13px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  text-align: center;
+}
+.searchBox__inner{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.searchBox__select{
+  width: 150px;
+  height: 33px;
+  font-size: 15px;
+  color: #555555;
+  border-radius: 5px;
+  border: 1px solid #B5B5B5;
+}
+.searchBox__input{
+  width: 450px;
+  height: 33px;
+  font-size: 15px;
+  color: #555555;
+  border-radius: 5px;
+  border: 1px solid #B5B5B5;
+}
+.searchBox__btn{
+  width: 90px;
+  height: 34px;
+  background: var(--basic-color-secondary);
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid var(--basic-color-secondary);
+  font-size: 16px;
+  font-weight: bold;
+}
+.comSearchBox .txt span{
+  display: inline-block;
+  color: var(--basic-color-secondary);
+  font-weight: bold;
+}
+.comTable-3{
+  table-layout: fixed;
+  border-top: none;
+}
+.comTable-3 th, .comTable-3 td{
+  height: 50px;
+  vertical-align: middle;
+  border: 1px solid #DEDEDE;
+  text-align: center;
+  font-size: 15px;
+  color: #555555;
+}
+.comTable-3 td a, .comTable-3 td span{
+  text-align: center;
+  font-size: 15px;
+  color: #555555;
+  text-align: left;
+  padding-bottom: 0!important;
+
+}
+.comTable-3 td a:hover{
+  color: var(--basic-color);
+}
+.comTable-3 td a .dib{
+  display: inline-block;
+}
+.comTable-3 .cRed{
+  display: inline-block;
+  color: #FF3000;
+  font-weight: bold;
+}
+.comTable-3 td.left{
+  text-align: left;
+  padding-left: 10px;
+}
+.comTable-3 th{
+  background: var(--basic-color);
+  color: #fff;
+}
+.cusTomUi .customPageNumberBtn.on{
+  color: var(--basic-color)!important;
+  font-weight: bold;
+  position: relative;
+  top: -0.5px;
+  font-size: 14px;
+}
+.cusTomUi .customPageNumberBtn{
+  font-size: 14px;
+}
+.cusTomUi .customPageNumberBtn:hover{
+  color: var(--basic-color) !important;
+}
+.cusTomUi .gridContainer{
+  position: relative;
+}
+.cusTomUi .botSelectBox{
+  position: absolute;
+  left: 22px;
+  bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2D2D2D;
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+  border: 1px solid #555555;
+  color: #555555;
+  font-size: 15px;
+  width: 74px;height: 30px;
+  color: #2D2D2D;
+}
+.cusTomUi .pageNumber{
+    position: absolute;
+    right: 22px;
+    bottom: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D2D2D;
+    display: flex;
+    gap: 5px;
+}
+.cusTomUi .comBtn2{
+  position: absolute;
+  right: 22px;
+  bottom: -35px;
+  background: var(--basic-color-secondary);
+  border: 1px solid var(--basic-color-secondary);
+  border-radius: 5px;
+  color: #fff;
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.4s;
+  top: auto;
+}
+.cusTomUi .comBtn2:hover{
+  background: #fff;
+  color: var(--basic-color-secondary);
+}
+.cusTomUi .tbl-type02 th{
+  text-align: left;
+}
+.cusTomUi table td input[type="checkbox"]:first-child+label, table td input[type="checkbox"]:first-child+input[type="hidden"]+label{
+  font-size: 14px;
+}
+.cusTomUi .comTable-3.left td{text-align: left;}
+.cusTomUi .control{
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.cusTomUi .comfile{
+  display: block;
+  visibility: hidden;
+  position: absolute;
+}
+.cusTomUi .inputGroup{
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.cusTomUi .inputGroup .comBtn{
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+}
+.cusTomUi .hashTag{
+  position: relative;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid #aaa;
+}
+.cusTomUi .tagWrap{
+  position: relative;
+}
+.cusTomUi .hashTag .tag{
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding:3px 7px;
+  padding-right: 35px;
+  border: 1px solid #C6E0FF;
+  box-sizing: border-box;
+  background: #C6E0FF;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.cusTomUi .hashTag .close2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  cursor: pointer;
+}
+.cusTomUi .totalNum{
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.cusTomUi .totalNum span{
+  color: var(--basic-color-secondary);
+  font-weight: bold;
+  display: inline-block;
+}
+.cusTomUi .tbl-type02{
+  border-top: 0;
+}
+.cusTomUi.pt10{
+  padding-top: 10px;
+}
+.cusTomUi.pt20{
+  padding-top: 20px;
+}
+.cusTomUi .tbl-bottom{}
+.cusTomUi .tbl-bottom.right .tbl-btn2{
+  justify-content: flex-end;
+  gap: 10px;
+}
+.cusTomUi .tbl-bottom .tbl-btn2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cusTomUi .tbl-bottom .tbl-btn2 .comBtn{
+  display: inline-block;
+  background: var(--basic-color-secondary);
+  border: 1px solid var(--basic-color-secondary);
+  border-radius: 5px;
+  color: #fff;
+  width: 120px;
+  height: 45px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.cusTomUi .tbl-bottom .tbl-btn2 .comBtn:hover{
+  background: #fff;
+  color: var(--basic-color-secondary)!important;
+}
+.cusTomUi .tbl-bottom .tbl-btn2 .comBtn.bgGray{
+  background: #555555;
+  border: 1px solid #555;
+}
+.cusTomUi .tbl-bottom .tbl-btn2 .comBtn.bgGray:hover{
+  background: #fff;
+  color: #555!important;
+}
+.cusTomUi .flexColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.cusTomUi .comtable-2 th,.comtable-2 td{
+  border: 1px solid #DEDEDE;
+}
+.cusTomUi label.container{
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  user-select: none;
+}
+.cusTomUi label.container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.cusTomUi label.container .checkmark{
+  position: absolute;
+  top: 60%; transform: translateY(-50%);
+  left: 0;height: 15px;width: 15px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  padding-left: 0;
+}
+.cusTomUi label.container:hover .checkmark{
+  background: #aaa;
+}
+.cusTomUi label.container input:checked ~ .checkmark{
+  background: var(--basic-color);
+  border: 1px solid var(--basic-color);
+}
+.cusTomUi label.container .checkmark::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 1px;width: 3px;height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* Customize the label (the container) */
+.isRadio {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.isRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.isRadio .checkmark {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  padding-left: 0;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.isRadio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.isRadio input:checked ~ .checkmark {
+  background-color: var(--basic-color);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.isRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.isRadio .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+.isRadioWrap{
+  display: flex;
+  gap:15px;
+}
+.cusTomUi .input-file{
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  padding: 5px 15px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+}
+.cusTomUi input[type="file"]{
+  height: 30px; line-height: 30px;
+  display: none;
+}
+.file-choose-btn{
+  position: absolute;
+  top: -1px; right: 0;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px!important;
+}
+.cusTomUi .comAddLine .comBtn.btn-bg-red{
+  background: #555555!important;
+  border: 1px solid #555555!important;
+}
+.cusTomUi .btn-bg-red{
+  background: #555555!important;
+}
+
+
+
+
+.cusTomUi .oneLine .flex{
+  display: flex!important;
+  align-items: center;
+}
+.cusTomUi .cBlue{
+  color: #00489E;
+  font-weight: bold;
+}
+
+
+/* 대시보드 */
+.dashboard{
+  padding: 30px 0;
+}
+.widgetWrap{
+  display: flex;
+  gap:40px;
+  margin-top: 20px;
+}
+.widgetWrap .widget{
+  flex:1;
+}
+.widgetWrap .widget .chart{
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  height: 250px;
+}
+.widgetWrap .widget .chart.num{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  font-size: 40px;
+  color: #DDC728;
+  font-weight: bold;
+}
+.widgetWrap .widget .chart.num span{
+  font-size: 16px;
+  color: #333;
+  position: relative;left: 8px;top: 8px;
+}
+.widgetWrap .widget h2{
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+.dashboard .chart{
+  text-align: center;
+}
+.dashboard__row{
+  margin-top: 15px;
+}
+.dashboard .comTable-1{
+  margin-top: 7px;
+}
+.dashboard .comTable-1 th,.dashboard .comTable-1 td{
+  height: 37px;
+  min-height: 37px;
+  line-height: 1.5;
+}
+.dashboard .comTitWrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+  color: #333;
+}
+.dashboard .comTitWrap .comTit{
+  position: relative;
+  padding-left: 9px;
+  font-weight: bold;
+  color:#000;
+}
+.dashboard .comTitWrap .comTit span{
+  font-weight: bold;
+  color: #2d7ec0;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.dashboard .comTitWrap .comTit::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px; height: 100%;
+  background: #333;
+  display: inline-block;
+}
+.dashboard .comTitWrap .selectWrap{
+  display: flex;
+  gap:10px;
+}
+.dashboard .comTitWrap .selectWrap select{
+  width: 200px;
+}
+/* 대시보드 eee */
