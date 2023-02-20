@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>성과관리 시스템 + CMS</title>
+  <link rel="stylesheet" type="text/css" href="../css/smoothness/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/ui.jqgrid.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" type="text/css" href="../css/common3.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../css/contents.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="../css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/ui.css">
+  <script type="text/javascript" src="/irmsm/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/jquery.form-validator.min.js"></script>
+
+  <script type="text/javascript" src="/irmsm/js/parsley/parsley.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/parsley/i18n/ko.js"></script>
+
+  <script type="text/javascript" src="/irmsm/js/jquery.i18n.properties.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/i18n/grid.locale-ko.js"></script>
+  <script type="text/javascript" src="/irmsm/js/jquery.jqGrid.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="/irmsm/js/common.js"></script>
+  <script type="text/javascript" src="/irmsm/js/commonEstn.js"></script>
+  <script type="text/javascript" src="/irmsm/js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="/irmsm/js/layout/common.js"></script>
+  <script type="text/javascript" src="/irmsm/js/Chart.bundle.min.js"></script>
+  <script src="../js/jquery.js"></script>
+
+  <style type="text/css">
+    /* Chart.js */
+    @-webkit-keyframes chartjs-render-animation {
+      from {
+        opacity: 0.99
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes chartjs-render-animation {
+      from {
+        opacity: 0.99
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .chartjs-render-monitor {
+      -webkit-animation: chartjs-render-animation 0.001s;
+      animation: chartjs-render-animation 0.001s;
+    }
+  </style>
+
+  <script type="text/javascript" src="/irmsm/js/select2.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/handlebars.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/tinymce/js/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript" src="/irmsm/js/contents.js"></script>
+  <script type="text/javascript" src="/irmsm/js/echarts.js"></script>
+  <link rel="stylesheet" type="text/css" href="/irmsm/js/datetimepicker/build/jquery.datetimepicker.min.css">
+  <script type="text/javascript" src="/irmsm/js/datetimepicker/build/jquery.datetimepicker.full.js"></script>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="/irmsm/assets/vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/irmsm/assets/vendor/hover/hover.css">
+  <link rel="stylesheet" href="/irmsm/assets/vendor/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/irmsm/assets/vendor/magnific-popup/magnific-popup.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="/irmsm/assets/stylesheets/theme.css">
+
+  <!-- Skin CSS -->
+  <link rel="stylesheet" href="/irmsm/assets/stylesheets/skins/default.css">
+
+  <!-- Theme Custom CSS -->
+  <link rel="stylesheet" href="/irmsm/assets/stylesheets/theme-custom.css">
+
+  <!-- Vendor -->
+  <!--
+    <script src="/assets/vendor/jquery/jquery.js"></script>
+    <script src="/assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+-->
+  <script src="/irmsm/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+  <script src="/irmsm/assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+  <script src="/irmsm/assets/vendor/jquery.validate.min.js"></script>
+  <script src="/irmsm/assets/vendor/jquery-appear/jquery-appear.js"></script>
+  <script src="/irmsm/assets/vendor/bootstrap/js/bootstrap.js"></script>
+  <!-- <script src="/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> -->
+  <script src="/irmsm/assets/vendor/nanoscroller/nanoscroller.js"></script>
+  <script src="/irmsm/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+
+
+  <!-- Custom -->
+  <script src="/irmsm/assets/javascripts/custom/human.custom.class.js"></script>
+  <script src="/irmsm/assets/javascripts/custom/human.function.js"></script>
+  <script src="/irmsm/assets/javascripts/custom/human.call.cms.func.js"></script>
+  <script src="/irmsm/assets/javascripts/custom/jquery.validation.rule.js"></script>
+
+</head>
+
+<body style="">
+  <div id="wrap">
+    <input type="hidden" id="defaultCategoryPath" value="1>[국문]">
+    <!-- 상단 시작 -->
+    <div id="hd">
+      <h1 id="hd_h1">bizGATE CMS+ 콘텐츠관리시스템</h1>
+      <div id="skip_to_container"><a href="#content">컨텐츠 바로가기</a></div>
+      <div class="head">
+        <div class="logo">
+          <a href="/irmsm/main.do"><img src="/irmsm/img/white.png" alt="성과관리시스템 + CMS"></a>
+        </div>
+        <div class="country">
+          <ul>
+            <li><a href="#" onclick="changeLang('ko');return false;" class="active">한글</a></li>
+          </ul>
+        </div>
+        <div class="tnb">
+          <ul>
+            <li><a href="#" class="fir">매뉴얼</a></li>
+            <!--
+                    <li><a href="#" class="two">용어사전</a></li>
+                    -->
+            <li><a href="#" class="mem-modify mr10"><img src="/irmsm/images/common/ico-tnb03.png" class="mr10"
+                  alt="정보수정">관리자</a>
+              <a href="#" class="mem-logout ml10" onclick="doLogout();return false;"><img
+                  src="/irmsm/images/common/ico-tnb04.png" alt="로그아웃"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 상단 끝 -->
+    <!-- 콘텐츠 시작 -->
+    <div id="container">
+      <div id="gnb" style="width: 270px;">
+        <h2 class="sound_only">메뉴</h2>
+        <ul>
+          <li><a href="#" class="gnb01 active">전체메뉴</a>
+            <div class="menu01 depth2 active">
+              <div id="menu" class="menu"
+                style="background: url(&quot;/irmsm/images/common/gnb-menu-bg.png&quot;) no-repeat rgb(0, 124, 178); height: 859px;">
+                <p class="allmenu"><a href="#"
+                    style="background: #82d8fc; border: 1px solid #000;"><span>전체메뉴</span></a></p>
+                <div class="am-bx" style="display: none;">
+                  <div id="allMenu" class="am-bx2">
+
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="2">분류체계관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1544">사이트관리</a></th>
+                            <td>
+                              <a href="/irmsm/main.do#PGM1572"><span>사이트조회</span></a>
+                              <a href="/irmsm/main.do#PGM1586"><span>카테고리순서조정</span></a>
+                              <a href="/irmsm/main.do#PGM1587"><span>카테고리등록</span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1545">카테고리관리</a></th>
+                            <td>
+                              <a href="/irmsm/main.do#PGM1583"><span>카테고리순서조정</span></a>
+                              <a href="/irmsm/main.do#PGM1573"><span>카테고리이동</span></a>
+                              <a href="/irmsm/main.do#PGM1584"><span>카테고리등록</span></a>
+                              <a href="/irmsm/main.do#PGM1585"><span>폴더맵이동</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="5">배포관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1551">배포채널관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1552">배포서버관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1553">배포테이블관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1554">배포테이블컬럼관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1555">배포테이블그룹관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="3">배포모니터링관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1576">배포실패콘텐츠</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1575">콘텐츠배포이력</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1577">배포대기</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="2">템플릿관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1557">입력템플릿관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1556">표현템플릿관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup">워크플로우관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1568">승인프로세스관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="5">콘텐츠관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1589">팝업 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1590">배너 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1571">콘텐츠관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1570">콘텐츠 검색/통계</a></th>
+                            <td>
+                              <a href="/irmsm/main.do#PGM1588"><span>콘텐츠 통계</span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1569">작업목록</a></th>
+                            <td>
+                              <a href="/irmsm/main.do#PGM1581"><span>작업중 콘텐츠</span></a>
+                              <a href="/irmsm/main.do#PGM1578"><span>승인요청 콘텐츠</span></a>
+                              <a href="/irmsm/main.do#PGM1579"><span>검토대상 콘텐츠</span></a>
+                              <a href="/irmsm/main.do#PGM1580"><span>승인반려 콘텐츠</span></a>
+                              <a href="/irmsm/main.do#PGM1582"><span>콘텐츠 승인결과</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="6">사용자관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1562">프론트사용자관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1563">CMS사용자관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1561">그룹관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1560">그룹/사용자 매핑관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1559">그룹 카테고리권한관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1558">그룹메뉴권한관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="3">시스템관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1566">공통코드관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1565">메뉴관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1620">접속로그현황</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="5">표준성과 관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1592">표준성과 관리(국내)</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1629">표준성과 관리(국제)</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1607">표준성과 최종승인</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1593">통계현황</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1627">표준성과 우수사례</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="2">전문가 및 수행협력기관</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1605">전문가(개인) 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1606">수행협력기관 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="6">표준화동향조사 관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1602">표준화동향조사 모집공고 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1603">표준화동향조사 모집신청 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1608">표준화동향조사 수행공고 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1612">표준화동향조사 수행신청 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1619">표준화동향조사 결과물 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1613">표준화동향조사 보고서 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="6">STD-R&amp;D 관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1610">STD-R&amp;D 모집공고 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1611">STD-R&amp;D 모집신청 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1615">STD-R&amp;D 수행공고 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1616">STD-R&amp;D 수행신청 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1621">STD-R&amp;D 결과물 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1614">STD-R&amp;D 보고서 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup" rowspan="3">게시판관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1618">게시판관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1626">입찰 및 공고 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1628">홍보자료실 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup">교육 관리</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1623">교육 콘텐츠 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="am-tbl">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="rowgroup">메일 발송</th>
+                            <th scope="row"><a href="/irmsm/main.do#PGM1625">메일 발송 관리</a></th>
+                            <td>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <ul class="menu2" style="background: #0195d3;">
+                  <li id="menu_PGM1543">
+                    <a href="/irmsm" onclick="return false;"><span>분류체계관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1544">
+                        <a href="/irmsm/main.do#PGM1544"><span>사이트관리</span></a>
+                        <ul class="menu4hide"
+                          style="background: #007cb2 url(/irmsm/images/common/gnb-menu-bg2.png) no-repeat;">
+                          <li id="menu_PGM1572">
+                            <a href="/irmsm/main.do#PGM1572" class="hide"><span>사이트조회</span></a>
+                          </li>
+                          <li id="menu_PGM1586">
+                            <a href="/irmsm/main.do#PGM1586" class="hide"><span>카테고리순서조정</span></a>
+                          </li>
+                          <li id="menu_PGM1587">
+                            <a href="/irmsm/main.do#PGM1587" class="hide"><span>카테고리등록</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu_PGM1545">
+                        <a href="/irmsm/main.do#PGM1545"><span>카테고리관리</span></a>
+                        <ul class="menu4hide"
+                          style="background: #007cb2 url(/irmsm/images/common/gnb-menu-bg2.png) no-repeat;">
+                          <li id="menu_PGM1583">
+                            <a href="/irmsm/main.do#PGM1583" class="hide"><span>카테고리순서조정</span></a>
+                          </li>
+                          <li id="menu_PGM1573">
+                            <a href="/irmsm/main.do#PGM1573" class="hide"><span>카테고리이동</span></a>
+                          </li>
+                          <li id="menu_PGM1584">
+                            <a href="/irmsm/main.do#PGM1584" class="hide"><span>카테고리등록</span></a>
+                          </li>
+                          <li id="menu_PGM1585">
+                            <a href="/irmsm/main.do#PGM1585" class="hide"><span>폴더맵이동</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1546">
+                    <a href="/irmsm" onclick="return false;"><span>배포관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1551">
+                        <a href="/irmsm/main.do#PGM1551"><span>배포채널관리</span></a>
+                      </li>
+                      <li id="menu_PGM1552">
+                        <a href="/irmsm/main.do#PGM1552"><span>배포서버관리</span></a>
+                      </li>
+                      <li id="menu_PGM1553">
+                        <a href="/irmsm/main.do#PGM1553"><span>배포테이블관리</span></a>
+                      </li>
+                      <li id="menu_PGM1554">
+                        <a href="/irmsm/main.do#PGM1554" class="hide"><span>배포테이블컬럼관리</span></a>
+                      </li>
+                      <li id="menu_PGM1555">
+                        <a href="/irmsm/main.do#PGM1555"><span>배포테이블그룹관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1574">
+                    <a href="/irmsm" onclick="return false;"><span>배포모니터링관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1576">
+                        <a href="/irmsm/main.do#PGM1576"><span>배포실패콘텐츠</span></a>
+                      </li>
+                      <li id="menu_PGM1575">
+                        <a href="/irmsm/main.do#PGM1575"><span>콘텐츠배포이력</span></a>
+                      </li>
+                      <li id="menu_PGM1577">
+                        <a href="/irmsm/main.do#PGM1577"><span>배포대기</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1547">
+                    <a href="/irmsm" onclick="return false;" class="active"><span>템플릿관리</span></a>
+                    <ul class="menu3 active" style="background: #0087bf;">
+                      <li id="menu_PGM1557">
+                        <a href="/irmsm/main.do#PGM1557" class="active"><span>입력템플릿관리</span></a>
+                      </li>
+                      <li id="menu_PGM1556">
+                        <a href="/irmsm/main.do#PGM1556"><span>표현템플릿관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1548">
+                    <a href="/irmsm" onclick="return false;" class=""><span>워크플로우관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1568" class="currentMenu active">
+                        <a href="/irmsm/main.do#PGM1568" class="active"><span>승인프로세스관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1549">
+                    <a href="/irmsm" onclick="return false;"><span>콘텐츠관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1589">
+                        <a href="/irmsm/main.do#PGM1589"><span>팝업 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1590">
+                        <a href="/irmsm/main.do#PGM1590"><span>배너 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1571">
+                        <a href="/irmsm/main.do#PGM1571"><span>콘텐츠관리</span></a>
+                      </li>
+                      <li id="menu_PGM1570">
+                        <a href="/irmsm/main.do#PGM1570"><span>콘텐츠 검색/통계</span></a>
+                        <ul class="menu4hide"
+                          style="background: #007cb2 url(/irmsm/images/common/gnb-menu-bg2.png) no-repeat;">
+                          <li id="menu_PGM1588">
+                            <a href="/irmsm/main.do#PGM1588" class="hide"><span>콘텐츠 통계</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu_PGM1569">
+                        <a href="/irmsm" onclick="return false;"><span>작업목록</span></a>
+                        <ul class="menu4"
+                          style="background: #007cb2 url(/irmsm/images/common/gnb-menu-bg2.png) no-repeat;">
+                          <li id="menu_PGM1581">
+                            <a href="/irmsm/main.do#PGM1581"><span>작업중 콘텐츠</span></a>
+                          </li>
+                          <li id="menu_PGM1578">
+                            <a href="/irmsm/main.do#PGM1578"><span>승인요청 콘텐츠</span></a>
+                          </li>
+                          <li id="menu_PGM1579">
+                            <a href="/irmsm/main.do#PGM1579"><span>검토대상 콘텐츠</span></a>
+                          </li>
+                          <li id="menu_PGM1580">
+                            <a href="/irmsm/main.do#PGM1580"><span>승인반려 콘텐츠</span></a>
+                          </li>
+                          <li id="menu_PGM1582">
+                            <a href="/irmsm/main.do#PGM1582"><span>콘텐츠 승인결과</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1550">
+                    <a href="/irmsm" onclick="return false;"><span>사용자관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1562">
+                        <a href="/irmsm/main.do#PGM1562"><span>프론트사용자관리</span></a>
+                      </li>
+                      <li id="menu_PGM1563">
+                        <a href="/irmsm/main.do#PGM1563"><span>CMS사용자관리</span></a>
+                      </li>
+                      <li id="menu_PGM1561">
+                        <a href="/irmsm/main.do#PGM1561"><span>그룹관리</span></a>
+                      </li>
+                      <li id="menu_PGM1560">
+                        <a href="/irmsm/main.do#PGM1560"><span>그룹/사용자 매핑관리</span></a>
+                      </li>
+                      <li id="menu_PGM1559">
+                        <a href="/irmsm/main.do#PGM1559"><span>그룹 카테고리권한관리</span></a>
+                      </li>
+                      <li id="menu_PGM1558">
+                        <a href="/irmsm/main.do#PGM1558"><span>그룹메뉴권한관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1564">
+                    <a href="/irmsm" onclick="return false;"><span>시스템관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1566">
+                        <a href="/irmsm/main.do#PGM1566"><span>공통코드관리</span></a>
+                      </li>
+                      <li id="menu_PGM1565">
+                        <a href="/irmsm/main.do#PGM1565"><span>메뉴관리</span></a>
+                      </li>
+                      <li id="menu_PGM1620">
+                        <a href="/irmsm/main.do#PGM1620"><span>접속로그현황</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1591">
+                    <a href="/irmsm" onclick="return false;"><span>표준성과 관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1592">
+                        <a href="/irmsm/main.do#PGM1592"><span>표준성과 관리(국내)</span></a>
+                      </li>
+                      <li id="menu_PGM1629">
+                        <a href="/irmsm/main.do#PGM1629"><span>표준성과 관리(국제)</span></a>
+                      </li>
+                      <li id="menu_PGM1607">
+                        <a href="/irmsm/main.do#PGM1607"><span>표준성과 최종승인</span></a>
+                      </li>
+                      <li id="menu_PGM1593">
+                        <a href="/irmsm/main.do#PGM1593"><span>통계현황</span></a>
+                      </li>
+                      <li id="menu_PGM1627">
+                        <a href="/irmsm/main.do#PGM1627"><span>표준성과 우수사례</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1604">
+                    <a href="/irmsm" onclick="return false;"><span>전문가 및 수행협력기관</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1605">
+                        <a href="/irmsm/main.do#PGM1605"><span>전문가(개인) 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1606">
+                        <a href="/irmsm/main.do#PGM1606"><span>수행협력기관 관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1601">
+                    <a href="/irmsm" onclick="return false;"><span>표준화동향조사 관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1602">
+                        <a href="/irmsm/main.do#PGM1602"><span>표준화동향조사 모집공고 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1603">
+                        <a href="/irmsm/main.do#PGM1603"><span>표준화동향조사 모집신청 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1608">
+                        <a href="/irmsm/main.do#PGM1608"><span>표준화동향조사 수행공고 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1612">
+                        <a href="/irmsm/main.do#PGM1612"><span>표준화동향조사 수행신청 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1619">
+                        <a href="/irmsm/main.do#PGM1619"><span>표준화동향조사 결과물 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1613">
+                        <a href="/irmsm/main.do#PGM1613"><span>표준화동향조사 보고서 관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1609">
+                    <a href="/irmsm" onclick="return false;"><span>STD-R&amp;D 관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1610">
+                        <a href="/irmsm/main.do#PGM1610"><span>STD-R&amp;D 모집공고 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1611">
+                        <a href="/irmsm/main.do#PGM1611"><span>STD-R&amp;D 모집신청 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1615">
+                        <a href="/irmsm/main.do#PGM1615"><span>STD-R&amp;D 수행공고 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1616">
+                        <a href="/irmsm/main.do#PGM1616"><span>STD-R&amp;D 수행신청 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1621">
+                        <a href="/irmsm/main.do#PGM1621"><span>STD-R&amp;D 결과물 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1614">
+                        <a href="/irmsm/main.do#PGM1614"><span>STD-R&amp;D 보고서 관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1617">
+                    <a href="/irmsm" onclick="return false;"><span>게시판관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1618">
+                        <a href="/irmsm/main.do#PGM1618"><span>게시판관리</span></a>
+                      </li>
+                      <li id="menu_PGM1626">
+                        <a href="/irmsm/main.do#PGM1626"><span>입찰 및 공고 관리</span></a>
+                      </li>
+                      <li id="menu_PGM1628">
+                        <a href="/irmsm/main.do#PGM1628"><span>홍보자료실 관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1622">
+                    <a href="/irmsm" onclick="return false;"><span>교육 관리</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1623">
+                        <a href="/irmsm/main.do#PGM1623"><span>교육 콘텐츠 관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu_PGM1624">
+                    <a href="/irmsm" onclick="return false;"><span>메일 발송</span></a>
+                    <ul class="menu3" style="background: #0087bf;">
+                      <li id="menu_PGM1625">
+                        <a href="/irmsm/main.do#PGM1625"><span>메일 발송 관리</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li id="scDeptTree"><a href="#" class="gnb02">분류체계</a>
+            <div class="menu02 depth2">
+              <div class="oga-menu" style="min-height: 859px;">
+                <p class="title">분류체계</p>
+                <div id="scDeptList" class="scDeptList oga-bx ogam" style="border: 1px solid; min-height: 804px;">
+                  <span>
+                    <div class="sch-oga" id="popFindScDeptList">
+                      <ul style="width:170px;background-color:white!important;border:1px solid #e1e1e1!important">
+                        <li class="liScDeptNm">
+                          <p><span>전체</span></p>
+                        </li>
+                        <li class="liScDeptList hide" style="display: none;">
+                          <div class="scDeptList oga-bx">
+                            <ul id="categoryTree">
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="liAc" style="display: none;"><input type="text" class="acInput"
+                            style="width:170px;height:26px;"></li>
+                        <li class="liAcList" style="display: none;">
+                          <div class="acList">
+                            <ul></ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <input type="hidden" id="findPopScDeptId" value="">
+                  </span>
+                  <ul id="categoryTree">
+                    <li class="scDept_S60 scDeptRoot hasChildSite"><a href="#" class="tree-folder active"><span
+                          onclick="setCategoryInfo(this, 'S60', '국가R&amp;D 산업표준(KS/ISO·IEC 등) 성과관리시스템', '', '60', '');return false;"
+                          data-sc_dept_id="S60">국가R&amp;D 산업표준(KS/ISO·IEC 등) 성과관리시스템</span></a>
+                      <ul class="upScDept_S60 open">
+                        <li class="scDept_600 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '600', 'TEST01', 'S60', '60', 'TEST01');return false;"
+                              data-sc_dept_id="600">TEST01</span></a>
+                          <ul class="upScDept_600 open">
+                            <li class="scDept_657 hasChild"><a href="#" class="tree-folder active"><span
+                                  onclick="setCategoryInfo(this, '657', '일반콘텐츠', '600', '60', 'TEST01 > 일반콘텐츠');return false;"
+                                  data-sc_dept_id="657">일반콘텐츠</span></a>
+                              <ul class="upScDept_657 open">
+                                <li class="scDept_685"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '685', '입력템플릿 테스트', '657', '60', 'TEST01 > 일반콘텐츠 > 입력템플릿 테스트');return false;"
+                                      data-sc_dept_id="685">입력템플릿 테스트</span></a></li>
+                                <li class="scDept_679"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '679', '입력템플릿 테스트2', '657', '60', 'TEST01 > 일반콘텐츠 > 입력템플릿 테스트2');return false;"
+                                      data-sc_dept_id="679">입력템플릿 테스트2</span></a></li>
+                                <li class="scDept_678"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '678', '표현템플릿 테스트', '657', '60', 'TEST01 > 일반콘텐츠 > 표현템플릿 테스트');return false;"
+                                      data-sc_dept_id="678">표현템플릿 테스트</span></a></li>
+                                <li class="scDept_683"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '683', '표현템플릿 테스트2', '657', '60', 'TEST01 > 일반콘텐츠 > 표현템플릿 테스트2');return false;"
+                                      data-sc_dept_id="683">표현템플릿 테스트2</span></a></li>
+                                <li class="scDept_684"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '684', '표현템플릿 테스트3', '657', '60', 'TEST01 > 일반콘텐츠 > 표현템플릿 테스트3');return false;"
+                                      data-sc_dept_id="684">표현템플릿 테스트3</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="scDept_675 hasChild"><a href="#" class="tree-folder active"><span
+                                  onclick="setCategoryInfo(this, '675', '게시판8(숫자)', '600', '60', 'TEST01 > 게시판8(숫자)');return false;"
+                                  data-sc_dept_id="675">게시판8(숫자)</span></a>
+                              <ul class="upScDept_675 open">
+                                <li class="scDept_676"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '676', '1', '675', '60', 'TEST01 > 게시판8(숫자) > 1');return false;"
+                                      data-sc_dept_id="676">1</span></a></li>
+                                <li class="scDept_604"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '604', '2', '675', '60', 'TEST01 > 게시판8(숫자) > 2');return false;"
+                                      data-sc_dept_id="604">2</span></a></li>
+                                <li class="scDept_605"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '605', '3', '675', '60', 'TEST01 > 게시판8(숫자) > 3');return false;"
+                                      data-sc_dept_id="605">3</span></a></li>
+                                <li class="scDept_606"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '606', '4', '675', '60', 'TEST01 > 게시판8(숫자) > 4');return false;"
+                                      data-sc_dept_id="606">4</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="scDept_682 hasChild"><a href="#" class="tree-folder active"><span
+                                  onclick="setCategoryInfo(this, '682', '게시판', '600', '60', 'TEST01 > 게시판');return false;"
+                                  data-sc_dept_id="682">게시판</span></a>
+                              <ul class="upScDept_682 open">
+                                <li class="scDept_649"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '649', '게시판1', '682', '60', 'TEST01 > 게시판 > 게시판1');return false;"
+                                      data-sc_dept_id="649">게시판1</span></a></li>
+                                <li class="scDept_650"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '650', '게시판2', '682', '60', 'TEST01 > 게시판 > 게시판2');return false;"
+                                      data-sc_dept_id="650">게시판2</span></a></li>
+                                <li class="scDept_651"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '651', '게시판3', '682', '60', 'TEST01 > 게시판 > 게시판3');return false;"
+                                      data-sc_dept_id="651">게시판3</span></a></li>
+                                <li class="scDept_652"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '652', '게시판4', '682', '60', 'TEST01 > 게시판 > 게시판4');return false;"
+                                      data-sc_dept_id="652">게시판4</span></a></li>
+                                <li class="scDept_653"><a href="#" class="tree-file pl32 active"><span
+                                      onclick="setCategoryInfo(this, '653', '게시판5', '682', '60', 'TEST01 > 게시판 > 게시판5');return false;"
+                                      data-sc_dept_id="653">게시판5</span></a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="scDept_567 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '567', 'TEST02', 'S60', '60', 'TEST02');return false;"
+                              data-sc_dept_id="567">TEST02</span></a>
+                          <ul class="upScDept_567 open">
+                            <li class="scDept_576 hasChild"><a href="#" class="tree-folder active"><span
+                                  onclick="setCategoryInfo(this, '576', '카테고리 TEST', '567', '60', 'TEST02 > 카테고리 TEST');return false;"
+                                  data-sc_dept_id="576">카테고리 TEST</span></a>
+                              <ul class="upScDept_576 open">
+                                <li class="scDept_577 hasChild"><a href="#" class="tree-folder active"><span
+                                      onclick="setCategoryInfo(this, '577', 'ISPARK', '576', '60', 'TEST02 > 카테고리 TEST > ISPARK');return false;"
+                                      data-sc_dept_id="577">ISPARK</span></a>
+                                  <ul class="upScDept_577 open">
+                                    <li class="scDept_578 hasChild"><a href="#" class="tree-folder active"><span
+                                          onclick="setCategoryInfo(this, '578', '공공금융', '577', '60', 'TEST02 > 카테고리 TEST > ISPARK > 공공금융');return false;"
+                                          data-sc_dept_id="578">공공금융</span></a>
+                                      <ul class="upScDept_578 open">
+                                        <li class="scDept_579"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '579', 'CMS', '578', '60', 'TEST02 > 카테고리 TEST > ISPARK > 공공금융 > CMS');return false;"
+                                              data-sc_dept_id="579">CMS</span></a></li>
+                                        <li class="scDept_580"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '580', 'TTA', '578', '60', 'TEST02 > 카테고리 TEST > ISPARK > 공공금융 > TTA');return false;"
+                                              data-sc_dept_id="580">TTA</span></a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="scDept_581 hasChild"><a href="#" class="tree-folder active"><span
+                                          onclick="setCategoryInfo(this, '581', 'ESM', '577', '60', 'TEST02 > 카테고리 TEST > ISPARK > ESM');return false;"
+                                          data-sc_dept_id="581">ESM</span></a>
+                                      <ul class="upScDept_581 open">
+                                        <li class="scDept_582"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '582', 'AI-RPA', '581', '60', 'TEST02 > 카테고리 TEST > ISPARK > ESM > AI-RPA');return false;"
+                                              data-sc_dept_id="582">AI-RPA</span></a></li>
+                                        <li class="scDept_583"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '583', 'Solution', '581', '60', 'TEST02 > 카테고리 TEST > ISPARK > ESM > Solution');return false;"
+                                              data-sc_dept_id="583">Solution</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="scDept_680 hasChild"><a href="#" class="tree-folder active"><span
+                                      onclick="setCategoryInfo(this, '680', '23 복사본2', '576', '60', 'TEST02 > 카테고리 TEST > 23 복사본2');return false;"
+                                      data-sc_dept_id="680">23 복사본2</span></a>
+                                  <ul class="upScDept_680 open">
+                                    <li class="scDept_681 hasChild"><a href="#" class="tree-folder active"><span
+                                          onclick="setCategoryInfo(this, '681', '23 복사본2의 카테고리', '680', '60', 'TEST02 > 카테고리 TEST > 23 복사본2 > 23 복사본2의 카테고리');return false;"
+                                          data-sc_dept_id="681">23 복사본2의 카테고리</span></a>
+                                      <ul class="upScDept_681 open">
+                                        <li class="scDept_686"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '686', '1', '681', '60', 'TEST02 > 카테고리 TEST > 23 복사본2 > 23 복사본2의 카테고리 > 1');return false;"
+                                              data-sc_dept_id="686">1</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="scDept_568"><a href="#" class="tree-file pl32 active"><span
+                                  onclick="setCategoryInfo(this, '568', 'asdasd', '567', '60', 'TEST02 > asdasd');return false;"
+                                  data-sc_dept_id="568">asdasd</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="scDept_603 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '603', 'TEST03', 'S60', '60', 'TEST03');return false;"
+                              data-sc_dept_id="603">TEST03</span></a>
+                          <ul class="upScDept_603 open">
+                            <li class="scDept_607"><a href="#" class="tree-file pl32 active"><span
+                                  onclick="setCategoryInfo(this, '607', '29', '603', '60', 'TEST03 > 29');return false;"
+                                  data-sc_dept_id="607">29</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="scDept_608 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '608', 'TEST04', 'S60', '60', 'TEST04');return false;"
+                              data-sc_dept_id="608">TEST04</span></a>
+                          <ul class="upScDept_608 open">
+                            <li class="scDept_609"><a href="#" class="tree-file pl32 active"><span
+                                  onclick="setCategoryInfo(this, '609', '31', '608', '60', 'TEST04 > 31');return false;"
+                                  data-sc_dept_id="609">31</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="scDept_610 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '610', 'TEST05', 'S60', '60', 'TEST05');return false;"
+                              data-sc_dept_id="610">TEST05</span></a>
+                          <ul class="upScDept_610 open">
+                            <li class="scDept_611 hasChild"><a href="#" class="tree-folder active"><span
+                                  onclick="setCategoryInfo(this, '611', '33', '610', '60', 'TEST05 > 33');return false;"
+                                  data-sc_dept_id="611">33</span></a>
+                              <ul class="upScDept_611 open">
+                                <li class="scDept_613 hasChild"><a href="#" class="tree-folder active"><span
+                                      onclick="setCategoryInfo(this, '613', '40', '611', '60', 'TEST05 > 33 > 40');return false;"
+                                      data-sc_dept_id="613">40</span></a>
+                                  <ul class="upScDept_613 open">
+                                    <li class="scDept_617"><a href="#" class="tree-file pl32 active"><span
+                                          onclick="setCategoryInfo(this, '617', '47', '613', '60', 'TEST05 > 33 > 40 > 47');return false;"
+                                          data-sc_dept_id="617">47</span></a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="scDept_620 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '620', 'TEST06', 'S60', '60', 'TEST06');return false;"
+                              data-sc_dept_id="620">TEST06</span></a>
+                          <ul class="upScDept_620 open">
+                            <li class="scDept_659 hasChild"><a href="#" class="tree-folder active"><span
+                                  onclick="setCategoryInfo(this, '659', 'TEST01_1', '620', '60', 'TEST06 > TEST01_1');return false;"
+                                  data-sc_dept_id="659">TEST01_1</span></a>
+                              <ul class="upScDept_659 open">
+                                <li class="scDept_660 hasChild"><a href="#" class="tree-folder active"><span
+                                      onclick="setCategoryInfo(this, '660', '999', '659', '60', 'TEST06 > TEST01_1 > 999');return false;"
+                                      data-sc_dept_id="660">999</span></a>
+                                  <ul class="upScDept_660 open">
+                                    <li class="scDept_662 hasChild"><a href="#" class="tree-folder active"><span
+                                          onclick="setCategoryInfo(this, '662', '9', '660', '60', 'TEST06 > TEST01_1 > 999 > 9');return false;"
+                                          data-sc_dept_id="662">9</span></a>
+                                      <ul class="upScDept_662 open">
+                                        <li class="scDept_666"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '666', '1', '662', '60', 'TEST06 > TEST01_1 > 999 > 9 > 1');return false;"
+                                              data-sc_dept_id="666">1</span></a></li>
+                                        <li class="scDept_667"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '667', '2', '662', '60', 'TEST06 > TEST01_1 > 999 > 9 > 2');return false;"
+                                              data-sc_dept_id="667">2</span></a></li>
+                                        <li class="scDept_668"><a href="#" class="tree-file pl32 active"><span
+                                              onclick="setCategoryInfo(this, '668', '3', '662', '60', 'TEST06 > TEST01_1 > 999 > 9 > 3');return false;"
+                                              data-sc_dept_id="668">3</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="scDept_688"><a href="#" class="tree-file pl32 active"><span
+                              onclick="setCategoryInfo(this, '688', '콘텐츠 테스트', 'S60', '60', '콘텐츠 테스트');return false;"
+                              data-sc_dept_id="688">콘텐츠 테스트</span></a></li>
+                        <li class="scDept_700 hasChild"><a href="#" class="tree-folder active"><span
+                              onclick="setCategoryInfo(this, '700', '사업소개', 'S60', '60', '사업소개');return false;"
+                              data-sc_dept_id="700">사업소개</span></a>
+                          <ul class="upScDept_700 open">
+                            <li class="scDept_704"><a href="#" class="tree-file pl32 active"><span
+                                  onclick="setCategoryInfo(this, '704', '표준성과전담기관', '700', '60', '사업소개 > 표준성과전담기관');return false;"
+                                  data-sc_dept_id="704">표준성과전담기관</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="scDept_702"><a href="#" class="tree-file pl32 active"><span
+                              onclick="setCategoryInfo(this, '702', '표준성과 정보', 'S60', '60', '표준성과 정보');return false;"
+                              data-sc_dept_id="702">표준성과 정보</span></a></li>
+                        <li class="scDept_703"><a href="#" class="tree-file pl32 active"><span
+                              onclick="setCategoryInfo(this, '703', '협력기관', 'S60', '60', '협력기관');return false;"
+                              data-sc_dept_id="703">협력기관</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="gnb03">즐겨찾기</a>
+            <div class="menu03 depth2">
+              <form id="bookmarkForm" name="bookmarkForm" action="/irmsm/main.do" method="post">
+                <div id="bookmark" class="menu"
+                  style="background: url(&quot;/irmsm/images/common/gnb-menu-bg.png&quot;) no-repeat rgb(0, 124, 178); height: 859px;">
+                  <p class="favo" style="background: #0195d3;"><a href="#" onclick="manageBookmark();return false;"
+                      style="background: #82d8fc; border: 1px solid #000;"><span>즐겨찾기 관리</span></a></p>
+                  <p id="favoBtns" class="favo-btn">
+                    <a href="#" onclick="deleteAllBookmarks();return false;">일괄삭제</a>
+                    <a href="#" onclick="deleteBookmark();return false;">선택삭제</a>
+                  </p>
+                  <ul class="active" style="background: rgb(1, 149, 211);">
+                    <li id="bookmark_PGM1617"><a href="/irmsm" onclick="return false;"><span>게시판관리</span></a>
+                      <ul class="active" style="background: rgb(0, 135, 191);">
+                        <li id="bookmark_PGM1618"><span><input type="checkbox" name="keys" value="PGM1618"> <a
+                              href="/irmsm/main.do#PGM1618">게시판관리</a></span></li>
+                        <li id="bookmark_PGM1626"><span><input type="checkbox" name="keys" value="PGM1626"> <a
+                              href="/irmsm/main.do#PGM1626">입찰 및 공고 관리</a></span></li>
+                        <li id="bookmark_PGM1628"><span><input type="checkbox" name="keys" value="PGM1628"> <a
+                              href="/irmsm/main.do#PGM1628">홍보자료실 관리</a></span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </li>
+          <div class="fniconbg">
+            <div class="fnicon">
+              <ul>
+                <li><a href="javascript:popNotice();" class="gnb04">공지/자료</a>
+                  <!-- <div class="menu04 depth2">
+                                <div class="menu" style="height: 944px;">
+                                </div>
+                            </div> -->
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </ul>
+        <a href="#" class="close">닫기</a>
+      </div>
+      <div id="contents" style="width: 1605px; min-height: 859px;">
+        <div id="nav" class="nav">
+          <ul>
+            <li><a href="#" class="home">홈</a></li>
+            <li class="active">대시보드
+            </li>
+          </ul>
+          <a id="bookmarkIcon" href="#" class="favo" onclick="addToBookmark();return false;">즐겨찾기</a>
+        </div>
+        <h3 class=""><span id="title">대시보드
+          </span></h3>
+        <div class="contents" style="opacity: 1;padding: 0;">
+          <!-- 조직성과도, 전략체계도 -->
+          <!--
+*************************************************************************
+* CLASS 명	: WorkflowList
+* 작 업 자	: jhlee
+* 작 업 일	: 2018-07-27
+* 기	능	: 승인프로세스 관리 List
+* ---------------------------- 변 경 이 력 --------------------------------
+* 번호	작 업 자		작	업	일			변 경 내 용				비고
+* ----	---------	----------------	---------------------	-----------
+*	1	jhlee		2018-07-27				최 초 작 업
+**************************************************************************
+-->
+
+          <!--
+필독 : 다국어 지원기능에 의해서 화면에 나타나는 한글명칭은 message properties파일을 이용하여 수정할 것.
+ -->
+
+          <!-- 내용 container -->
+          <div class="gridContainer">
+            <div class="comGridContainer pt0" style="padding-bottom:0;">
+
+              <!-- 대시보드 영역 -->
+              <div class="dashboard">
+                <!-- 회원현황 -->
+                <div class="dashboard__top">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      회원현황
+                    </h1>
+                  </div>
+                  <div class="widgetWrap">
+                    <div class="widget">
+                      <h2>총 가입자 수</h2>
+                      <div class="chart num">
+                        25,000 <span>명</span>
+                      </div>
+                    </div>
+                    <div class="widget">
+                      <h2>가입자 남녀 비율</h2>
+                      <!-- 차트 들어갈 공간 -->
+                      <div class="chart">
+                        
+                      </div>
+                      <!-- 차트 들어갈 공간 eee -->
+                    </div>
+                    <div class="widget">
+                      <h2>가입자 지역비율</h2>
+                      <!-- 차트 들어갈 공간 -->
+                      <div class="chart">
+
+                      </div>
+                      <!-- 차트 들어갈 공간 eee -->
+                    </div>
+                  </div>
+                </div>
+                <!-- 회원현황 eee-->
+
+                <!-- 입금확인 필요강좌 -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      입금확인 필요강좌 (<span>3</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="comTableWrap-1">
+                    <table class="comTable-1">
+                      <colgroup>
+                        <col width="50px">
+                        <col width="200px">
+                        <col width="auto">
+                        <col width="200px">
+                        <col width="150px">
+                        <col width="150px">
+                        <col width="130px">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>번호</th>
+                          <th>기관명</th>
+                          <th>강의명</th>
+                          <th>접수기간</th>
+                          <th>선정방법</th>
+                          <th>결제수단</th>
+                          <th>접수현황 바로가기</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>3</td>
+                          <td class="left">평생교육관</td>
+                          <td class="left">드론조종자 양성과정(드론국가자격증 1종 취득)</td>
+                          <td> 2022-11-01 ~ 2022-11-10 </td>
+                          <td>선착순</td>
+                          <td>무통장입금</td>
+                          <td>
+                            <button type="button" class="comBtn bg-main">바로가기</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td class="left">운서동행정복지센터</td>
+                          <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
+                          <td> 2022-11-01 ~ 2022-11-10</td>
+                          <td>추첨</td>
+                          <td>무통장입금</td>
+                          <td>
+                            <button type="button" class="comBtn bg-main">바로가기</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td class="left">영종동행정복지센터</td>
+                          <td class="left">휴센터 휴공방 자개 그립톡</td>
+                          <td> 2022-11-01 ~ 2022-11-10</td>
+                          <td>선착순</td>
+                          <td>무통장입금</td>
+                          <td>
+                            <button type="button" class="comBtn bg-main">바로가기</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- 입금확인 필요강좌 eee -->
+
+                <!-- 강좌 환불요청 -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      강좌 환불요청 (<span>3</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <table class="comTable-1">
+                    <colgroup>
+                      <col width="50px">
+                      <col width="200px">
+                      <col width="100px">
+                      <col width="auto">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="130px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>기관명</th>
+                        <th>사용자명</th>
+                        <th>강의명</th>
+                        <th>환불요청일시</th>
+                        <th>결제수단</th>
+                        <th>접수상세 바로가기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3</td>
+                        <td>평생교육관</td>
+                        <td>홍*동</td>
+                        <td class="left">드론조종자 양성과정(드론국가자격증 1종 취득)</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>무통장입금</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>운서동행정복지센터</td>
+                        <td>임*정</td>
+                        <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>무통장입금</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>영종동행정복지센터</td>
+                        <td>성*향</td>
+                        <td class="left">휴센터 휴공방 자개 그립톡</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>무통장입금</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <!-- 강좌 환불요청 eee-->
+
+                <!-- 대관 승인대기  -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      대관 승인대기 (<span>3</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <table class="comTable-1">
+                    <colgroup>
+                      <col width="50px">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="100px">
+                      <col width="130px">
+                      <col width="150px">
+                      <col width="130px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>대관명</th>
+                        <th>대관일</th>
+                        <th>대관시간</th>
+                        <th>대관신청인원</th>
+                        <th>대관신청일시</th>
+                        <th>접수상세 바로가기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2</td>
+                        <td>중강의실 (1층)</td>
+                        <td>2023-03-10</td>
+                        <td>오후</td>
+                        <td>임*정</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>소강의실 (2층)</td>
+                        <td>2023-03-12</td>
+                        <td>야간</td>
+                        <td>성*향</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <!-- 대관 승인대기  eee-->
+
+                <!-- 대관 환불요청 -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      대관 환불요청 (<span>2</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <table class="comTable-1">
+                    <colgroup>
+                      <col width="50px">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="100px">
+                      <col width="130px">
+                      <col width="150px">
+                      <col width="130px">
+                      <col width="130px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>대관명</th>
+                        <th>대관일</th>
+                        <th>대관시간</th>
+                        <th>사용자명</th>
+                        <th>환불요청일시</th>
+                        <th>결제수단</th>
+                        <th>접수상세 바로가기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2</td>
+                        <td>중강의실 (1층)</td>
+                        <td>2023-03-10</td>
+                        <td>오후</td>
+                        <td>임*정</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>가상계좌</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>소강의실 (2층)</td>
+                        <td>2023-03-12</td>
+                        <td>야간</td>
+                        <td>성*향</td>
+                        <td> 2022-11-0112:21:30</td>
+                        <td>가상계좌</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <!-- 대관 환불요청  eee-->
+
+                <!-- 강사 승인요청 -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      강사 승인요청 (<span>2</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <table class="comTable-1">
+                    <colgroup>
+                      <col width="50px">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="auto">
+                      <col width="130px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>강사명</th>
+                        <th>신청일시</th>
+                        <th>교육분야</th>
+                        <th>신청상세 바로가기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>임*정
+                        </td>
+                        <td>
+                          2022-11-01 12:21:30
+                        </td>
+                        <td>기초문해교육, 인문교양
+                        </td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <!-- 강사 승인요청  eee-->
+
+                <!-- 학습동아리 승인요청 -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      학습동아리 승인요청 (<span>2</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <table class="comTable-1">
+                    <colgroup>
+                      <col width="50px">
+                      <col width="auto">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="250px">
+                      <col width="130px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>동아리명</th>
+                        <th>신청자명</th>
+                        <th>신청일시</th>
+                        <th>학습활동분야</th>
+                        <th>신청상세 바로가기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="left">배워서 남주나
+                        </td>
+                        <td>홍*동</td>
+                        <td> 2022-11-01 12:21:30</td>
+                        <td>시민참여활동, 기초문해교육, 인문교양
+                        </td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <!-- 학습동아리 승인요청  eee-->
+
+                <!-- 나눔공간 승인요청 -->
+                <div class="dashboard__row">
+                  <div class="comTitWrap">
+                    <h1 class="comTit">
+                      나눔공간 승인요청 (<span>2</span>건)
+                    </h1>
+                    <div class="selectWrap">
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                      <select name="" id="" class="comSelect">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <table class="comTable-1">
+                    <colgroup>
+                      <col width="50px">
+                      <col width="auto">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="150px">
+                      <col width="130px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>나눔공간명</th>
+                        <th>신청자명</th>
+                        <th>신청일시</th>
+                        <th>지역구분</th>
+                        <th>신청상세 바로가기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="left">우리집에 놀러와</td>
+                        <td>홍*동</td>
+                        <td> 2022-11-01 12:21:30</td>
+                        <td>율목동</td>
+                        <td>
+                          <button type="button" class="comBtn bg-main">바로가기</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- 나눔공간 승인요청  eee-->
+
+              </div>
+              <!-- 대시보드 영역 eee -->
+
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 콘텐츠 끝 -->
+    <div id="sgDialog" title="확인">
+      <p></p>
+    </div> <!-- 다이어로그 -->
+    <div class="loadingDiv" style="display: none; height: 1015px;">
+      <div class="loadingImgDiv" style="top: 580px;">
+        <img src="/irmsm/images/loading.gif">
+      </div>
+      <div class="loadingBGDiv"></div>
+    </div>
+    <form id="command" name="logoutForm" action="/irmsm/logout.do" method="POST"></form><iframe name="hiddenFrame"
+      id="hiddenFrame" frameborder="0"></iframe>
+    <form id="layoutPopForm" action="/irmsm/main.do" method="post"></form>
+  </div>
+
+  <div id="fancybox-tmp"></div>
+  <div id="fancybox-loading">
+    <div></div>
+  </div>
+  <div id="fancybox-overlay"></div>
+  <div id="fancybox-wrap" style="">
+    <div id="fancybox-outer">
+      <div class="fancybox-bg" id="fancybox-bg-n"></div>
+      <div class="fancybox-bg" id="fancybox-bg-ne"></div>
+      <div class="fancybox-bg" id="fancybox-bg-e"></div>
+      <div class="fancybox-bg" id="fancybox-bg-se"></div>
+      <div class="fancybox-bg" id="fancybox-bg-s"></div>
+      <div class="fancybox-bg" id="fancybox-bg-sw"></div>
+      <div class="fancybox-bg" id="fancybox-bg-w"></div>
+      <div class="fancybox-bg" id="fancybox-bg-nw"></div>
+      <div id="fancybox-content"></div><a id="fancybox-close"></a>
+      <div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico"
+          id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico"
+          id="fancybox-right-ico"></span></a>
+    </div>
+  </div>
+</body>
+
+</html>

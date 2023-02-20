@@ -2330,3 +2330,38 @@ body.Yellow{
   width: 200px;
 }
 /* 대시보드 eee */
+
+/* 출석부팝업 */
+.comPopupWrap.on.pages.aa{}
+.comPopupWrap.on.pages.aa .comPopupBotBtn{
+  position: absolute;left: 0;width: 100%;bottom: 0;top: auto;left: 15px;
+}
+.comPopupWrap.on.pages.aa .descTxt dl{
+  display: flex;
+  align-items: center;
+}
+.comPopupWrap.on.pages.aa .descTxt dl dt{
+  position: relative;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 7px 0;
+  font-weight: 500;
+}
+.comPopupWrap.on.pages.aa .descTxt dl dt::after{
+  display: inline-block;  
+  margin-left: 5px;
+  content: ':';
+}
+.comPopupWrap.on.pages.aa .descTxt dl dd{
+  font-size: 17px;
+  font-weight: 400;
+}
+.comPopupWrap.on.pages.aa .hadTit{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.comPopupWrap.on.pages.aa .comTable-1 th, .comTable-1 td{
+  height: 31px;
+}
+/* 출석부팝업 eee */
